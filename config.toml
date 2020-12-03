@@ -1,4 +1,4 @@
-baseURL = "http://seawave.top"
+baseURL = "https://seawave.top"
 languageCode = "en-us"
 title = "SeaWave's blog"
 publishDir = "docs"
