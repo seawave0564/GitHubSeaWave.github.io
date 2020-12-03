@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SeaWave&#39;s blog</title>
+    <link>http://seawave.top/</link>
+    <description>Recent content on SeaWave&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Dec 2020 12:42:18 +0800</lastBuildDate><atom:link href="http://seawave.top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>first blog</title>
+      <link>http://seawave.top/posts/my-first-post/</link>
+      <pubDate>Thu, 03 Dec 2020 12:42:18 +0800</pubDate>
+      
+      <guid>http://seawave.top/posts/my-first-post/</guid>
+      <description>这是我的第一条blog  不知道写啥 随便写点吧做个测试 </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://seawave.top/about/</link>
+      <pubDate>Thu, 03 Dec 2020 12:35:00 +0800</pubDate>
+      
+      <guid>http://seawave.top/about/</guid>
+      <description>欢迎来的我的博客  </description>
+    </item>
+    
+  </channel>
+</rss>
