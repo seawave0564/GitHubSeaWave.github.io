@@ -1,6 +1,0 @@
-[submodule "beautifulhugo"]
-	path = beautifulhugo
-	url = https://github.com/halogenica/beautifulhugo.git
-[submodule "themes/hugo-coder"]
-	path = themes/hugo-coder
-	url = https://github.com/luizdepra/hugo-coder.git
