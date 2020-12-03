@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://seawave.top/"
 languageCode = "en-us"
 publishDir = "docs"
-title = "My New Hugo Site"
+title = "SeaWave"
