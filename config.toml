@@ -1,4 +1,5 @@
-baseURL = "http://seawave.top/"
+baseURL = "http://seawave.top"
 languageCode = "en-us"
 title = "SeaWave's blog"
 publishDir = "docs"
+theme="hugo-PaperMod"
