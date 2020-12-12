@@ -462,12 +462,6 @@ enableEmoji = true
         shortname = ""
       # Gitalk comment config (https://github.com/gitalk/gitalk)
       # Gitalk 评论系统设置 (https://github.com/gitalk/gitalk)
-      [params.page.comment.gitalk]
-        enable = false
-        owner = "GitHubSeaWave"
-        repo = "GitHubSeaWave.github.io"
-        clientId = "9bda4e957d95f3604a34"
-        clientSecret = "1b798243e903bb78b9df1bcbcf88f17df4f31cce"
       # Valine comment config (https://github.com/xCss/Valine)
       # Valine 评论系统设置 (https://github.com/xCss/Valine)
       [params.page.comment.valine]
