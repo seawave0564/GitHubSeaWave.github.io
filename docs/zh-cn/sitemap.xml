@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://blog.Seawave.top/about/</loc><lastmod>2020-12-04T12:58:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://blog.Seawave.top/about/</loc><lastmod>2020-12-04T12:58:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://blog.Seawave.top/en/about/"
@@ -15,9 +15,9 @@
                     hreflang="zh-cn"
                     href="https://blog.Seawave.top/about/"
                     /></url><url>
-            <loc>https://blog.Seawave.top/my-first-post/</loc><lastmod>2020-12-03T23:57:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://blog.Seawave.top/posts/</loc><lastmod>2020-12-03T23:57:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://blog.Seawave.top/</loc><lastmod>2020-12-03T23:57:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            <loc>https://blog.Seawave.top/my-first-post/</loc><lastmod>2020-12-03T23:57:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://blog.Seawave.top/posts/</loc><lastmod>2020-12-03T23:57:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://blog.Seawave.top/</loc><lastmod>2020-12-03T23:57:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://blog.Seawave.top/en/"
