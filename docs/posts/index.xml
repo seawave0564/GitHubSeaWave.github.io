@@ -3,7 +3,14 @@
         <title>所有文章 - SeaWave</title>
         <link>https://blog.Seawave.top/posts/</link>
         <description>所有文章 | SeaWave</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 03 Dec 2020 23:57:58 &#43;0800</lastBuildDate><atom:link href="https://blog.Seawave.top/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 12 Jan 2021 18:00:00 &#43;0800</lastBuildDate><atom:link href="https://blog.Seawave.top/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>通过SakuraFrp进行远程桌面连接</title>
+    <link>https://blog.Seawave.top/remote-desktop/</link>
+    <pubDate>Tue, 12 Jan 2021 18:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://blog.Seawave.top/remote-desktop/</guid>
+    <description><![CDATA[##SakuraFrp简介 SakuraFrp是目前市面上少有的免费内网穿透平台，可以用于个人搭建服务器和做一些应用的流量穿透。花生壳虽然也有]]></description>
+</item><item>
     <title>My First Blog</title>
     <link>https://blog.Seawave.top/my-first-post/</link>
     <pubDate>Thu, 03 Dec 2020 23:57:58 &#43;0800</pubDate>
