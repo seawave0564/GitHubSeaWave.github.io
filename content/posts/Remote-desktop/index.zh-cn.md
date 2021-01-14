@@ -4,7 +4,7 @@ date: 2021-01-12T18:00:00+08:00
 draft: false
 Author: "SeaWave"
 ---
-##SakuraFrp简介  
+## SakuraFrp简介  
 SakuraFrp是目前市面上少有的免费内网穿透平台，可以用于个人搭建服务器和做一些应用的流量穿透。花生壳虽然也有免费的，但是带宽和流量都有很大限制，SakuraFrp免费用户就可提供10Mbps和6GB的流量相比之下这个平台算是比较良心的了。  
 
 
@@ -24,7 +24,7 @@ SakuraFrp是目前市面上少有的免费内网穿透平台，可以用于个�
 
 
 4.确定。到此配置完毕。  
-##创建SakuraFrp隧道  
+## 创建SakuraFrp隧道  
 1.注册账号  
 2.创建隧道：  
 >节点最好是选国内的，联通还是电信根据你自己的网络环境来选。  
@@ -36,7 +36,7 @@ SakuraFrp是目前市面上少有的免费内网穿透平台，可以用于个�
 
 ![创建隧道](https://seawave.top/blogimage/blog2-3.png)  
 4.单击确认创建，完成创建。  
-##连接隧道  
+## 连接隧道  
 1.下载Sakura客户端。[单击下载](https://getfrp.sh/l/SakuraLauncher.zip)   
 &nbsp;&nbsp;无法下载可以在主页点击软件下载手动选择windows客户端。  
 
@@ -55,7 +55,7 @@ SakuraFrp是目前市面上少有的免费内网穿透平台，可以用于个�
 ![日志](https://seawave.top/blogimage/blog2-6.png)  
 
 5.保存所提示的IP或域名，选择其中一种即可。  
-##在其他电脑上连接到你的电脑  
+## 在其他电脑上连接到你的电脑  
 1.打开远程连接工具。  
 >第1种方法：win+r打开运行窗口，输入mstsc。  
 >第2种方法：单击开始菜单，在附件中找到远程桌面连接。 
