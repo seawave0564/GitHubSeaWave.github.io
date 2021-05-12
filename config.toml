@@ -456,7 +456,7 @@ enableEmoji = true
       # Disqus comment config (https://disqus.com/)
       # Disqus 评论系统设置 (https://disqus.com/)
       [params.page.comment.disqus]
-        enable = false
+        enable =false
         # Disqus shortname to use Disqus in posts
         # Disqus 的 shortname，用来在文章中启用 Disqus 评论系统
         shortname = ""
@@ -468,16 +468,16 @@ enableEmoji = true
         enable = true
         appId = "w9ndi2cjk3TnaLVcQLn58vt3-9Nh9j0Va"
         appKey = "3k9y2rbhwVhc1AfAV49HdokB"
-        placeholder = ""
+        placeholder = "想说点啥"
         avatar = "mp"
-        meta= ""
+        meta= ['nick','mail','link']
         pageSize = 10
-        lang = ""
+        lang = "zh-CN"
         visitor = true
         recordIP = true
         highlight = true
-        enableQQ = false
-        serverURLs = "https://seawave.top"
+        enableQQ = true
+        serverURLs = ""
         # emoji data file name, default is "google.yml"
         # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
         # located in "themes/LoveIt/assets/data/emoji/" directory
@@ -673,7 +673,7 @@ enableEmoji = true
 # 作者配置
 [author]
   name = "SeaWave"
-  email = ""
+  email = "943581833@qq.com"
   link = ""
 
 # Sitemap config
