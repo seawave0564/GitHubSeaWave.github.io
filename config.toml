@@ -140,7 +140,7 @@ enableEmoji = true
           # Gravatar 邮箱，用于优先在主页显示的头像
           gravatarEmail = ""
           # 主页显示头像的 URL
-          avatarURL = "/images/touxiang.png"
+          avatarURL = "https://cdn.jsdelivr.net/gh/GitHubSeaWave/GitHubSeaWave.github.io@main/docs/images/touxiang.png"
           # 主页显示的网站标题 (支持 HTML 格式)
           title = "SeaWave"
           # 主页显示的网站副标题
