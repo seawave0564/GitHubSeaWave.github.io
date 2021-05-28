@@ -4,7 +4,7 @@ prefix:
   simpleIcons: https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/
   ghcdn: https://cdn.jsdelivr.net/gh/
 ghcdn:
-  style: GitHubSeaWave/GitHubSeaWave.github.io@main/docs/css/style.min.css
+  style: style.min.css@GitHubSeaWave/GitHubSeaWave.github.io@main/docs/css/style.min.css
 libFiles:
   # normalize.css@8.0.1 https://github.com/necolas/normalize.css
   normalizeCSS: normalize.css@8.0.1/normalize.min.css
