@@ -1,4 +1,4 @@
-baseURL = "https://blog.Seawave.top/"
+baseURL = "https://Seawave.top/"
 publishDir = "docs"
 # [en, zh-cn, fr, pl, ...] determines default content language
 # [en, zh-cn, fr, pl, ...] 设置默认的语言
@@ -294,7 +294,7 @@ enableEmoji = true
     since = 2020
     # ICP info only in China (HTML format is supported)
     # ICP 备案信息，仅在中国使用 (支持 HTML 格式)
-    icp = "本网站基于Hugo-loveit"
+    icp = "SeaWave.top"
     # license info (HTML format is supported)
     # 许可协议信息 (支持 HTML 格式)
     #license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
