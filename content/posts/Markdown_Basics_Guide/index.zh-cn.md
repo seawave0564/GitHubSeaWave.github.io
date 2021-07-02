@@ -5,6 +5,13 @@ categories: ["各种笔记"]
 draft: false
 Author: "SeaWave"
 ---
+## Markdown简介
+
+Markdown是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。
+Markdown 语言在 2004 由约翰·格鲁伯（英语：John Gruber）创建。
+Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。
+Markdown 编写的文档后缀为 .md, .markdown。
+来自：[百度百科](https://baike.baidu.com/item/markdown/3245829?fr=aladdin)
 ## 一、Markdown标题
 
 ### 1.使用 = 和 - 标记
