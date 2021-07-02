@@ -7,9 +7,9 @@ Author: "SeaWave"
 ---
 #                               Markdown语法规则
 
-## 一、Markdown标题
+# 一、Markdown标题
 
-### 1.使用 = 和 - 标记
+## 1.使用 = 和 - 标记
 
 > 我展示的是一级标题
 >
@@ -23,7 +23,7 @@ Author: "SeaWave"
  
 ![标题](https://seawave.top/file/markdown/bt.jpg)
 
- ### 2.使用#号标记
+ ## 2.使用#号标记
 用#号标记标题时要注意#号与标题文本中间的空格
 ```
 # 一级标题
@@ -41,7 +41,7 @@ Author: "SeaWave"
  
 ![标题1](https://seawave.top/file/markdown/bt1.jpg)
 
-## 二、Markdown 段落
+# 二、Markdown 段落
 
 ## 1.段落分段
 
