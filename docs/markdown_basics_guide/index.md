@@ -2,9 +2,9 @@
 
 #                               Markdown语法规则
 
-## 一、Markdown标题
+# 一、Markdown标题
 
-### 1.使用 = 和 - 标记
+## 1.使用 = 和 - 标记
 
 > 我展示的是一级标题
 >
@@ -18,7 +18,7 @@
  
 ![标题](https://seawave.top/file/markdown/bt.jpg)
 
- ### 2.使用#号标记
+ ## 2.使用#号标记
 用#号标记标题时要注意#号与标题文本中间的空格
 ```
 # 一级标题
@@ -36,7 +36,7 @@
  
 ![标题1](https://seawave.top/file/markdown/bt1.jpg)
 
-## 二、Markdown 段落
+# 二、Markdown段落
 
 ## 1.段落分段
 
@@ -95,6 +95,7 @@ Markdown可以使用如下字体格式：
 
 ![](https://seawave.top/file/markdown/jz.jpg)
 
+
 # 三、Markdown列表
 
 ## 1.无序列表
@@ -147,6 +148,7 @@ Markdown可以使用如下字体格式：
 
 ![](https://www.runoob.com/wp-content/uploads/2019/03/8ED795DA-F124-4E70-BA71-57CD9CF958A4.jpg)
 
+
 # 四、Markdown区块
 
 ## 1.普通区块
@@ -188,6 +190,7 @@ Markdown 区块引用是在段落开头使用 **>** 符号 ，然后后面紧跟
 
 ![](https://seawave.top/file/markdown/qkqt.jpg)
 
+
 # 五、Markdown 代码
 
 ## 1.代码片段
@@ -217,6 +220,7 @@ $(document).ready(function () {
 **效果如下：**
 
 ![](https://www.runoob.com/wp-content/uploads/2019/03/88F52386-2F98-4D7E-8935-E43BECA6D868.jpg)
+
 
 # 六、Markdown 链接
 
@@ -254,6 +258,7 @@ $(document).ready(function () {
 然后在文档的结尾为变量赋值（网址）
 
 ![](https://seawave.top/file/markdown/gjlj.jpg)
+
 
 # 七、Markdown 图片
 
@@ -297,6 +302,7 @@ Markdown 图片语法格式如下：
 然后在文档的结尾为变量赋值（网址）
 
 ![](https://seawave.top/file/markdown/gitee.jpg)
+
 
 # 八、Markdown 表格
 
