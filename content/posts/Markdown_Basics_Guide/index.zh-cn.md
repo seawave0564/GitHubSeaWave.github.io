@@ -1,6 +1,7 @@
 ---
 title: "MarkDwon基础语法指北"
 date: 2021-07-02T17:00:00+08:00
+categories: ["各种笔记"]
 draft: false
 Author: "SeaWave"
 ---

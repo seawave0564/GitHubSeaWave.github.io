@@ -2,6 +2,7 @@
 title: "通过SakuraFrp进行远程桌面连接"
 date: 2021-01-12T18:00:00+08:00
 draft: false
+categories: ["Windows小技巧"]
 Author: "SeaWave"
 ---
 ## SakuraFrp简介  
