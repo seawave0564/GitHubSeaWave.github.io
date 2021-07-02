@@ -19,19 +19,21 @@
 ![标题](https://seawave.top/file/markdown/bt.jpg)
 
  ### 2.使用#号标记
+用#号标记标题时要注意#号与标题文本中间的空格
+```
+# 一级标题
 
->#一级标题
->
->##二级标题
->
->###三级标题
->
->#####四级标题
->
->######五级标题
->
->#######六级标题
-  
+## 二级标题
+
+### 三级标题
+
+##### 四级标题
+
+###### 五级标题
+
+####### 六级标题
+```
+ 
 ![标题1](https://seawave.top/file/markdown/bt1.jpg)
 
 ## 二、Markdown 段落
@@ -79,7 +81,7 @@ Markdown可以使用如下字体格式：
 
 `<u>带下划线的文本</u>`
 
-效果如下
+**效果如下：**
 
 ![下划线](https://seawave.top/file/markdown/xh.jpg)
 
@@ -119,7 +121,7 @@ Markdown可以使用如下字体格式：
 ![](https://www.runoob.com/wp-content/uploads/2019/03/89446A8E-6D83-4666-AACC-980145D5F070.jpg)
 
 ## 2.有序列表
-
+有序列表使用数字标记，后面同样需要加一个空格在填写内容：
 ```
 1. 第一项
 2. 第二项
@@ -131,7 +133,7 @@ Markdown可以使用如下字体格式：
 ![](https://www.runoob.com/wp-content/uploads/2019/03/560384BB-2B00-41D5-ACF2-18972F7F2775.jpg)
 
 ## 3.列表嵌套
-
+列表是可以嵌套的，达到分级效果。
 ```
 1. 第一项：
     - 第一项嵌套的第一个元素
@@ -228,6 +230,8 @@ $(document).ready(function () {
 
 **效果如下：**
 
+欢迎来到我的博客 [点击进入](https://seawave.top)
+
 ![](https://seawave.top/file/markdown/clj.jpg)
 
 ## 2.高级链接
@@ -243,6 +247,11 @@ $(document).ready(function () {
   [1]: http://www.google.com/
   [2]: http://www.seawave.com/
 ```
+效果如下：
+
+点击进入 [Google][1]
+点击进入 [seawave][2]
+然后在文档的结尾为变量赋值（网址）
 
 ![](https://seawave.top/file/markdown/gjlj.jpg)
 
@@ -261,10 +270,14 @@ Markdown 图片语法格式如下：
 ```
 ![Baidu 图标](https://www.baidu.com/img/540x258_2179d1243e6c5320a8dcbecd834a025d.png)
 
-![Baidu 图标](https://www.baidu.com/img/540x258_2179d1243e6c5320a8dcbecd834a025d.png "RUNOOB")
+![Baidu 图标](https://www.baidu.com/img/540x258_2179d1243e6c5320a8dcbecd834a025d.png "100years")
 ```
 
 **效果如下:**
+
+![Baidu 图标](https://www.baidu.com/img/540x258_2179d1243e6c5320a8dcbecd834a025d.png)
+
+![Baidu 图标](https://www.baidu.com/img/540x258_2179d1243e6c5320a8dcbecd834a025d.png "100years")
 
 ![](https://seawave.top/file/markdown/tb.jpg)
 
@@ -278,6 +291,10 @@ Markdown 图片语法格式如下：
 
 [1]: https://gitee.com/static/images/logo-black.svg
 ```
+效果如下：
+
+这个链接用 1 作为网址变量 [Gitee][1].
+然后在文档的结尾为变量赋值（网址）
 
 ![](https://seawave.top/file/markdown/gitee.jpg)
 
@@ -293,6 +310,10 @@ Markdown 制作表格使用 **|** 来分隔不同的单元格，使用 **-** 来
 | 单元格  | 单元格 |
 | 单元格  | 单元格 |
 ```
+|  表头   | 表头  |
+|  ----  | ----  |
+| 单元格  | 单元格 |
+| 单元格  | 单元格 |
 
 ![](https://seawave.top/file/markdown/bg1.jpg)
 
@@ -310,7 +331,12 @@ Markdown 制作表格使用 **|** 来分隔不同的单元格，使用 **-** 来
 | 单元格 | 单元格 | 单元格 |
 | 单元格 | 单元格 | 单元格 |
 ```
+| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
 
 ![](https://seawave.top/file/markdown/bg2.jpg)
 
-
+  [1]: http://www.google.com/
+  [2]: http://www.seawave.com/
