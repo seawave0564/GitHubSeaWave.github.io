@@ -1,11 +1,11 @@
 ---
 title: "MyBatis使用教程"
-date: 2021-11-18T14:00:00+08:00
+date: 2021-12-05T14:00:00+08:00
 categories: ["各种笔记"]
 draft: false
 Author: "SeaWave"
 ---
-## 什么是MyBatis？
+## ·什么是MyBatis？
 
 ### 1.MyBatis介绍
 
@@ -100,8 +100,142 @@ try (SqlSession session = sqlSessionFactory.openSession()) {
 
 在上述代码中我们需要更改以下几项：
 
-+ namespace:他指向你所需要映射的java接口方法
++ namespace:他指向你所需要映射的java接口
 + id:映射方法的名称
 + resultType指明返回类型
 + 不可或缺的是，我们需要更改查询语句。
+
+### 4.ResultMap结果集映射
+
+当数据库字段名和属性名不一致时，会导致实体类中的属性值为null，例子如下：  
+
+```java
+//实体类的属性如下：
+class user{
+    int name;
+	int password;
+}
+//接口方法
+void getUser();
+```
+
+```xml
+<!--mapper中的查询语句如下-->
+<select id="getUser" type=com.example.User>
+select * name,pwd from users
+</select>
+```
+
+此时返回的User类中的password属性值为null，对于这个问题我们可以在mapper配置文件中添加resultMap标签来解决。  
+
+```xml
+<!--mapper中的查询语句如下-->
+<select id="getUser" resultmap=com.example.User>
+select * name,pwd from users
+</select>
+<!--新增resultMap标签-->
+<resultMap id="UserMap" type="User">
+<!--column表示数据库中的字段，property表示实体类中的属性 -->
+    <result column="name" property="name"/>
+    <result column="pwd" property="password"/>
+</resultMap>
+```
+
+  
+
+### 5.多对一的处理
+
+在实际查询数据库的过程中，大概率会遇到多对一的情况，比如多个学生对应一个老师，我们查询寻学生时需要连同老师一起查询，这时我们需要对结果集做一些修改。
+
+例子：
+
+```java
+//实体类的属性如下：
+class Student{
+    int id;
+	String name;
+	Teacher teacher
+}
+//接口方法
+void getStudent();
+```
+
+很明显 以上User类中的Teacher属性是一个复杂类型，所以我们需要单独处理。
+
+#### 方法一
+
+类似于子查询的方法
+
+```xml
+<select id = "getStudent" resultMap="StudentTeacher">
+	select * from student
+</select>
+
+<resultMap id ="StudentTeacher" type="Student">
+<result property="id" colum="id"/>
+<result property="name"colum="name"/>
+    <!-- 复杂的属性，单独处理。对象：association 集合：collection -->
+<association property="teacher" colum="tid" javaType="Teacher" select="getTcher"/>    
+
+    <!--单独查询Teacher的语句-->
+<select id="getTeacher" resultType="Teacher">
+	select * from teacher where id=#{id}    
+</select>      
+</result>
+```
+
+#### 方法二
+
+按照结果嵌套处理
+
+``` xml
+<select id="getStudent" resultMap="StudentTeacher">
+	select s.id sid,s.name sname,t.name tname
+    from student s,teacher t
+    where s.tid = t.id
+</select>
+<resultMap id="StudentTeacher2" type ="Student">
+	<result property="id" column="sid"/>
+    <result property="name" column="sname"/>
+    <association property="teacher" javaType="Teacher">
+    	<result property="name" column="tname"/>
+    </association>
+</resultMap>
+```
+
+### 6. 一对多的处理
+
+与多对一相反,我们会遇到一对多的情况,比如说一个老师对应多个老师,所以我们同样需要对结果集进行处理.
+
+例子:
+
+```java
+//实体类
+public class Teacher{
+    private int id;
+    private String name;
+    private List<Student> students;
+}
+//接口方法
+class TeacherMapper{
+    Teacher getTeacher(int id);
+}
+```
+
+```xml
+<select id="getTeacher" resultMapper="">
+	select s.id sid,s.name sname,t.name tname
+    from student s,teacher t
+    where s.tid = t.id and t.id=#{tid}
+</select>
+<resultMap id="TeacherStudent" type ="Teacher">
+	<result property="id" column="sid"/>
+    <result property="name" column="sname"/>
+    <collection property="teacher" TypeOf="Stident">
+    	<result property="id" column="sid"/>
+        <result property="name" column="sname"/>
+        <result property="tid" column="tid"/>
+    </association>
+</resultMap>
+```
 
