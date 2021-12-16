@@ -13,9 +13,9 @@ MyBatis 是一款优秀的持久层框架，它支持定制化 SQL、存储过�
 
 ### 2.如何获取MyBatis有关的信息？
 
-1. MyBatis官方文档：https://mybatis.org/mybatis-3/  
-2. MyBatis项目地址：https://github.com/mybatis/mybatis-3/  
-3. Maven中央仓库：https://mvnrepository.com/  
+1. MyBatis官方文档：[https://mybatis.org/mybatis-3](https://mybatis.org/mybatis-3/)
+2. MyBatis项目地址：[https://github.com/mybatis/mybatis-3](https://github.com/mybatis/mybatis-3/)  
+3. Maven中央仓库：[https://mvnrepository.com](https://mvnrepository.com)  
 
 ## MyBatis的安装 
 
