@@ -1,7 +1,7 @@
 ---
 title: "MyBatis使用教程"
 date: 2021-12-05T14:00:00+08:00
-categories: ["各种笔记"]
+categories: ["学习笔记"]
 draft: false
 Author: "SeaWave"
 ---
