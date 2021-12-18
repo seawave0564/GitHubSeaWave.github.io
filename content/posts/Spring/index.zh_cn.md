@@ -184,8 +184,6 @@ public class MyTest {
 
 ```java
 <bean id="user" class="com.kuang.pojo.User" name="userTest">
-    <constructor-arg index="0" value="12"/>
-    <constructor-arg index="1" value="fuck"/>
 </bean>
 ```
 
@@ -369,6 +367,19 @@ public class Student {
 
 测试源代码：
 
+此处的cat和dog是一个复杂类型
+
+```xml
+<bean id="cat" class="com.seawave.pojo.Cat>
+	<property name="name" value="xiaomiao"/>
+</bean>
+<bean id="dog" class="com.seawave.pojo.Cat>
+	<property name="name" value="xiaowang"/>
+</bean>                     							 
+```
+
+普通写法：
+
 ```xml
 <bean id="people" class="com.seawave.pojo.People" autowire="byName">
     <property name="name" value="fuck"/>
@@ -379,7 +390,7 @@ public class Student {
 
 #### ByName自动装配
 
-会自动在容器上下文中查找和自己对象set方法后面的值对应的beanID
+会自动在容器上下文中查找和自己对象set方法后面的值对应的beanID，无需手动装配cat和dog类
 
 ```xml
 <bean id="people" class="com.seawave.pojo.People" autowire="byName">
@@ -389,7 +400,7 @@ public class Student {
 
 #### ByType自动装配
 
-会自动在容器上下文中查找和自己对象属性类型相同的beanID
+会自动在容器上下文中查找和自己对象属性类型相同的beanID，同理
 
 ```xml
 <bean id="people" class="com.seawave.pojo.People" autowire="byType">
@@ -798,16 +809,16 @@ public class DiyPointCut {
  ## Spring事务   
 
    事务是作为单个逻辑工作单元执行的一系列操作。一个逻辑工作单元必须有四个属性，称为原子性、一致性、隔离性和持久性 (ACID) 属性，只有这样才能成为一个事务。事务一般都是与数据库打交道的操作。
-   
+
    **简单来说，事务就是将一系列要做的事情放在一起，要么一起成功，要么一起失败。**
-   
+
    spring提供了以下两种事务：
-   
+
    + 声明式事务
    + 编程式事务
-   
+
    本文将举例声明式事务。
-   
+
    **例子：**
    在UserMapper中配置如下sql语句：
 
