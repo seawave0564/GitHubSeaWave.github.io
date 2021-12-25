@@ -8,7 +8,7 @@ Spring框架是由于[软件开发](https://baike.baidu.com/item/软件开发/34
 
 ### 2、创始人
 
-![Rod Johnson](https://bkimg.cdn.bcebos.com/pic/63d0f703918fa0ecf02c6612269759ee3c6ddbc2?x-bce-process=image/resize,m_lfit,w_536,limit_1/format,f_jpg)
+![Rod Johnson](https://seawave.top/blogimage/blog5-1.jpg)
 
 Rod在悉尼大学不仅获得了计算机学位，同时还获得了音乐学位。更令人吃惊的是在回到软件开发领域之前，他还获得了音乐学的博士学位。有着相当丰富的C/C++技术背景的Rod早在1996年就开始了对Java服务器端技术的研究。他是一个在保险、电子商务和金融行业有着丰富经验的技术顾问，同时也是JSR-154（Servlet 2.4）和JDO 2.0的规范专家、JCP的积极成员。
 
@@ -257,7 +257,7 @@ public class Student {
 
 ##### 数组注入：
 
-```java
+```xml
         <property name="books">
             <array>
                 <value>红楼梦</value>
