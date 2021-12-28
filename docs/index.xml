@@ -4,9 +4,16 @@
         <link>https://Seawave.top/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>943581833@qq.com (SeaWave)</managingEditor>
-            <webMaster>943581833@qq.com (SeaWave)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 17 Dec 2021 00:50:00 &#43;0800</lastBuildDate>
+            <webMaster>943581833@qq.com (SeaWave)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 28 Dec 2021 20:50:00 &#43;0800</lastBuildDate>
             <atom:link href="https://Seawave.top/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>初识SpringMVC</title>
+    <link>https://Seawave.top/index.zh_cn/</link>
+    <pubDate>Tue, 28 Dec 2021 20:50:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://Seawave.top/index.zh_cn/</guid>
+    <description><![CDATA[什么是SpringMVC？ 1、简介 很多应用程序的问题在于处理业务数据的对象和显示业务数据的视图之间存在紧密耦合，通常，更新业务对象的命令都是]]></description>
+</item><item>
     <title>初识Spring5</title>
     <link>https://Seawave.top/index.zh_cn/</link>
     <pubDate>Fri, 17 Dec 2021 00:50:00 &#43;0800</pubDate>
