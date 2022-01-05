@@ -11,7 +11,9 @@ Author: "SeaWave"
 
 ## 1.导入Vue
 
+```html
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+```
 
 ## 2.数据绑定
 
@@ -42,7 +44,7 @@ Author: "SeaWave"
 </html>
 ```
 
-***方式二：**
+**方式二：**
 
 通过v-bind指令：
 
