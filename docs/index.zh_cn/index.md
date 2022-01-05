@@ -1,423 +1,329 @@
-# 初识Spring5
+# 初识SpringMVC
 
-## 什么是Spring？
+## 什么是SpringMVC？
+### 1、简介 
+很多应用程序的问题在于处理业务数据的对象和显示业务数据的视图之间存在紧密耦合，通常，更新业务对象的命令都是从视图本身发起的，使视图对任何业务对象更改都有高度敏感性。而且，当多个视图依赖于同一个业务对象时是没有灵活性的。
 
-### 1、简介
+SpringMVC是一种基于Java，实现了Web MVC设计模式，请求驱动类型的轻量级Web框架，即使用了MVC架构模式的思想，将Web层进行职责解耦。基于请求驱动指的就是使用请求-响应模型，框架的目的就是帮助我们简化开发，SpringMVC也是要简化我们日常Web开发。
 
-Spring框架是由于[软件开发](https://baike.baidu.com/item/软件开发/3448966)的复杂性而创建的。Spring使用的是基本的[JavaBean](https://baike.baidu.com/item/JavaBean/529577)来完成以前只可能由[EJB](https://baike.baidu.com/item/EJB/144195)完成的事情。然而，Spring的用途不仅仅限于服务器端的开发。从简单性、可测试性和松耦合性角度而言，绝大部分Java应用都可以从Spring中受益。
+### 2、MVC设计模式
 
-### 2、创始人
+MVC设计模式的任务是将包含业务数据的模块与显示模块的视图解耦。这是怎样发生的？在模型和视图之间引入重定向层可以解决问题。此重定向层是控制器，控制器将接收请求，执行更新模型的操作，然后通知视图关于模型更改的消息。
 
-![Rod Johnson](https://seawave.top/blogimage/blog5-1.jpg)
++ Model（模型）：
++ View（视图）：
++ Controller（控制器）：
 
-Rod在悉尼大学不仅获得了计算机学位，同时还获得了音乐学位。更令人吃惊的是在回到软件开发领域之前，他还获得了音乐学的博士学位。有着相当丰富的C/C++技术背景的Rod早在1996年就开始了对Java服务器端技术的研究。他是一个在保险、电子商务和金融行业有着丰富经验的技术顾问，同时也是JSR-154（Servlet 2.4）和JDO 2.0的规范专家、JCP的积极成员。
+![结构](https://img-blog.csdnimg.cn/20190328153555304.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdGlhbnhpYW5nX2thb2xh,size_16,color_FFFFFF,t_70)
 
-真正引起了人们的注意的，是在2002年Rod Johnson根据多年经验撰写的《Expert o-ne-on-One J2EE Design and Development》。其中对正统J2EE架构的臃肿、低效的质疑，引发了人们对正统J2EE的反思。这本书也体现了Rod Johnson对技术的态度，技术的选择应该基于实证或是自身的经验，而不是任何形式的偶像崇拜或者门户之见。正是这本书真正地改变了Java世界。基于这本书的代码，Rod Johnson创建了轻量级的容器Spring。Spring的出现，使得正统J2EE架构一统天下的局面被打破。基于Struts+Hibernate+Spring的J2EE架构也逐渐得到人们的认可，甚至在大型的项目架构中也逐渐开始应用。
+![](https://img-blog.csdnimg.cn/20190630145911981.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdGlhbnhpYW5nX2thb2xh,size_16,color_FFFFFF,t_70)
 
+### 3、初识SpringMVC
 
-### 3、官网
-
-首页：[https://spring.io](https://spring.io/)
-
-下载地址：[https://repo1.maven.org/maven2/org/springframework/spring](https://repo1.maven.org/maven2/org/springframework/spring)
-
-github：[https://github.com/spring-projects/spring-framework](https://github.com/spring-projects/spring-framework)
-
-maven：
+#### 第一步、配置web.xml
 
 ```xml
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-webmvc</artifactId>
-    <version>5.3.13</version>
-</dependency>
-<!--MyBatis整合-->
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-jdbc</artifactId>
-    <version>5.3.13</version>
-</dependency>
+<!--    注册DispatcherServlet-->
+    <servlet>
+        <servlet-name>springmvc</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+<!--       关联一个springmvc配置文件-->
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:spirngmvc-servlet.xml</param-value>
+        </init-param>
+<!--        设置启动级别-->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>springmvc</servlet-name>·
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+</web-app>
 ```
 
-### 4.IOC理论
-
-```java
-    public void setUserDao(UserDao userDao) {
-        this.userDao = userDao;
-    }
-```
-
-使用set来把决定权交给用户，降低系统耦合性。
-
-## Spring的使用
-
-### 1.HelloSpring
-
-----------
-
-#### 例子：
-
-Dao接口
-
-```java
-public interface UserDao {
-    void getUser();
-}
-```
-
-实现接口1：
-
-```java
-public class UserDaoImpl implements UserDao {
-    @Override
-    public void getUser() {
-        System.out.println("默认获取用户数据");
-    }
-}
-```
-
-实现接口2：
-
-```java
-public class UserDaoMysqlImpl implements UserDao{
-    @Override
-    public void getUser() {
-        System.out.println("默认获取MYSQL数据");
-    }
-}
-```
-
-业务层：
-
-```java
-public class UserServiceImpl implements  UserService{
-   private UserDao userDao;
-    @Override
-    public void getUser() {
-        userDao.getUser();
-    }
-    public void setUserDao(UserDao userDao) {
-        this.userDao = userDao;
-    }
-}	
-```
-
-通过spring实例化：
-
-```java
-public class MyTest {
-    public static void main(String[] args) {
-        //拿到spring容器
-        ApplicationContext beans = new ClassPathXmlApplicationContext("beans.xml");
-        UserServiceImpl userServiceImpl = (UserServiceImpl) 					beans.getBean("UserServiceImpl");
-        userServiceImpl.getUser();
-    }
-}
-```
-
-配置文件：
+#### 第二步、配置spirngmvc-servlet.xml
 
 ```xml
+ <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>  
+ <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>  
+<!-- 视图解析器:DispatcherServlet给他的ModeLAndVIew-->  
+<!--    1.获取了ModelAndView的数据-->  
+<!--    2.解析ModelAndView的试图名字-->  
+<!--    3.拼接试图名字，找到对应视图-->  
+<!--    4.将数据渲染到视图上-->  
+ <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">  
+<!-- 前置-->  
+ <property name="prefix" value="/WEB-INF/jsp/"/>  
+<!-- 后缀-->  
+ <property name="suffix" value=".jsp"/>  
+ </bean><!--    Handler-->  
+ <bean id="/hello" class="com.seawave.HelloController"/>  
+</beans>
+```
+
+#### 第三步、在Controller类中测试
+```java
+ @Override  
+ public ModelAndView handleRequest(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {  
+//        modelAndView 模型和视图  
+ ModelAndView mv = new ModelAndView();  
+// 封装对象，放在ModelAndView中  
+ mv.addObject("msg","helloSpringMVC");  
+// 封装要跳转的视图，放在ModelAndView中  
+ mv.setViewName("hello");  
+ return mv;  
+  
+ }  
+}
+```
+
+结果：在浏览器中显示hellospringmvc。
+
+## SpringMVC的使用
+
+### 1、使用注解开发SpringMVC
+
+**步骤1 ：配置web.xml**
+
+```java
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!--    注册DispatcherServlet-->
+    <servlet>
+        <servlet-name>springmvc</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <!--       关联一个springmvc配置文件-->
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:spirngmvc-servlet.xml</param-value>
+        </init-param>
+        <!--        设置启动级别-->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>springmvc</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+```
+
+***tips：此文件除非特殊需求无需变动***
+
+-----
+
+**步骤2：配置springmvc-servlet**
+
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="userImpl" class="com.seawave.dao.UserDaoImpl"/>
-    <bean id="mysqlImpl" class="com.seawave.dao.UserDaoMysqlImpl"/>
-    <bean id="UserServiceImpl" class="com.seawave.service.UserServiceImpl">
-        <property name="userDao" ref="userImpl"/>
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <context:component-scan base-package="com.seawave.controller"/>
+    <mvc:default-servlet-handler/>
+    <mvc:annotation-driven/>
+<!--    视图解析器:DispatcherServlet给他的ModeLAndVIew-->
+<!--    1.获取了ModelAndView的数据-->
+<!--    2.解析ModelAndView的试图名字-->
+<!--    3.拼接试图名字，找到对应视图-->
+<!--        4.将数据渲染到视图上-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+<!--        前置-->
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+<!--        后缀-->
+        <property name="suffix"  value=".jsp"/>
     </bean>
 </beans>
-
 ```
 
-### 2.ioc创建对象的方式
+***tips:此文件除特殊需求无需变动***
 
 --------
 
-+ 默认使用无参构造
-
-+ 假设我们需要用有参构造创建对象：
-
-方式一：通过下标赋值
+**步骤3：创建控制器**
 
 ```java
-    <bean id="user" class="com.kuang.pojo.User">
-        <constructor-arg index="0" value="12"/>
-        <constructor-arg index="1" value="fuck"/>
-    </bean>
-```
-
-方式二：通过属性名赋值
-
-```java
-    <bean id="user" class="com.kuang.pojo.User">
-        <constructor-arg name="id" value="12"/>
-        <constructor-arg name="name" value="fuck"/>
-    </bean>
-```
-
-在配置文件加载的时候，容器中管理的对象就已经初始化了！
-
-### 3.Spring配置
-
--------
-
-#### 3.1、别名
-
-通过别名获取对象
-
-```java
-<!--    别名，可以用过别名获取对象-->
-    <alias name="user" alias="UserTese"/>
-```
-
-#### 3.2、bean
-
-```java
-<bean id="user" class="com.kuang.pojo.User" name="userTest">
-</bean>
-```
-
-+ id:bean对象的唯一标识符，相当于对象名
-+ class：bean对应的全限定名，包名+类型
-+ name：也是别名,可以取多个
-
-#### 3.3、import
-
-用于团队开发，导入其他的bean配置文件，将多个配置文件合并为一个。
-
-```
-<import resource="beans.xml"/>
-<import resource="bean1.xml"/>
-<import resource="bean2.xml"/>
-```
-
-### 4.依赖注入
-
-------------
-
-
-
-#### 4.1、构造器注入
-
-前面用到的方式即为构造器注入
-
-#### 4.2 Set方式注入【重点】
-
-+ 依赖：bean对象的创建依赖于容器
-+ 注入：bean对象中的所有属性，由容器注入
-
-【环境搭建】
-
-1.复杂类型
-
-```java
-public class Address {
-    private String address;
-    public String getAddress() {
-        return address;
-    }
-    public void setAddress(String address) {
-        this.address = address;
+@Controller
+@RequestMapping("/test")    //非必须
+public class HelloController {
+    @RequestMapping("/hello")  //真实地址：项目路径/test/hello
+    public String hello(Model model){
+        model.addAttribute("msg","Hello,SpringMVCAnnotation!");
+        return "hello"; //会被视图解析器处理
     }
 }
 ```
 
-2.真实测试对象
+此时在浏览器中访问http://localhost:8080/test/hello可以看到后端返回了：Hello,SpringMVCAnnotation!
+
+### 2、Restful风格
+
+传统风格与Restful风格对比：
+
+传统：http://baidu.com?search=china
+
+Restful：http://baidu.com/china
+
+使用Restful风格可以使同一个url提交不同请求。
+
+示例代码：
 
 ```java
-@Data
-public class Student {
-    private String name;
-    private  Address address;
-    private String[]books;
-    private List<String> hobbies;
-    private Map<String,String>card;
-    private Set<String>games;
-    private Properties info;
-    private String wife;
+@Controller
+public class RestFulController {
+    方式1：@RequestMapping(value = "/add/{a}/{b}",method = RequestMethod.GET)
+    方式2：@GetMapping("/add/{a}/{b}")
+    public String test1(@PathVariable int a, @PathVariable int b, Model mv){
+        mv.addAttribute("msg",a+b);
+        return "test";
+    }
 }
 ```
 
-##### 复杂类型注入：
+当我们在浏览器中输入http://localhost:8080/add/1/2时，可以得到结果：3
+
+从示例代码中可以看到我们指定了提交方式为GET，我们也可以通过注解的方式直接限定提交方式：
+
++ @GetMapping
++ @POSTMapping
++ @DELETEMapping
++ .....
+
+### 3、获取请求参数
+
+#### 接收为普通参数
+
+使用springmvc获取前端请求的参数时，只需要在控制器上设置相应的传参即可。
+
+```java
+public class Controller {
+    @RequestMapping("/add")
+    public String test1(int a, int b, Model mv){
+        mv.addAttribute("msg",a+b);
+        return "test";
+    }
+}
+```
+
+默认情况下，形参类型和请求参数的名称一致，比如当我访问http://localhost:8080/add?a=1&b=2时，那么a变量和b变量便会自动赋值1
+
+和2，当形参名和请求参数名不一致时，我们可以添加@RequestParam 注解使之匹配：
+
+```java
+public class Controller {
+    @RequestMapping("/add")
+    public String test1(@RequestParam("a") int num1,@RequestParam("b") int num, Model mv){
+        mv.addAttribute("msg",a+b);
+        return "test";
+    }
+}
+```
+
+此时请求参数ab的值将会赋值到num1和num2.
+
+#### 接收为实体类
+
+我们可以直接在控制器的形参中添加一个实体类，当前端发送请求时会自动创建该类的实体对象，会自动匹配属性名进行赋值：
+
+```java
+@RequestMapping("/test2")
+public String test2( User user){
+    System.out.println(user);
+    return "test";
+}
+```
+
+此时我们访问http://localhost:8080/test2?name=zs&id=11&age=21时会创建一个name=zs，id=11，age=21的User对象。
+
+控制台输出如下：
+
+```
+User(id=11, name=zs, age=21)
+```
+
+**注：请求参数名必须和实体类属性名一致，否则为null**
+
+### 4、设置编码方式
+
+前后端传递数据时，经常会遇到编码问题，比如中文乱码。springMVC为我们提供了一个现成的过滤器，我们直接在web.xml中配置即可。
 
 ```xml
-    <!--        第二种，Bean注入，ref-->
-    <bean id="address" class="com.seawave.pojo.Address">
-        <property name="address" value="北京东城"/>
+<filter>
+    <filter-name>encoding</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+        <param-name>encoding</param-name>
+        <param-value>utf-8</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>encoding</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>		
+```
+
+### 5、SpringMVC返回数据
+
+大多数情况下，后端所要做的事仅仅是向前端返回数据，这意味着我们并不需要使用到视图解析器返回视图，我们可以给控制器的方法添加@ResponseBody注解来表示此处理器只返回数据。
+
+例子：
+
+```java
+@Controller
+public class UserController {
+    @RequestMapping(value = "/j1")
+    @ResponseBody //使此控制器不会走视图解析器，直接返回字符串
+    public String json1(){
+        String str="";
+        User user =new User("海浪",20,"男");
+        ObjectMapper mapper=new ObjectMapper();
+        try {
+             str = mapper.writeValueAsString(user);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        return str;
+    }
+}
+```
+
+此控制器会返回一个user类的JSON字符串。
+
+我们也可以在控制器类上使用@RestController来表明此控制器下的所有控制器均只返回数据。
+
+### 6、解决SpringMVC返回JSON乱码问题
+
+```xml
+    <bean id="utf8Charset" class="java.nio.charset.Charset" factory-method="forName">
+        <constructor-arg value="UTF-8" />
     </bean>
-    <bean id="student" class="com.seawave.pojo.Student">
-        <property name="name" value="fuck"/>
-        <property name="address" ref="address"/>
+<mvc:annotation-driven>
+    <mvc:message-converters register-defaults="true">
+        <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+            <constructor-arg value="UTF-8"/>
+        </bean>
+        <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+            <property name="objectMapper">
+                <bean class="org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean">
+                    <property name="failOnEmptyBeans" value="false"/>
+                </bean>
+            </property>
+        </bean>
+    </mvc:message-converters>
+</mvc:annotation-driven>
 ```
-
-##### 数组注入：
-
-```xml
-        <property name="books">
-            <array>
-                <value>红楼梦</value>
-                <value>西游记</value>
-                <value>三国演义</value>
-                <value>水浒传</value>
-            </array>
-        </property>
-```
-
-##### List集合注入:
-
-```xml
-<property name="books">
-    <array>
-        <value>红楼梦</value>
-        <value>西游记</value>
-        <value>三国演义</value>
-        <value>水浒传</value>
-    </array>
-</property>
-```
-
-##### map注入：
-
-```xml
-<property name="card">
-    <map>
-        <entry key="身份证" value="330629197010232241"/>
-        <entry key="银行卡" value="340629197010232231"/>
-    </map>
-</property>
-```
-
-##### set注入：
-
-```xml
-<property name="games">
-    <set>
-        <value>LOL</value>
-        <value>COC</value>
-        <value>BOB</value>
-    </set>
-</property>
-```
-
-##### null值注入：
-
-```
-<property name="wife">
-    <null/>
-</property>
-```
-
-##### Properties注入：
-
-```
-<property name="info">
-    <props>
-        <prop key="url">https://baidu.com</prop>
-        <prop key="username">seawave</prop>
-        <prop key="password">zgq123</prop>
-    </props>
-</property>
-```
-
-### 5.bean的作用域
-
-| 作用域    | 描述                                                         |
-| :--------: | :----------------------------------------------------------: |
-| singleton | (默认)将每个 Spring IoC 容器的单个 bean 定义范围限定为单个对象实例。 |
-|prototype|将单个 bean 定义的作用域限定为任意数量的对象实例。|
-|request|将单个 bean 定义的范围限定为单个 HTTP 请求的生命周期。也就是说，每个 HTTP 请求都有一个在单个 bean 定义后面创建的 bean 实例。仅在可感知网络的 Spring ApplicationContext中有效。|
-|session|将单个 bean 定义的范围限定为 HTTP Session的生命周期。仅在可感知网络的 Spring ApplicationContext上下文中有效。|
-|application|将单个 bean 定义的范围限定为ServletContext的生命周期。仅在可感知网络的 Spring ApplicationContext上下文中有效。|
-|websocket|将单个 bean 定义的范围限定为WebSocket的生命周期。仅在可感知网络的 Spring ApplicationContext上下文中有效。|
-
-##### 单例模式（默认模式）
-
-```xml
-<bean id="user" class="com.seawave.pojo.User" scope="singleton">
-```
-
-##### 原型模式（每次从容器中获取都会产生一个新对象）
-
-```xml
-<bean id="user" class="com.seawave.pojo.User" scope="prototype">
-```
-
-##### 其余的request、session、application、websocket 这些只能在web开发中失效
-
-### 6.Bean自动装配
-
-+ 自动装配是Spring满足bean依赖一种方式
-+ Spring会在上下文中自动寻找，并自动给bean装配属性！
-
-在spring中有三种装配方式：
-
-1. 在xml中显示的配置
-2. 在java中显示配置
-3. 隐式 的自动装配bean【重要】
-
-测试源代码：
-
-此处的cat和dog是一个复杂类型
-
-```xml
-<bean id="cat" class="com.seawave.pojo.Cat>
-	<property name="name" value="xiaomiao"/>
-</bean>
-<bean id="dog" class="com.seawave.pojo.Cat>
-	<property name="name" value="xiaowang"/>
-</bean>                     							 
-```
-
-普通写法：
-
-```xml
-<bean id="people" class="com.seawave.pojo.People" autowire="byName">
-    <property name="name" value="fuck"/>
-    <property name="cat" ref="cat"/>
-    <property name="dog" ref="dog"/>
-</bean>
-```
-
-#### ByName自动装配
-
-会自动在容器上下文中查找和自己对象set方法后面的值对应的beanID，无需手动装配cat和dog类
-
-```xml
-<bean id="people" class="com.seawave.pojo.People" autowire="byName">
-    <property name="name" value="fuck"/>
-</bean>
-```
-
-#### ByType自动装配
-
-会自动在容器上下文中查找和自己对象属性类型相同的beanID，同理
-
-```xml
-<bean id="people" class="com.seawave.pojo.People" autowire="byType">
-    <property name="name" value="fuck"/>
-</bean>
-```
-
-#### 使用注解进行自动装配
-
-要使用注解须知：
-
-1. 导入约束：context约束
-
-2. **配置注解支持**
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:context="http://www.springframework.org/schema/context"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd
+ework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd">
     <context:annotation-config/>
