@@ -6,38 +6,38 @@
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>943581833@qq.com (SeaWave)</managingEditor>
             <webMaster>943581833@qq.com (SeaWave)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 05 Jan 2022 21:00:00 &#43;0800</lastBuildDate><atom:link href="https://Seawave.top/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Vue快速入门</title>
-    <link>https://Seawave.top/index.zh_cn/</link>
+    <link>https://Seawave.top/vue-study/</link>
     <pubDate>Wed, 05 Jan 2022 21:00:00 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://Seawave.top/index.zh_cn/</guid>
+    <guid>https://Seawave.top/vue-study/</guid>
     <description><![CDATA[Vue快速入门 以下所有代码均可在浏览器直接运行，替换body即可。为了节省空间，里的内容需自行添加。 1.导入Vue 1 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js&#34;&gt;&lt;/script&gt; 2.数据绑定 方式一：]]></description>
 </item><item>
     <title>初识SpringMVC</title>
-    <link>https://Seawave.top/index.zh_cn/</link>
+    <link>https://Seawave.top/springmvc-study/</link>
     <pubDate>Tue, 28 Dec 2021 20:50:00 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://Seawave.top/index.zh_cn/</guid>
+    <guid>https://Seawave.top/springmvc-study/</guid>
     <description><![CDATA[什么是SpringMVC？ 1、简介 很多应用程序的问题在于处理业务数据的对象和显示业务数据的视图之间存在紧密耦合，通常，更新业务对象的命令都是]]></description>
 </item><item>
     <title>初识Spring5</title>
-    <link>https://Seawave.top/index.zh_cn/</link>
+    <link>https://Seawave.top/spring-study/</link>
     <pubDate>Fri, 17 Dec 2021 00:50:00 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://Seawave.top/index.zh_cn/</guid>
+    <guid>https://Seawave.top/spring-study/</guid>
     <description><![CDATA[什么是Spring？ 1、简介 Spring框架是由于软件开发的复杂性而创建的。Spring使用的是基本的JavaBean来完成以前只可能由EJ]]></description>
 </item><item>
     <title>MyBatis使用教程</title>
-    <link>https://Seawave.top/mybatis/</link>
+    <link>https://Seawave.top/mybatis-study/</link>
     <pubDate>Sun, 05 Dec 2021 14:00:00 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://Seawave.top/mybatis/</guid>
+    <guid>https://Seawave.top/mybatis-study/</guid>
     <description><![CDATA[·什么是MyBatis？ 1.MyBatis介绍 MyBatis 是一款优秀的持久层框架，它支持定制化 SQL、存储过程以及高级映射。MyBatis 避免 了几乎所]]></description>
 </item><item>
     <title>MarkDown基础语法指北</title>
-    <link>https://Seawave.top/markdown_basics_guide/</link>
+    <link>https://Seawave.top/markdown-basics-guide/</link>
     <pubDate>Fri, 02 Jul 2021 17:00:00 &#43;0800</pubDate>
     <author>作者</author>
-    <guid>https://Seawave.top/markdown_basics_guide/</guid>
+    <guid>https://Seawave.top/markdown-basics-guide/</guid>
     <description><![CDATA[Markdown简介 Markdown是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。 Markdown 语言在 2004 由约翰·格鲁伯（英语：Joh]]></description>
 </item><item>
     <title>通过SakuraFrp进行远程桌面连接</title>

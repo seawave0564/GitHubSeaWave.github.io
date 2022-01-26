@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>初识SpringMVC - SeaWave</title><meta name="Description" content="关于 LoveIt 主题"><meta property="og:title" content="初识SpringMVC" />
+<meta property="og:description" content="什么是SpringMVC？ 1、简介 很多应用程序的问题在于处理业务数据的对象和显示业务数据的视图之间存在紧密耦合，通常，更新业务对象的命令都是" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Seawave.top/springmvc-study/" /><meta property="og:image" content="https://Seawave.top/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-12-28T20:50:00+08:00" />
+<meta property="article:modified_time" content="2021-12-28T20:50:00+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://Seawave.top/logo.png"/>
+
+<meta name="twitter:title" content="初识SpringMVC"/>
+<meta name="twitter:description" content="什么是SpringMVC？ 1、简介 很多应用程序的问题在于处理业务数据的对象和显示业务数据的视图之间存在紧密耦合，通常，更新业务对象的命令都是"/>
+<meta name="application-name" content="SeaWave">
+<meta name="apple-mobile-web-app-title" content="SeaWave"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#dac32c"><link rel="icon" href="/images/touxiang.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://Seawave.top/springmvc-study/" /><link rel="prev" href="https://Seawave.top/spring-study/" /><link rel="next" href="https://Seawave.top/vue-study/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "初识SpringMVC",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/Seawave.top\/springmvc-study\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "https:\/\/Seawave.top\/images\/Apple-Devices-Preview.png",
+                            "width":  3200 ,
+                            "height":  2048 
+                        }],"genre": "posts","wordcount":  2745 ,
+        "url": "https:\/\/Seawave.top\/springmvc-study\/","datePublished": "2021-12-28T20:50:00+08:00","dateModified": "2021-12-28T20:50:00+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": {
+                    "@type": "ImageObject",
+                    "url": "https:\/\/Seawave.top\/images\/touxiang.png",
+                    "width":  320 ,
+                    "height":  320 
+                }},"author": {
+                "@type": "Person",
+                "name": "SeaWave"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="SeaWave"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>SeaWave&#39;s blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/categories/documentation/"> 文档 </a><a class="menu-item" href="/about/"> 关于 </a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="SeaWave"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>SeaWave&#39;s blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/categories/documentation/" title="">文档</a><a class="menu-item" href="/about/" title="">关于</a><a class="menu-item" href="https://github.com/dillonzq/LoveIt" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">初识SpringMVC</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>SeaWave</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><i class="far fa-folder fa-fw"></i>学习笔记</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-12-28">2021-12-28</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 2745 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 6 分钟&nbsp;<span id="/springmvc-study/" class="leancloud_visitors" data-flag-title="初识SpringMVC">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#什么是springmvc">什么是SpringMVC？</a>
+      <ul>
+        <li><a href="#1简介">1、简介</a></li>
+        <li><a href="#2mvc设计模式">2、MVC设计模式</a></li>
+        <li><a href="#3初识springmvc">3、初识SpringMVC</a>
+          <ul>
+            <li><a href="#第一步配置webxml">第一步、配置web.xml</a></li>
+            <li><a href="#第二步配置spirngmvc-servletxml">第二步、配置spirngmvc-servlet.xml</a></li>
+            <li><a href="#第三步在controller类中测试">第三步、在Controller类中测试</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#springmvc的使用">SpringMVC的使用</a>
+      <ul>
+        <li><a href="#1使用注解开发springmvc">1、使用注解开发SpringMVC</a></li>
+        <li><a href="#2restful风格">2、Restful风格</a></li>
+        <li><a href="#3获取请求参数">3、获取请求参数</a>
+          <ul>
+            <li><a href="#接收为普通参数">接收为普通参数</a></li>
+            <li><a href="#接收为实体类">接收为实体类</a></li>
+          </ul>
+        </li>
+        <li><a href="#4设置编码方式">4、设置编码方式</a></li>
+        <li><a href="#5springmvc返回数据">5、SpringMVC返回数据</a></li>
+        <li><a href="#6解决springmvc返回json乱码问题">6、解决SpringMVC返回JSON乱码问题</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="什么是springmvc">什么是SpringMVC？</h2>
+<h3 id="1简介">1、简介</h3>
+<p>很多应用程序的问题在于处理业务数据的对象和显示业务数据的视图之间存在紧密耦合，通常，更新业务对象的命令都是从视图本身发起的，使视图对任何业务对象更改都有高度敏感性。而且，当多个视图依赖于同一个业务对象时是没有灵活性的。</p>
+<p>SpringMVC是一种基于Java，实现了Web MVC设计模式，请求驱动类型的轻量级Web框架，即使用了MVC架构模式的思想，将Web层进行职责解耦。基于请求驱动指的就是使用请求-响应模型，框架的目的就是帮助我们简化开发，SpringMVC也是要简化我们日常Web开发。</p>
+<h3 id="2mvc设计模式">2、MVC设计模式</h3>
+<p>MVC设计模式的任务是将包含业务数据的模块与显示模块的视图解耦。这是怎样发生的？在模型和视图之间引入重定向层可以解决问题。此重定向层是控制器，控制器将接收请求，执行更新模型的操作，然后通知视图关于模型更改的消息。</p>
+<ul>
+<li>Model（模型）：</li>
+<li>View（视图）：</li>
+<li>Controller（控制器）：</li>
+</ul>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/20190328153555304.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdGlhbnhpYW5nX2thb2xh,size_16,color_FFFFFF,t_70"
+        data-srcset="https://img-blog.csdnimg.cn/20190328153555304.png?x-oss-process=image/watermark%2ctype_ZmFuZ3poZW5naGVpdGk%2cshadow_10%2ctext_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdGlhbnhpYW5nX2thb2xh%2csize_16%2ccolor_FFFFFF%2ct_70, https://img-blog.csdnimg.cn/20190328153555304.png?x-oss-process=image/watermark%2ctype_ZmFuZ3poZW5naGVpdGk%2cshadow_10%2ctext_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdGlhbnhpYW5nX2thb2xh%2csize_16%2ccolor_FFFFFF%2ct_70 1.5x, https://img-blog.csdnimg.cn/20190328153555304.png?x-oss-process=image/watermark%2ctype_ZmFuZ3poZW5naGVpdGk%2cshadow_10%2ctext_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdGlhbnhpYW5nX2thb2xh%2csize_16%2ccolor_FFFFFF%2ct_70 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/20190328153555304.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdGlhbnhpYW5nX2thb2xh,size_16,color_FFFFFF,t_70"
+        title="结构" /></p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://img-blog.csdnimg.cn/20190630145911981.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdGlhbnhpYW5nX2thb2xh,size_16,color_FFFFFF,t_70"
+        data-srcset="https://img-blog.csdnimg.cn/20190630145911981.png?x-oss-process=image/watermark%2ctype_ZmFuZ3poZW5naGVpdGk%2cshadow_10%2ctext_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdGlhbnhpYW5nX2thb2xh%2csize_16%2ccolor_FFFFFF%2ct_70, https://img-blog.csdnimg.cn/20190630145911981.png?x-oss-process=image/watermark%2ctype_ZmFuZ3poZW5naGVpdGk%2cshadow_10%2ctext_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdGlhbnhpYW5nX2thb2xh%2csize_16%2ccolor_FFFFFF%2ct_70 1.5x, https://img-blog.csdnimg.cn/20190630145911981.png?x-oss-process=image/watermark%2ctype_ZmFuZ3poZW5naGVpdGk%2cshadow_10%2ctext_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdGlhbnhpYW5nX2thb2xh%2csize_16%2ccolor_FFFFFF%2ct_70 2x"
+        data-sizes="auto"
+        alt="https://img-blog.csdnimg.cn/20190630145911981.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdGlhbnhpYW5nX2thb2xh,size_16,color_FFFFFF,t_70"
+        title="https://img-blog.csdnimg.cn/20190630145911981.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdGlhbnhpYW5nX2thb2xh,size_16,color_FFFFFF,t_70" /></p>
+<h3 id="3初识springmvc">3、初识SpringMVC</h3>
+<h4 id="第一步配置webxml">第一步、配置web.xml</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!--    注册DispatcherServlet--&gt;</span>
+    <span class="nt">&lt;servlet&gt;</span>
+        <span class="nt">&lt;servlet-name&gt;</span>springmvc<span class="nt">&lt;/servlet-name&gt;</span>
+        <span class="nt">&lt;servlet-class&gt;</span>org.springframework.web.servlet.DispatcherServlet<span class="nt">&lt;/servlet-class&gt;</span>
+<span class="c">&lt;!--       关联一个springmvc配置文件--&gt;</span>
+        <span class="nt">&lt;init-param&gt;</span>
+            <span class="nt">&lt;param-name&gt;</span>contextConfigLocation<span class="nt">&lt;/param-name&gt;</span>
+            <span class="nt">&lt;param-value&gt;</span>classpath:spirngmvc-servlet.xml<span class="nt">&lt;/param-value&gt;</span>
+        <span class="nt">&lt;/init-param&gt;</span>
+<span class="c">&lt;!--        设置启动级别--&gt;</span>
+        <span class="nt">&lt;load-on-startup&gt;</span>1<span class="nt">&lt;/load-on-startup&gt;</span>
+    <span class="nt">&lt;/servlet&gt;</span>
+    <span class="nt">&lt;servlet-mapping&gt;</span>
+        <span class="nt">&lt;servlet-name&gt;</span>springmvc<span class="nt">&lt;/servlet-name&gt;</span>·
+        <span class="nt">&lt;url-pattern&gt;</span>/<span class="nt">&lt;/url-pattern&gt;</span>
+    <span class="nt">&lt;/servlet-mapping&gt;</span>
+<span class="nt">&lt;/web-app&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="第二步配置spirngmvc-servletxml">第二步、配置spirngmvc-servlet.xml</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"> <span class="nt">&lt;bean</span> <span class="na">class=</span><span class="s">&#34;org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping&#34;</span><span class="nt">/&gt;</span>  
+ <span class="nt">&lt;bean</span> <span class="na">class=</span><span class="s">&#34;org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter&#34;</span><span class="nt">/&gt;</span>  
+<span class="c">&lt;!-- 视图解析器:DispatcherServlet给他的ModeLAndVIew--&gt;</span>  
+<span class="c">&lt;!--    1.获取了ModelAndView的数据--&gt;</span>  
+<span class="c">&lt;!--    2.解析ModelAndView的试图名字--&gt;</span>  
+<span class="c">&lt;!--    3.拼接试图名字，找到对应视图--&gt;</span>  
+<span class="c">&lt;!--    4.将数据渲染到视图上--&gt;</span>  
+ <span class="nt">&lt;bean</span> <span class="na">class=</span><span class="s">&#34;org.springframework.web.servlet.view.InternalResourceViewResolver&#34;</span> <span class="na">id=</span><span class="s">&#34;internalResourceViewResolver&#34;</span><span class="nt">&gt;</span>  
+<span class="c">&lt;!-- 前置--&gt;</span>  
+ <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;prefix&#34;</span> <span class="na">value=</span><span class="s">&#34;/WEB-INF/jsp/&#34;</span><span class="nt">/&gt;</span>  
+<span class="c">&lt;!-- 后缀--&gt;</span>  
+ <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;suffix&#34;</span> <span class="na">value=</span><span class="s">&#34;.jsp&#34;</span><span class="nt">/&gt;</span>  
+ <span class="nt">&lt;/bean&gt;</span><span class="c">&lt;!--    Handler--&gt;</span>  
+ <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">&#34;/hello&#34;</span> <span class="na">class=</span><span class="s">&#34;com.seawave.HelloController&#34;</span><span class="nt">/&gt;</span>  
+<span class="nt">&lt;/beans&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="第三步在controller类中测试">第三步、在Controller类中测试</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"> <span class="nd">@Override</span>  
+ <span class="kd">public</span> <span class="n">ModelAndView</span> <span class="nf">handleRequest</span><span class="o">(</span><span class="n">HttpServletRequest</span> <span class="n">httpServletRequest</span><span class="o">,</span> <span class="n">HttpServletResponse</span> <span class="n">httpServletResponse</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>  
+<span class="c1">//        modelAndView 模型和视图  
+</span><span class="c1"></span> <span class="n">ModelAndView</span> <span class="n">mv</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ModelAndView</span><span class="o">();</span>  
+<span class="c1">// 封装对象，放在ModelAndView中  
+</span><span class="c1"></span> <span class="n">mv</span><span class="o">.</span><span class="na">addObject</span><span class="o">(</span><span class="s">&#34;msg&#34;</span><span class="o">,</span><span class="s">&#34;helloSpringMVC&#34;</span><span class="o">);</span>  
+<span class="c1">// 封装要跳转的视图，放在ModelAndView中  
+</span><span class="c1"></span> <span class="n">mv</span><span class="o">.</span><span class="na">setViewName</span><span class="o">(</span><span class="s">&#34;hello&#34;</span><span class="o">);</span>  
+ <span class="k">return</span> <span class="n">mv</span><span class="o">;</span>  
+  
+ <span class="o">}</span>  
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>结果：在浏览器中显示hellospringmvc。</p>
+<h2 id="springmvc的使用">SpringMVC的使用</h2>
+<h3 id="1使用注解开发springmvc">1、使用注解开发SpringMVC</h3>
+<p><strong>步骤1 ：配置web.xml</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;?</span><span class="n">xml</span> <span class="n">version</span><span class="o">=</span><span class="s">&#34;1.0&#34;</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="n">web</span><span class="o">-</span><span class="n">app</span> <span class="n">xmlns</span><span class="o">=</span><span class="s">&#34;http://xmlns.jcp.org/xml/ns/javaee&#34;</span>
+         <span class="n">xmlns</span><span class="o">:</span><span class="n">xsi</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
+         <span class="n">xsi</span><span class="o">:</span><span class="n">schemaLocation</span><span class="o">=</span><span class="s">&#34;http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd&#34;</span>
+         <span class="n">version</span><span class="o">=</span><span class="s">&#34;4.0&#34;</span><span class="o">&gt;</span>
+    <span class="o">&lt;!--</span>    <span class="n">注册DispatcherServlet</span><span class="o">--&gt;</span>
+    <span class="o">&lt;</span><span class="n">servlet</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">servlet</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span><span class="n">springmvc</span><span class="o">&lt;/</span><span class="n">servlet</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">servlet</span><span class="o">-</span><span class="n">class</span><span class="o">&gt;</span><span class="n">org</span><span class="o">.</span><span class="na">springframework</span><span class="o">.</span><span class="na">web</span><span class="o">.</span><span class="na">servlet</span><span class="o">.</span><span class="na">DispatcherServlet</span><span class="o">&lt;/</span><span class="n">servlet</span><span class="o">-</span><span class="n">class</span><span class="o">&gt;</span>
+        <span class="o">&lt;!--</span>       <span class="n">关联一个springmvc配置文件</span><span class="o">--&gt;</span>
+        <span class="o">&lt;</span><span class="n">init</span><span class="o">-</span><span class="n">param</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">param</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span><span class="n">contextConfigLocation</span><span class="o">&lt;/</span><span class="n">param</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="n">param</span><span class="o">-</span><span class="n">value</span><span class="o">&gt;</span><span class="n">classpath</span><span class="o">:</span><span class="n">spirngmvc</span><span class="o">-</span><span class="n">servlet</span><span class="o">.</span><span class="na">xml</span><span class="o">&lt;/</span><span class="n">param</span><span class="o">-</span><span class="n">value</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="n">init</span><span class="o">-</span><span class="n">param</span><span class="o">&gt;</span>
+        <span class="o">&lt;!--</span>        <span class="n">设置启动级别</span><span class="o">--&gt;</span>
+        <span class="o">&lt;</span><span class="n">load</span><span class="o">-</span><span class="n">on</span><span class="o">-</span><span class="n">startup</span><span class="o">&gt;</span><span class="n">1</span><span class="o">&lt;/</span><span class="n">load</span><span class="o">-</span><span class="n">on</span><span class="o">-</span><span class="n">startup</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">servlet</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">servlet</span><span class="o">-</span><span class="n">mapping</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">servlet</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span><span class="n">springmvc</span><span class="o">&lt;/</span><span class="n">servlet</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="n">url</span><span class="o">-</span><span class="n">pattern</span><span class="o">&gt;/&lt;/</span><span class="n">url</span><span class="o">-</span><span class="n">pattern</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="n">servlet</span><span class="o">-</span><span class="n">mapping</span><span class="o">&gt;</span>
+
+<span class="o">&lt;/</span><span class="n">web</span><span class="o">-</span><span class="n">app</span><span class="o">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><em><strong>tips：此文件除非特殊需求无需变动</strong></em></p>
+<hr>
+<p><strong>步骤2：配置springmvc-servlet</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;?</span><span class="n">xml</span> <span class="n">version</span><span class="o">=</span><span class="s">&#34;1.0&#34;</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="o">?&gt;</span>
+<span class="o">&lt;</span><span class="n">beans</span> <span class="n">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.springframework.org/schema/beans&#34;</span>
+       <span class="n">xmlns</span><span class="o">:</span><span class="n">xsi</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
+       <span class="n">xmlns</span><span class="o">:</span><span class="n">context</span><span class="o">=</span><span class="s">&#34;http://www.springframework.org/schema/context&#34;</span>
+       <span class="n">xmlns</span><span class="o">:</span><span class="n">mvc</span><span class="o">=</span><span class="s">&#34;http://www.springframework.org/schema/mvc&#34;</span>
+       <span class="n">xsi</span><span class="o">:</span><span class="n">schemaLocation</span><span class="o">=</span><span class="s">&#34;http://www.springframework.org/schema/beans
+</span><span class="s">       http://www.springframework.org/schema/beans/spring-beans.xsd
+</span><span class="s">       http://www.springframework.org/schema/context
+</span><span class="s">       https://www.springframework.org/schema/context/spring-context.xsd
+</span><span class="s">       http://www.springframework.org/schema/mvc
+</span><span class="s">       https://www.springframework.org/schema/mvc/spring-mvc.xsd&#34;</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="n">context</span><span class="o">:</span><span class="n">component</span><span class="o">-</span><span class="n">scan</span> <span class="n">base</span><span class="o">-</span><span class="n">package</span><span class="o">=</span><span class="s">&#34;com.seawave.controller&#34;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">mvc</span><span class="o">:</span><span class="k">default</span><span class="o">-</span><span class="n">servlet</span><span class="o">-</span><span class="n">handler</span><span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="n">mvc</span><span class="o">:</span><span class="n">annotation</span><span class="o">-</span><span class="n">driven</span><span class="o">/&gt;</span>
+<span class="o">&lt;!--</span>    <span class="n">视图解析器</span><span class="o">:</span><span class="n">DispatcherServlet给他的ModeLAndVIew</span><span class="o">--&gt;</span>
+<span class="o">&lt;!--</span>    <span class="n">1</span><span class="o">.</span><span class="na">获取了ModelAndView的数据</span><span class="o">--&gt;</span>
+<span class="o">&lt;!--</span>    <span class="n">2</span><span class="o">.</span><span class="na">解析ModelAndView的试图名字</span><span class="o">--&gt;</span>
+<span class="o">&lt;!--</span>    <span class="n">3</span><span class="o">.</span><span class="na">拼接试图名字</span><span class="err">，</span><span class="n">找到对应视图</span><span class="o">--&gt;</span>
+<span class="o">&lt;!--</span>        <span class="n">4</span><span class="o">.</span><span class="na">将数据渲染到视图上</span><span class="o">--&gt;</span>
+    <span class="o">&lt;</span><span class="n">bean</span> <span class="n">class</span><span class="o">=</span><span class="s">&#34;org.springframework.web.servlet.view.InternalResourceViewResolver&#34;</span> <span class="n">id</span><span class="o">=</span><span class="s">&#34;internalResourceViewResolver&#34;</span><span class="o">&gt;</span>
+<span class="o">&lt;!--</span>        <span class="n">前置</span><span class="o">--&gt;</span>
+        <span class="o">&lt;</span><span class="n">property</span> <span class="n">name</span><span class="o">=</span><span class="s">&#34;prefix&#34;</span> <span class="n">value</span><span class="o">=</span><span class="s">&#34;/WEB-INF/jsp/&#34;</span><span class="o">/&gt;</span>
+<span class="o">&lt;!--</span>        <span class="n">后缀</span><span class="o">--&gt;</span>
+        <span class="o">&lt;</span><span class="n">property</span> <span class="n">name</span><span class="o">=</span><span class="s">&#34;suffix&#34;</span>  <span class="n">value</span><span class="o">=</span><span class="s">&#34;.jsp&#34;</span><span class="o">/&gt;</span>
+    <span class="o">&lt;/</span><span class="n">bean</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">beans</span><span class="o">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><em><strong>tips:此文件除特殊需求无需变动</strong></em></p>
+<hr>
+<p><strong>步骤3：创建控制器</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Controller</span>
+<span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/test&#34;</span><span class="o">)</span>    <span class="c1">//非必须
+</span><span class="c1"></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloController</span> <span class="o">{</span>
+    <span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/hello&#34;</span><span class="o">)</span>  <span class="c1">//真实地址：项目路径/test/hello
+</span><span class="c1"></span>    <span class="kd">public</span> <span class="n">String</span> <span class="nf">hello</span><span class="o">(</span><span class="n">Model</span> <span class="n">model</span><span class="o">){</span>
+        <span class="n">model</span><span class="o">.</span><span class="na">addAttribute</span><span class="o">(</span><span class="s">&#34;msg&#34;</span><span class="o">,</span><span class="s">&#34;Hello,SpringMVCAnnotation!&#34;</span><span class="o">);</span>
+        <span class="k">return</span> <span class="s">&#34;hello&#34;</span><span class="o">;</span> <span class="c1">//会被视图解析器处理
+</span><span class="c1"></span>    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>此时在浏览器中访问http://localhost:8080/test/hello可以看到后端返回了：Hello,SpringMVCAnnotation!</p>
+<h3 id="2restful风格">2、Restful风格</h3>
+<p>传统风格与Restful风格对比：</p>
+<p>传统：http://baidu.com?search=china</p>
+<p>Restful：http://baidu.com/china</p>
+<p>使用Restful风格可以使同一个url提交不同请求。</p>
+<p>示例代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Controller</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">RestFulController</span> <span class="o">{</span>
+    <span class="n">方式1</span><span class="err">：</span><span class="nd">@RequestMapping</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;/add/{a}/{b}&#34;</span><span class="o">,</span><span class="n">method</span> <span class="o">=</span> <span class="n">RequestMethod</span><span class="o">.</span><span class="na">GET</span><span class="o">)</span>
+    <span class="n">方式2</span><span class="err">：</span><span class="nd">@GetMapping</span><span class="o">(</span><span class="s">&#34;/add/{a}/{b}&#34;</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">test1</span><span class="o">(</span><span class="nd">@PathVariable</span> <span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="nd">@PathVariable</span> <span class="kt">int</span> <span class="n">b</span><span class="o">,</span> <span class="n">Model</span> <span class="n">mv</span><span class="o">){</span>
+        <span class="n">mv</span><span class="o">.</span><span class="na">addAttribute</span><span class="o">(</span><span class="s">&#34;msg&#34;</span><span class="o">,</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">);</span>
+        <span class="k">return</span> <span class="s">&#34;test&#34;</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>当我们在浏览器中输入http://localhost:8080/add/1/2时，可以得到结果：3</p>
+<p>从示例代码中可以看到我们指定了提交方式为GET，我们也可以通过注解的方式直接限定提交方式：</p>
+<ul>
+<li>@GetMapping</li>
+<li>@POSTMapping</li>
+<li>@DELETEMapping</li>
+<li>&hellip;..</li>
+</ul>
+<h3 id="3获取请求参数">3、获取请求参数</h3>
+<h4 id="接收为普通参数">接收为普通参数</h4>
+<p>使用springmvc获取前端请求的参数时，只需要在控制器上设置相应的传参即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Controller</span> <span class="o">{</span>
+    <span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/add&#34;</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">test1</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">,</span> <span class="n">Model</span> <span class="n">mv</span><span class="o">){</span>
+        <span class="n">mv</span><span class="o">.</span><span class="na">addAttribute</span><span class="o">(</span><span class="s">&#34;msg&#34;</span><span class="o">,</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">);</span>
+        <span class="k">return</span> <span class="s">&#34;test&#34;</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>默认情况下，形参类型和请求参数的名称一致，比如当我访问http://localhost:8080/add?a=1&amp;b=2时，那么a变量和b变量便会自动赋值1</p>
+<p>和2，当形参名和请求参数名不一致时，我们可以添加@RequestParam 注解使之匹配：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Controller</span> <span class="o">{</span>
+    <span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/add&#34;</span><span class="o">)</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">test1</span><span class="o">(</span><span class="nd">@RequestParam</span><span class="o">(</span><span class="s">&#34;a&#34;</span><span class="o">)</span> <span class="kt">int</span> <span class="n">num1</span><span class="o">,</span><span class="nd">@RequestParam</span><span class="o">(</span><span class="s">&#34;b&#34;</span><span class="o">)</span> <span class="kt">int</span> <span class="n">num</span><span class="o">,</span> <span class="n">Model</span> <span class="n">mv</span><span class="o">){</span>
+        <span class="n">mv</span><span class="o">.</span><span class="na">addAttribute</span><span class="o">(</span><span class="s">&#34;msg&#34;</span><span class="o">,</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">);</span>
+        <span class="k">return</span> <span class="s">&#34;test&#34;</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>此时请求参数ab的值将会赋值到num1和num2.</p>
+<h4 id="接收为实体类">接收为实体类</h4>
+<p>我们可以直接在控制器的形参中添加一个实体类，当前端发送请求时会自动创建该类的实体对象，会自动匹配属性名进行赋值：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">&#34;/test2&#34;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="n">String</span> <span class="nf">test2</span><span class="o">(</span> <span class="n">User</span> <span class="n">user</span><span class="o">){</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">user</span><span class="o">);</span>
+    <span class="k">return</span> <span class="s">&#34;test&#34;</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>此时我们访问http://localhost:8080/test2?name=zs&amp;id=11&amp;age=21时会创建一个name=zs，id=11，age=21的User对象。</p>
+<p>控制台输出如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">User(id=11, name=zs, age=21)
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>注：请求参数名必须和实体类属性名一致，否则为null</strong></p>
+<h3 id="4设置编码方式">4、设置编码方式</h3>
+<p>前后端传递数据时，经常会遇到编码问题，比如中文乱码。springMVC为我们提供了一个现成的过滤器，我们直接在web.xml中配置即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;filter&gt;</span>
+    <span class="nt">&lt;filter-name&gt;</span>encoding<span class="nt">&lt;/filter-name&gt;</span>
+    <span class="nt">&lt;filter-class&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="nt">&lt;/filter-class&gt;</span>
+    <span class="nt">&lt;init-param&gt;</span>
+        <span class="nt">&lt;param-name&gt;</span>encoding<span class="nt">&lt;/param-name&gt;</span>
+        <span class="nt">&lt;param-value&gt;</span>utf-8<span class="nt">&lt;/param-value&gt;</span>
+    <span class="nt">&lt;/init-param&gt;</span>
+<span class="nt">&lt;/filter&gt;</span>
+<span class="nt">&lt;filter-mapping&gt;</span>
+    <span class="nt">&lt;filter-name&gt;</span>encoding<span class="nt">&lt;/filter-name&gt;</span>
+    <span class="nt">&lt;url-pattern&gt;</span>/*<span class="nt">&lt;/url-pattern&gt;</span>
+<span class="nt">&lt;/filter-mapping&gt;</span>		
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="5springmvc返回数据">5、SpringMVC返回数据</h3>
+<p>大多数情况下，后端所要做的事仅仅是向前端返回数据，这意味着我们并不需要使用到视图解析器返回视图，我们可以给控制器的方法添加@ResponseBody注解来表示此处理器只返回数据。</p>
+<p>例子：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Controller</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">UserController</span> <span class="o">{</span>
+    <span class="nd">@RequestMapping</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;/j1&#34;</span><span class="o">)</span>
+    <span class="nd">@ResponseBody</span> <span class="c1">//使此控制器不会走视图解析器，直接返回字符串
+</span><span class="c1"></span>    <span class="kd">public</span> <span class="n">String</span> <span class="nf">json1</span><span class="o">(){</span>
+        <span class="n">String</span> <span class="n">str</span><span class="o">=</span><span class="s">&#34;&#34;</span><span class="o">;</span>
+        <span class="n">User</span> <span class="n">user</span> <span class="o">=</span><span class="k">new</span> <span class="n">User</span><span class="o">(</span><span class="s">&#34;海浪&#34;</span><span class="o">,</span><span class="n">20</span><span class="o">,</span><span class="s">&#34;男&#34;</span><span class="o">);</span>
+        <span class="n">ObjectMapper</span> <span class="n">mapper</span><span class="o">=</span><span class="k">new</span> <span class="n">ObjectMapper</span><span class="o">();</span>
+        <span class="k">try</span> <span class="o">{</span>
+             <span class="n">str</span> <span class="o">=</span> <span class="n">mapper</span><span class="o">.</span><span class="na">writeValueAsString</span><span class="o">(</span><span class="n">user</span><span class="o">);</span>
+        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">JsonProcessingException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">str</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>此控制器会返回一个user类的JSON字符串。</p>
+<p>我们也可以在控制器类上使用@RestController来表明此控制器下的所有控制器均只返回数据。</p>
+<h3 id="6解决springmvc返回json乱码问题">6、解决SpringMVC返回JSON乱码问题</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml">    <span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">&#34;utf8Charset&#34;</span> <span class="na">class=</span><span class="s">&#34;java.nio.charset.Charset&#34;</span> <span class="na">factory-method=</span><span class="s">&#34;forName&#34;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;constructor-arg</span> <span class="na">value=</span><span class="s">&#34;UTF-8&#34;</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/bean&gt;</span>
+<span class="nt">&lt;mvc:annotation-driven&gt;</span>
+    <span class="nt">&lt;mvc:message-converters</span> <span class="na">register-defaults=</span><span class="s">&#34;true&#34;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;bean</span> <span class="na">class=</span><span class="s">&#34;org.springframework.http.converter.StringHttpMessageConverter&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;constructor-arg</span> <span class="na">value=</span><span class="s">&#34;UTF-8&#34;</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;/bean&gt;</span>
+        <span class="nt">&lt;bean</span> <span class="na">class=</span><span class="s">&#34;org.springframework.http.converter.json.MappingJackson2HttpMessageConverter&#34;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;objectMapper&#34;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;bean</span> <span class="na">class=</span><span class="s">&#34;org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean&#34;</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;failOnEmptyBeans&#34;</span> <span class="na">value=</span><span class="s">&#34;false&#34;</span><span class="nt">/&gt;</span>
+                <span class="nt">&lt;/bean&gt;</span>
+            <span class="nt">&lt;/property&gt;</span>
+        <span class="nt">&lt;/bean&gt;</span>
+    <span class="nt">&lt;/mvc:message-converters&gt;</span>
+<span class="nt">&lt;/mvc:annotation-driven&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-12-28</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/springmvc-study/index.md" target="_blank">阅读原始文档</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://Seawave.top/springmvc-study/" data-title="初识SpringMVC" data-via="SeaWave30909150?s=09"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://Seawave.top/springmvc-study/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://Seawave.top/springmvc-study/" data-title="初识SpringMVC"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://Seawave.top/springmvc-study/" data-title="初识SpringMVC"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://Seawave.top/springmvc-study/" data-title="初识SpringMVC" data-ralateuid="u/5272052356"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/spring-study/" class="prev" rel="prev" title="初识Spring5"><i class="fas fa-angle-left fa-fw"></i>初识Spring5</a>
+            <a href="/vue-study/" class="next" rel="next" title="Vue快速入门">Vue快速入门<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2022</span><span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
+                    <span class="icp">SeaWave.top</span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{"valine":{"appId":"w9ndi2cjk3TnaLVcQLn58vt3-9Nh9j0Va","appKey":"3k9y2rbhwVhc1AfAV49HdokB","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":true,"highlight":true,"lang":"zh-CN","meta":["nick","mail","link"],"pageSize":10,"placeholder":"想说点啥","recordIP":true,"visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.zh-cn","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
