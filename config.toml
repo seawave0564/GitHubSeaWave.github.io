@@ -13,6 +13,11 @@ themesDir = "/themes"
 # website title
 # 网站标题
 title = "SeaWave"
+ # 网站描述
+  description = "seawave的个人网站"
+
+ # 网站关键词
+  keywords = ["seawave", "海浪"]
 
 # whether to use robots.txt
 # 是否使用 robots.txt
