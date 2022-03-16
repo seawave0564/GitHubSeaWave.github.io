@@ -141,8 +141,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="2数据绑定">2.数据绑定</h2>
 <p><strong>方式一：</strong></p>
@@ -172,29 +172,29 @@
 </span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Title<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-
-<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
-        {{message}}
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-        <span class="kd">var</span> <span class="nx">vm</span> <span class="o">=</span><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
-            <span class="nx">el</span><span class="o">:</span><span class="s2">&#34;#app&#34;</span><span class="p">,</span>
-            <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
-                <span class="nx">message</span><span class="o">:</span><span class="s2">&#34;hello,vue!&#34;</span>
-            <span class="p">}</span>
-        <span class="p">})</span>
-    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Title<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {{message}}
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">vm</span> <span class="o">=</span><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">el</span><span class="o">:</span><span class="s2">&#34;#app&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">message</span><span class="o">:</span><span class="s2">&#34;hello,vue!&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>方式二：</strong></p>
 <p>通过v-bind指令：</p>
@@ -215,20 +215,20 @@
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">v-bind:title</span><span class="o">=</span><span class="s">&#34;message&#34;</span><span class="p">&gt;</span>悬停几秒查看动态绑定<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-        <span class="kd">var</span> <span class="nx">vm</span> <span class="o">=</span><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
-            <span class="nx">el</span><span class="o">:</span><span class="s2">&#34;#app&#34;</span><span class="p">,</span>
-            <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
-                <span class="nx">message</span><span class="o">:</span><span class="s2">&#34;&#34;</span>
-            <span class="p">}</span>
-        <span class="p">})</span>
-    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">v-bind:title</span><span class="o">=</span><span class="s">&#34;message&#34;</span><span class="p">&gt;</span>悬停几秒查看动态绑定<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">vm</span> <span class="o">=</span><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">el</span><span class="o">:</span><span class="s2">&#34;#app&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">message</span><span class="o">:</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>经过以上的操作div中的{{message}}的显示内容已经被绑定到了VUE对象中的message属性上，更改message的值即可动态刷新页面中的值。</p>
 <h2 id="3条件判断">3.条件判断</h2>
@@ -251,22 +251,22 @@
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">v-if</span><span class="o">=</span><span class="s">&#34;ok===&#39;a&#39;&#34;</span><span class="p">&gt;</span>A<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">v-else-if</span><span class="o">=</span><span class="s">&#34;ok===&#39;b&#39;&#34;</span><span class="p">&gt;</span>B<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">v-else</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-        <span class="kd">var</span> <span class="nx">vm</span> <span class="o">=</span><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
-            <span class="nx">el</span><span class="o">:</span><span class="s2">&#34;#app&#34;</span><span class="p">,</span>
-            <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
-                <span class="nx">ok</span><span class="o">:</span><span class="s1">&#39;a&#39;</span>
-            <span class="p">}</span>
-        <span class="p">})</span>
-    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">v-if</span><span class="o">=</span><span class="s">&#34;ok===&#39;a&#39;&#34;</span><span class="p">&gt;</span>A<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">v-else-if</span><span class="o">=</span><span class="s">&#34;ok===&#39;b&#39;&#34;</span><span class="p">&gt;</span>B<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">v-else</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">vm</span> <span class="o">=</span><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">el</span><span class="o">:</span><span class="s2">&#34;#app&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">ok</span><span class="o">:</span><span class="s1">&#39;a&#39;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="4语句循环">4.语句循环</h2>
 <div class="highlight"><div class="chroma">
@@ -292,26 +292,26 @@
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">li</span> <span class="na">v-for</span><span class="o">=</span><span class="s">&#34;item in items&#34;</span><span class="p">&gt;</span>
-            {{item.message}}
-        <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-        <span class="kd">var</span> <span class="nx">vm</span> <span class="o">=</span><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
-            <span class="nx">el</span><span class="o">:</span><span class="s2">&#34;#app&#34;</span><span class="p">,</span>
-            <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
-                <span class="nx">items</span><span class="o">:</span><span class="p">[</span>
-                    <span class="p">{</span><span class="nx">message</span><span class="o">:</span><span class="s1">&#39;狂神说java&#39;</span><span class="p">},</span>
-                    <span class="p">{</span><span class="nx">message</span><span class="o">:</span><span class="s1">&#39;狂神说vue&#39;</span><span class="p">},</span>
-                    <span class="p">{</span><span class="nx">message</span><span class="o">:</span><span class="s1">&#39;狂神说js&#39;</span><span class="p">}</span>
-                <span class="p">]</span>
-            <span class="p">}</span>
-        <span class="p">})</span>
-    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">li</span> <span class="na">v-for</span><span class="o">=</span><span class="s">&#34;item in items&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            {{item.message}}
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">vm</span> <span class="o">=</span><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">el</span><span class="o">:</span><span class="s2">&#34;#app&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">items</span><span class="o">:</span><span class="p">[</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span><span class="nx">message</span><span class="o">:</span><span class="s1">&#39;狂神说java&#39;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span><span class="nx">message</span><span class="o">:</span><span class="s1">&#39;狂神说vue&#39;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span><span class="nx">message</span><span class="o">:</span><span class="s1">&#39;狂神说js&#39;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="5双向绑定">5.双向绑定</h2>
 <div class="highlight"><div class="chroma">
@@ -332,21 +332,21 @@
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
-        {{message}}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;message&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">input</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-        <span class="kd">var</span> <span class="nx">vm</span> <span class="o">=</span><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
-            <span class="nx">el</span><span class="o">:</span><span class="s2">&#34;#app&#34;</span><span class="p">,</span>
-            <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
-                <span class="nx">message</span><span class="o">:</span><span class="s2">&#34;&#34;</span>
-            <span class="p">}</span>
-        <span class="p">})</span>
-    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {{message}}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;password&#34;</span> <span class="na">v-model</span><span class="o">=</span><span class="s">&#34;message&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">input</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">vm</span> <span class="o">=</span><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">el</span><span class="o">:</span><span class="s2">&#34;#app&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">message</span><span class="o">:</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="6计算属性">6.计算属性</h2>
 <div class="highlight"><div class="chroma">
@@ -377,31 +377,31 @@
 </span><span class="lnt">24
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
-        {{currentTime1()}}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-        {{currentTime2}}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-        <span class="kd">var</span> <span class="nx">vm</span> <span class="o">=</span><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
-            <span class="nx">el</span><span class="o">:</span><span class="s2">&#34;#app&#34;</span><span class="p">,</span>
-            <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
-                <span class="nx">message</span><span class="o">:</span><span class="s2">&#34;&#34;</span>
-            <span class="p">},</span>
-            <span class="nx">methods</span><span class="o">:</span><span class="p">{</span>
-                <span class="nx">currentTime1</span><span class="o">:</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-                    <span class="k">return</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span>
-                <span class="p">}</span>
-            <span class="p">},</span>
-            <span class="nx">computed</span><span class="o">:</span><span class="p">{</span>
-                <span class="nx">currentTime2</span><span class="o">:</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-                    <span class="k">return</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span>
-                <span class="p">}</span>
-            <span class="p">}</span>
-        <span class="p">})</span>
-    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;app&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {{currentTime1()}}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {{currentTime2}}<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">var</span> <span class="nx">vm</span> <span class="o">=</span><span class="k">new</span> <span class="nx">Vue</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">el</span><span class="o">:</span><span class="s2">&#34;#app&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">data</span><span class="o">:</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">message</span><span class="o">:</span><span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">methods</span><span class="o">:</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">currentTime1</span><span class="o">:</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">computed</span><span class="o">:</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">currentTime2</span><span class="o">:</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol>
 <li>调用方式不同。computed直接以对象属性方式调用，不需要加括号，而methods必须要函数执行才可以得到结果。</li>

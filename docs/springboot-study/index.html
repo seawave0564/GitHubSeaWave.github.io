@@ -196,8 +196,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">https://start.spring.io/
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">https://start.spring.io/
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="方式二使用idea自带方式构建">方式二、使用idea自带方式构建</h3>
 <p>在new project窗口中选择Spring initializr，然后初始化配置即可。</p>
@@ -228,27 +228,27 @@
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt">                   _ooOoo_
-                  o8888888o
-                  88&#34; . &#34;88
-                  (| -_- |)
-                  O\  =  /O
-               ____/`---&#39;\____
-             .&#39;  \\|     |//  `.
-            /  \\|||  :  |||//  \
-           /  _||||| -:- |||||-  \
-           |   | \\\  -  /// |   |
-           | \_|  &#39;&#39;\---/&#39;&#39;  |   |
-           \  .-\__  `-`  ___/-. /
-         ___`. .&#39;  /--.--\  `. . __
-      .&#34;&#34; &#39;&lt;  `.___\_&lt;|&gt;_/___.&#39;  &gt;&#39;&#34;&#34;.
-     | | :  `- \`.;`\ _ /`;.`/ - ` : | |
-     \  \ `-.   \_ __\ /__ _/   .-` /  /
-======`-.____`-.___\_____/___.-`____.-&#39;======
-                   `=---=&#39;
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-         佛祖保佑       永无BUG
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">                   _ooOoo_
+</span></span><span class="line"><span class="cl">                  o8888888o
+</span></span><span class="line"><span class="cl">                  88&#34; . &#34;88
+</span></span><span class="line"><span class="cl">                  (| -_- |)
+</span></span><span class="line"><span class="cl">                  O\  =  /O
+</span></span><span class="line"><span class="cl">               ____/`---&#39;\____
+</span></span><span class="line"><span class="cl">             .&#39;  \\|     |//  `.
+</span></span><span class="line"><span class="cl">            /  \\|||  :  |||//  \
+</span></span><span class="line"><span class="cl">           /  _||||| -:- |||||-  \
+</span></span><span class="line"><span class="cl">           |   | \\\  -  /// |   |
+</span></span><span class="line"><span class="cl">           | \_|  &#39;&#39;\---/&#39;&#39;  |   |
+</span></span><span class="line"><span class="cl">           \  .-\__  `-`  ___/-. /
+</span></span><span class="line"><span class="cl">         ___`. .&#39;  /--.--\  `. . __
+</span></span><span class="line"><span class="cl">      .&#34;&#34; &#39;&lt;  `.___\_&lt;|&gt;_/___.&#39;  &gt;&#39;&#34;&#34;.
+</span></span><span class="line"><span class="cl">     | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+</span></span><span class="line"><span class="cl">     \  \ `-.   \_ __\ /__ _/   .-` /  /
+</span></span><span class="line"><span class="cl">======`-.____`-.___\_____/___.-`____.-&#39;======
+</span></span><span class="line"><span class="cl">                   `=---=&#39;
+</span></span><span class="line"><span class="cl">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</span></span><span class="line"><span class="cl">         佛祖保佑       永无BUG
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果：</p>
 <p><img
@@ -269,11 +269,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;dependency&gt;</span>
-    <span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
-    <span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-web<span class="nt">&lt;/artifactId&gt;</span>
-<span class="nt">&lt;/dependency&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-web<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>springboot-boot-starter-xxx</strong>：就是spring-boot的场景启动器</p>
 <p><strong>spring-boot-starter-web</strong>：帮我们导入了web模块正常运行所依赖的组件；</p>
@@ -289,12 +289,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="c1">//@SpringBootApplication 来标注一个主程序类//说明这是一个Spring Boot应用@SpringBootApplicationpublic class SpringbootApplication {
-</span><span class="c1"></span>   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>     <span class="c1">//以为是启动了一个方法，没想到启动了一个服务      
-</span><span class="c1"></span>       <span class="n">SpringApplication</span><span class="o">.</span><span class="na">run</span><span class="o">(</span><span class="n">SpringbootApplication</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>   
-   <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">//@SpringBootApplication 来标注一个主程序类//说明这是一个Spring Boot应用@SpringBootApplicationpublic class SpringbootApplication {
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>     <span class="c1">//以为是启动了一个方法，没想到启动了一个服务      
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>       <span class="n">SpringApplication</span><span class="o">.</span><span class="na">run</span><span class="o">(</span><span class="n">SpringbootApplication</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>   
+</span></span><span class="line"><span class="cl">   <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="springbootapplication注解">@SpringBootApplication注解</h4>
 <blockquote>
@@ -354,10 +354,10 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">key</span><span class="p">:</span><span class="w"> 
-</span><span class="w">    </span><span class="nt">child-key</span><span class="p">:</span><span class="w"> </span><span class="l">value</span><span class="w">
-</span><span class="w">    </span><span class="nt">child-key2</span><span class="p">:</span><span class="w"> </span><span class="l">value2</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">key</span><span class="p">:</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">child-key</span><span class="p">:</span><span class="w"> </span><span class="l">value</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">child-key2</span><span class="p">:</span><span class="w"> </span><span class="l">value2</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="yaml数组">YAML数组</h4>
 <div class="highlight"><div class="chroma">
@@ -367,10 +367,10 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="l">A</span><span class="w">
-</span><span class="w"></span>- <span class="l">B</span><span class="w">
-</span><span class="w"></span>- <span class="l">C</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">- <span class="l">A</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="l">B</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="l">C</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>YAML 支持多维数组，可以使用行内表示：</p>
 <div class="highlight"><div class="chroma">
@@ -378,8 +378,8 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">value1, value2, ...]</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">value1, value2, ...]</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>数据结构的子成员是一个数组，则可以在该项下面缩进一个空格。</p>
 <div class="highlight"><div class="chroma">
@@ -390,11 +390,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml">-<span class="w">
-</span><span class="w"> </span>- <span class="l">A</span><span class="w">
-</span><span class="w"> </span>- <span class="l">B</span><span class="w">
-</span><span class="w"> </span>- <span class="l">C</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">-<span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span>- <span class="l">A</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span>- <span class="l">B</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> </span>- <span class="l">C</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>例子</strong></p>
 <div class="highlight"><div class="chroma">
@@ -410,16 +410,16 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">companies</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span>-<span class="w">
-</span><span class="w">        </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">company1</span><span class="w">
-</span><span class="w">        </span><span class="nt">price</span><span class="p">:</span><span class="w"> </span><span class="l">200W</span><span class="w">
-</span><span class="w">    </span>-<span class="w">
-</span><span class="w">        </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
-</span><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">company2</span><span class="w">
-</span><span class="w">        </span><span class="nt">price</span><span class="p">:</span><span class="w"> </span><span class="l">500W</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">companies</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>-<span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">company1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">price</span><span class="p">:</span><span class="w"> </span><span class="l">200W</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>-<span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">company2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">price</span><span class="p">:</span><span class="w"> </span><span class="l">500W</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="复合结构">复合结构</h4>
 <p>数组和对象可以构成复合结构，例：</p>
@@ -436,16 +436,16 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">languages</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span>- <span class="l">Ruby</span><span class="w">
-</span><span class="w">  </span>- <span class="l">Perl</span><span class="w">
-</span><span class="w">  </span>- <span class="l">Python </span><span class="w">
-</span><span class="w"></span><span class="nt">websites</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">YAML</span><span class="p">:</span><span class="w"> </span><span class="l">yaml.org </span><span class="w">
-</span><span class="w">  </span><span class="nt">Ruby</span><span class="p">:</span><span class="w"> </span><span class="l">ruby-lang.org </span><span class="w">
-</span><span class="w">  </span><span class="nt">Python</span><span class="p">:</span><span class="w"> </span><span class="l">python.org </span><span class="w">
-</span><span class="w">  </span><span class="nt">Perl</span><span class="p">:</span><span class="w"> </span><span class="l">use.perl.org</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">languages</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">Ruby</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">Perl</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">Python </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">websites</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">YAML</span><span class="p">:</span><span class="w"> </span><span class="l">yaml.org </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">Ruby</span><span class="p">:</span><span class="w"> </span><span class="l">ruby-lang.org </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">Python</span><span class="p">:</span><span class="w"> </span><span class="l">python.org </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">Perl</span><span class="p">:</span><span class="w"> </span><span class="l">use.perl.org</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>转换为 json 为：</p>
 <div class="highlight"><div class="chroma">
@@ -461,16 +461,16 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml">{<span class="w"> 
-</span><span class="w">  </span><span class="nt">languages</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s1">&#39;Ruby&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Perl&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Python&#39;</span><span class="p">],</span><span class="w">
-</span><span class="w">  </span><span class="nt">websites</span><span class="p">:</span><span class="w"> </span>{<span class="w">
-</span><span class="w">    </span><span class="nt">YAML</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;yaml.org&#39;</span><span class="p">,</span><span class="w">
-</span><span class="w">    </span><span class="nt">Ruby</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;ruby-lang.org&#39;</span><span class="p">,</span><span class="w">
-</span><span class="w">    </span><span class="nt">Python</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;python.org&#39;</span><span class="p">,</span><span class="w">
-</span><span class="w">    </span><span class="nt">Perl</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;use.perl.org&#39;</span><span class="w"> 
-</span><span class="w">  </span>}<span class="w"> 
-</span><span class="w"></span>}<span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">{<span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">languages</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s1">&#39;Ruby&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Perl&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Python&#39;</span><span class="p">],</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">websites</span><span class="p">:</span><span class="w"> </span>{<span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">YAML</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;yaml.org&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">Ruby</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;ruby-lang.org&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">Python</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;python.org&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">Perl</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;use.perl.org&#39;</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>}<span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>}<span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="配置文件切换">配置文件切换</h2>
 <h3 id="1多环境切换">1、多环境切换</h3>
@@ -488,10 +488,10 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#比如在配置文件中指定使用dev环境，我们可以通过设置不同的端口号进行测试；#我们启动SpringBoot，就可以看到已经切换到dev下的配置了;
-
-spring.profiles.active=dev
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#比如在配置文件中指定使用dev环境，我们可以通过设置不同的端口号进行测试；#我们启动SpringBoot，就可以看到已经切换到dev下的配置了;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">spring.profiles.active=dev
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>yaml的多文档块</strong></p>
 <div class="highlight"><div class="chroma">
@@ -514,23 +514,23 @@ spring.profiles.active=dev
 </span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">server</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="m">8081</span><span class="w">
-</span><span class="w"></span><span class="c">#选择要激活那个环境块</span><span class="w">
-</span><span class="w"></span><span class="nt">spring</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">profiles</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">active</span><span class="p">:</span><span class="w"> </span><span class="l">prod</span><span class="w">
-</span><span class="w"></span><span class="nn">---</span><span class="w">
-</span><span class="w"></span><span class="nt">server</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="m">8083</span><span class="w">
-</span><span class="w"></span><span class="nt">spring</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">profiles</span><span class="p">:</span><span class="w"> </span><span class="l">dev</span><span class="w"> </span><span class="c">#配置环境的名称</span><span class="w">
-</span><span class="w"></span><span class="nn">---</span><span class="w">
-</span><span class="w"></span><span class="nt">server</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="m">8084</span><span class="w">
-</span><span class="w"></span><span class="nt">spring</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">profiles</span><span class="p">:</span><span class="w"> </span><span class="l">prod </span><span class="w"> </span><span class="c">#配置环境的名称</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">server</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="m">8081</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">#选择要激活那个环境块</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">spring</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">profiles</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">active</span><span class="p">:</span><span class="w"> </span><span class="l">prod</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">server</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="m">8083</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">spring</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">profiles</span><span class="p">:</span><span class="w"> </span><span class="l">dev</span><span class="w"> </span><span class="c">#配置环境的名称</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">server</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="m">8084</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">spring</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">profiles</span><span class="p">:</span><span class="w"> </span><span class="l">prod </span><span class="w"> </span><span class="c">#配置环境的名称</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>注意：如果yml和properties同时都配置了端口，并且没有激活其他环境 ， 默认会使用properties配置文件的！</strong></p>
 <h3 id="2配置文件加载位置">2、配置文件加载位置</h3>
@@ -551,11 +551,11 @@ spring.profiles.active=dev
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">优先级1：项目路径下的config文件夹配置文件
-优先级2：项目路径下配置文件
-优先级3：资源路径下的config文件夹配置文件
-优先级4：资源路径下配置文件
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">优先级1：项目路径下的config文件夹配置文件
+</span></span><span class="line"><span class="cl">优先级2：项目路径下配置文件
+</span></span><span class="line"><span class="cl">优先级3：资源路径下的config文件夹配置文件
+</span></span><span class="line"><span class="cl">优先级4：资源路径下配置文件
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="使用springboot进行web开发">使用SpringBoot进行Web开发</h2>
 <h3 id="1静态资源处理">1、静态资源处理</h3>
@@ -584,12 +584,12 @@ spring.profiles.active=dev
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!--thymeleaf--&gt;</span>
-<span class="nt">&lt;dependency&gt;</span>
-<span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
-<span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-thymeleaf<span class="nt">&lt;/artifactId&gt;</span>
-<span class="nt">&lt;/dependency&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="c">&lt;!--thymeleaf--&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-thymeleaf<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3页面国际化">3、页面国际化</h3>
 <blockquote>
@@ -629,8 +629,8 @@ spring.profiles.active=dev
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">spring.messages.basename=i18n.login
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">spring.messages.basename=i18n.login
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ol>
@@ -687,33 +687,33 @@ spring.profiles.active=dev
 </span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">com.kuang.component</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">org.springframework.util.StringUtils</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">org.springframework.web.servlet.LocaleResolver</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">javax.servlet.http.HttpServletRequest</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">javax.servlet.http.HttpServletResponse</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">java.util.Locale</span><span class="o">;</span>
-<span class="c1">//可以在链接上携带区域信息
-</span><span class="c1"></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyLocaleResolver</span> <span class="kd">implements</span> <span class="n">LocaleResolver</span> <span class="o">{</span>
-    <span class="c1">//解析请求
-</span><span class="c1"></span>    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="n">Locale</span> <span class="nf">resolveLocale</span><span class="o">(</span><span class="n">HttpServletRequest</span> <span class="n">request</span><span class="o">)</span><span class="n">hailagn</span> <span class="o">{</span>
-        <span class="n">String</span> <span class="n">language</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getParameter</span><span class="o">(</span><span class="s">&#34;l&#34;</span><span class="o">);</span>
-        <span class="n">Locale</span> <span class="n">locale</span> <span class="o">=</span> <span class="n">Locale</span><span class="o">.</span><span class="na">getDefault</span><span class="o">();</span> <span class="c1">// 如果没有获取到就使用系统默认的
-</span><span class="c1"></span>        <span class="c1">//如果请求链接不为空
-</span><span class="c1"></span>        <span class="k">if</span> <span class="o">(!</span><span class="n">StringUtils</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">(</span><span class="n">language</span><span class="o">)){</span>
-            <span class="c1">//分割请求参数
-</span><span class="c1"></span>            <span class="n">String</span><span class="o">[]</span> <span class="n">split</span> <span class="o">=</span> <span class="n">language</span><span class="o">.</span><span class="na">split</span><span class="o">(</span><span class="s">&#34;_&#34;</span><span class="o">);</span>
-            <span class="c1">//国家，地区
-</span><span class="c1"></span>            <span class="n">locale</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Locale</span><span class="o">(</span><span class="n">split</span><span class="o">[</span><span class="n">0</span><span class="o">],</span><span class="n">split</span><span class="o">[</span><span class="n">1</span><span class="o">]);</span>
-        <span class="o">}</span>
-        <span class="k">return</span> <span class="n">locale</span><span class="o">;</span>
-    <span class="o">}</span>
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setLocale</span><span class="o">(</span><span class="n">HttpServletRequest</span> <span class="n">httpServletRequest</span><span class="o">,</span> <span class="n">HttpServletResponse</span> <span class="n">httpServletResponse</span><span class="o">,</span> <span class="n">Locale</span> <span class="n">locale</span><span class="o">)</span> <span class="o">{</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">com.kuang.component</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.springframework.util.StringUtils</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">org.springframework.web.servlet.LocaleResolver</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">javax.servlet.http.HttpServletRequest</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">javax.servlet.http.HttpServletResponse</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">java.util.Locale</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//可以在链接上携带区域信息
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyLocaleResolver</span> <span class="kd">implements</span> <span class="n">LocaleResolver</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//解析请求
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">Locale</span> <span class="nf">resolveLocale</span><span class="o">(</span><span class="n">HttpServletRequest</span> <span class="n">request</span><span class="o">)</span><span class="n">hailagn</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">String</span> <span class="n">language</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getParameter</span><span class="o">(</span><span class="s">&#34;l&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Locale</span> <span class="n">locale</span> <span class="o">=</span> <span class="n">Locale</span><span class="o">.</span><span class="na">getDefault</span><span class="o">();</span> <span class="c1">// 如果没有获取到就使用系统默认的
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">//如果请求链接不为空
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="o">(!</span><span class="n">StringUtils</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">(</span><span class="n">language</span><span class="o">)){</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//分割请求参数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">String</span><span class="o">[]</span> <span class="n">split</span> <span class="o">=</span> <span class="n">language</span><span class="o">.</span><span class="na">split</span><span class="o">(</span><span class="s">&#34;_&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//国家，地区
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">locale</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Locale</span><span class="o">(</span><span class="n">split</span><span class="o">[</span><span class="n">0</span><span class="o">],</span><span class="n">split</span><span class="o">[</span><span class="n">1</span><span class="o">]);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">locale</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setLocale</span><span class="o">(</span><span class="n">HttpServletRequest</span> <span class="n">httpServletRequest</span><span class="o">,</span> <span class="n">HttpServletResponse</span> <span class="n">httpServletResponse</span><span class="o">,</span> <span class="n">Locale</span> <span class="n">locale</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>为了让我们的区域化信息能够生效，我们需要再配置一下这个组件！在我们自己的MvcConofig下添加bean；</p>
 <div class="highlight"><div class="chroma">
@@ -724,11 +724,11 @@ spring.profiles.active=dev
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Bean</span>
-<span class="kd">public</span> <span class="n">LocaleResolver</span> <span class="nf">localeResolver</span><span class="o">(){</span>
-    <span class="k">return</span> <span class="k">new</span> <span class="n">MyLocaleResolver</span><span class="o">();</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Bean</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="n">LocaleResolver</span> <span class="nf">localeResolver</span><span class="o">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">new</span> <span class="n">MyLocaleResolver</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="配置登录拦截器">配置登录拦截器</h4>
 <ol>
@@ -752,21 +752,21 @@ spring.profiles.active=dev
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LoginHandlerInterceptor</span> <span class="kd">implements</span> <span class="n">HandlerInterceptor</span> <span class="o">{</span>
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">preHandle</span><span class="o">(</span><span class="n">HttpServletRequest</span> <span class="n">request</span><span class="o">,</span> <span class="n">HttpServletResponse</span> <span class="n">response</span><span class="o">,</span> <span class="n">Object</span> <span class="n">handler</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
-        <span class="n">Object</span> <span class="n">loginUser</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getSession</span><span class="o">().</span><span class="na">getAttribute</span><span class="o">(</span><span class="s">&#34;loginUser&#34;</span><span class="o">);</span>
-        <span class="k">if</span><span class="o">(</span><span class="n">loginUser</span><span class="o">==</span><span class="kc">null</span><span class="o">){</span>
-            <span class="n">request</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;msg&#34;</span><span class="o">,</span><span class="s">&#34;没有权限，请先登录&#34;</span><span class="o">);</span>
-            <span class="c1">//转发至主页
-</span><span class="c1"></span>            <span class="n">request</span><span class="o">.</span><span class="na">getRequestDispatcher</span><span class="o">(</span><span class="s">&#34;/index.html&#34;</span><span class="o">).</span><span class="na">forward</span><span class="o">(</span><span class="n">request</span><span class="o">,</span><span class="n">response</span><span class="o">);</span>
-            <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
-        <span class="o">}</span><span class="k">else</span><span class="o">{</span>
-            <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LoginHandlerInterceptor</span> <span class="kd">implements</span> <span class="n">HandlerInterceptor</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">preHandle</span><span class="o">(</span><span class="n">HttpServletRequest</span> <span class="n">request</span><span class="o">,</span> <span class="n">HttpServletResponse</span> <span class="n">response</span><span class="o">,</span> <span class="n">Object</span> <span class="n">handler</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Object</span> <span class="n">loginUser</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="na">getSession</span><span class="o">().</span><span class="na">getAttribute</span><span class="o">(</span><span class="s">&#34;loginUser&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span><span class="o">(</span><span class="n">loginUser</span><span class="o">==</span><span class="kc">null</span><span class="o">){</span>
+</span></span><span class="line"><span class="cl">            <span class="n">request</span><span class="o">.</span><span class="na">setAttribute</span><span class="o">(</span><span class="s">&#34;msg&#34;</span><span class="o">,</span><span class="s">&#34;没有权限，请先登录&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//转发至主页
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">request</span><span class="o">.</span><span class="na">getRequestDispatcher</span><span class="o">(</span><span class="s">&#34;/index.html&#34;</span><span class="o">).</span><span class="na">forward</span><span class="o">(</span><span class="n">request</span><span class="o">,</span><span class="n">response</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 <li>
@@ -779,11 +779,11 @@ spring.profiles.active=dev
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java">    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addInterceptors</span><span class="o">(</span><span class="n">InterceptorRegistry</span> <span class="n">registry</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">registry</span><span class="o">.</span><span class="na">addInterceptor</span><span class="o">(</span><span class="k">new</span> 		<span class="n">LoginHandlerInterceptor</span><span class="o">()).</span><span class="na">addPathPatterns</span><span class="o">(</span><span class="s">&#34;/**&#34;</span><span class="o">).</span><span class="na">excludePathPatterns</span><span class="o">(</span><span class="s">&#34;/index.html&#34;</span><span class="o">,</span><span class="s">&#34;/&#34;</span><span class="o">,</span><span class="s">&#34;/user/login&#34;</span><span class="o">,</span><span class="s">&#34;/css/**&#34;</span><span class="o">,</span><span class="s">&#34;/img/**&#34;</span><span class="o">);</span>
-    <span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addInterceptors</span><span class="o">(</span><span class="n">InterceptorRegistry</span> <span class="n">registry</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">registry</span><span class="o">.</span><span class="na">addInterceptor</span><span class="o">(</span><span class="k">new</span> 		<span class="n">LoginHandlerInterceptor</span><span class="o">()).</span><span class="na">addPathPatterns</span><span class="o">(</span><span class="s">&#34;/**&#34;</span><span class="o">).</span><span class="na">excludePathPatterns</span><span class="o">(</span><span class="s">&#34;/index.html&#34;</span><span class="o">,</span><span class="s">&#34;/&#34;</span><span class="o">,</span><span class="s">&#34;/user/login&#34;</span><span class="o">,</span><span class="s">&#34;/css/**&#34;</span><span class="o">,</span><span class="s">&#34;/img/**&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>拦截请求时注意过滤静态资源，拦截静态资源会导致css样式不可用，无法访问请求等状况。</strong></p>
 </li>
@@ -805,12 +805,12 @@ spring.profiles.active=dev
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;dependency&gt;</span>
-    <span class="nt">&lt;groupId&gt;</span>org.mybatis.spring.boot<span class="nt">&lt;/groupId&gt;</span>
-    <span class="nt">&lt;artifactId&gt;</span>mybatis-spring-boot-starter<span class="nt">&lt;/artifactId&gt;</span>
-    <span class="nt">&lt;version&gt;</span>2.1.1<span class="nt">&lt;/version&gt;</span>
-<span class="nt">&lt;/dependency&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;groupId&gt;</span>org.mybatis.spring.boot<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;artifactId&gt;</span>mybatis-spring-boot-starter<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;version&gt;</span>2.1.1<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="2">
 <li>配置数据源：</li>
@@ -849,37 +849,37 @@ spring.profiles.active=dev
 </span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">spring</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">datasource</span><span class="p">:</span><span class="w">
-</span><span class="w">    </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l">root</span><span class="w">
-</span><span class="w">    </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l">root</span><span class="w">
-</span><span class="w">    </span><span class="c">#?serverTimezone=UTC解决时区的报错</span><span class="w">
-</span><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">jdbc:mysql://localhost:3306/springboot?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf-8</span><span class="w">
-</span><span class="w">    </span><span class="nt">driver-class-name</span><span class="p">:</span><span class="w"> </span><span class="l">com.mysql.cj.jdbc.Driver</span><span class="w">
-</span><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">com.alibaba.druid.pool.DruidDataSource</span><span class="w">
-</span><span class="w">
-</span><span class="w">    </span><span class="c">#Spring Boot 默认是不注入这些属性值的，需要自己绑定</span><span class="w">
-</span><span class="w">    </span><span class="c">#druid 数据源专有配置</span><span class="w">
-</span><span class="w">    </span><span class="nt">initialSize</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
-</span><span class="w">    </span><span class="nt">minIdle</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
-</span><span class="w">    </span><span class="nt">maxActive</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
-</span><span class="w">    </span><span class="nt">maxWait</span><span class="p">:</span><span class="w"> </span><span class="m">60000</span><span class="w">
-</span><span class="w">    </span><span class="nt">timeBetweenEvictionRunsMillis</span><span class="p">:</span><span class="w"> </span><span class="m">60000</span><span class="w">
-</span><span class="w">    </span><span class="nt">minEvictableIdleTimeMillis</span><span class="p">:</span><span class="w"> </span><span class="m">300000</span><span class="w">
-</span><span class="w">    </span><span class="nt">validationQuery</span><span class="p">:</span><span class="w"> </span><span class="l">SELECT 1 FROM DUAL</span><span class="w">
-</span><span class="w">    </span><span class="nt">testWhileIdle</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">    </span><span class="nt">testOnBorrow</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="w">    </span><span class="nt">testOnReturn</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-</span><span class="w">    </span><span class="nt">poolPreparedStatements</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">
-</span><span class="w">    </span><span class="c">#配置监控统计拦截的filters，stat:监控统计、log4j：日志记录、wall：防御sql注入</span><span class="w">
-</span><span class="w">    </span><span class="c">#如果允许时报错  java.lang.ClassNotFoundException: org.apache.log4j.Priority</span><span class="w">
-</span><span class="w">    </span><span class="c">#则导入 log4j 依赖即可，Maven 地址：https://mvnrepository.com/artifact/log4j/log4j</span><span class="w">
-</span><span class="w">    </span><span class="nt">filters</span><span class="p">:</span><span class="w"> </span><span class="l">stat,wall,log4j</span><span class="w">
-</span><span class="w">    </span><span class="nt">maxPoolPreparedStatementPerConnectionSize</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
-</span><span class="w">    </span><span class="nt">useGlobalDataSourceStat</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span><span class="w">    </span><span class="nt">connectionProperties</span><span class="p">:</span><span class="w"> </span><span class="l">druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">spring</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">datasource</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l">root</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l">root</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c">#?serverTimezone=UTC解决时区的报错</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">jdbc:mysql://localhost:3306/springboot?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf-8</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">driver-class-name</span><span class="p">:</span><span class="w"> </span><span class="l">com.mysql.cj.jdbc.Driver</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">com.alibaba.druid.pool.DruidDataSource</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c">#Spring Boot 默认是不注入这些属性值的，需要自己绑定</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c">#druid 数据源专有配置</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">initialSize</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">minIdle</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">maxActive</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">maxWait</span><span class="p">:</span><span class="w"> </span><span class="m">60000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">timeBetweenEvictionRunsMillis</span><span class="p">:</span><span class="w"> </span><span class="m">60000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">minEvictableIdleTimeMillis</span><span class="p">:</span><span class="w"> </span><span class="m">300000</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">validationQuery</span><span class="p">:</span><span class="w"> </span><span class="l">SELECT 1 FROM DUAL</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">testWhileIdle</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">testOnBorrow</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">testOnReturn</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">poolPreparedStatements</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c">#配置监控统计拦截的filters，stat:监控统计、log4j：日志记录、wall：防御sql注入</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c">#如果允许时报错  java.lang.ClassNotFoundException: org.apache.log4j.Priority</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c">#则导入 log4j 依赖即可，Maven 地址：https://mvnrepository.com/artifact/log4j/log4j</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">filters</span><span class="p">:</span><span class="w"> </span><span class="l">stat,wall,log4j</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">maxPoolPreparedStatementPerConnectionSize</span><span class="p">:</span><span class="w"> </span><span class="m">20</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">useGlobalDataSourceStat</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">connectionProperties</span><span class="p">:</span><span class="w"> </span><span class="l">druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="3">
 <li>创建测试表：</li>
@@ -908,16 +908,16 @@ spring.profiles.active=dev
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Data</span>
-<span class="nd">@AllArgsConstructor</span>
-<span class="nd">@NoArgsConstructor</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">User</span> <span class="o">{</span>
-    <span class="kd">private</span> <span class="kt">int</span> <span class="n">number</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="n">String</span> <span class="n">sex</span><span class="o">;</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Data</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@AllArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@NoArgsConstructor</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">User</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">number</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">sex</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>5.在application.yml中配置mybatis实体类映射：</p>
 <div class="highlight"><div class="chroma">
@@ -927,10 +927,10 @@ spring.profiles.active=dev
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="nt">mybatis</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="nt">type-aliases-package</span><span class="p">:</span><span class="w"> </span><span class="l">com.seawave.pojo</span><span class="w">
-</span><span class="w">  </span><span class="nt">mapper-locations</span><span class="p">:</span><span class="w"> </span><span class="l">classpath:mybatis/mapper/*.xml</span><span class="w">
-</span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-yml" data-lang="yml"><span class="line"><span class="cl"><span class="nt">mybatis</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">type-aliases-package</span><span class="p">:</span><span class="w"> </span><span class="l">com.seawave.pojo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">mapper-locations</span><span class="p">:</span><span class="w"> </span><span class="l">classpath:mybatis/mapper/*.xml</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>6.编写UserMapper</p>
 <div class="highlight"><div class="chroma">
@@ -972,42 +972,42 @@ spring.profiles.active=dev
 </span><span class="lnt">35
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; ?&gt;</span>
-<span class="cp">&lt;!DOCTYPE mapper
-</span><span class="cp">        PUBLIC &#34;-//mybatis.org//DTD Mapper 3.0//EN&#34;
-</span><span class="cp">        &#34;http://mybatis.org/dtd/mybatis-3-mapper.dtd&#34;&gt;</span>
-<span class="nt">&lt;mapper</span> <span class="na">namespace=</span><span class="s">&#34;com.seawave.mapper.UserMapper&#34;</span><span class="nt">&gt;</span>
-    <span class="c">&lt;!--    查询所有用户--&gt;</span>
-    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;queryUserList&#34;</span> <span class="na">resultType=</span><span class="s">&#34;com.seawave.pojo.User&#34;</span><span class="nt">&gt;</span>
-        select *
-        from student
-    <span class="nt">&lt;/select&gt;</span>
-    <span class="c">&lt;!--    根据id查询用户--&gt;</span>
-    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;queryUserById&#34;</span> <span class="na">resultType=</span><span class="s">&#34;User&#34;</span><span class="nt">&gt;</span>
-        select *
-        from student
-        where id = #{id}
-    <span class="nt">&lt;/select&gt;</span>
-    <span class="c">&lt;!--添加一个用户--&gt;</span>
-    <span class="nt">&lt;insert</span> <span class="na">id=</span><span class="s">&#34;addUser&#34;</span> <span class="na">parameterType=</span><span class="s">&#34;User&#34;</span><span class="nt">&gt;</span>
-        insert into student (name, age, sex)
-        values (#{name}, #{age}, #{sex})
-    <span class="nt">&lt;/insert&gt;</span>
-    <span class="c">&lt;!--    更新一个用户--&gt;</span>
-    <span class="nt">&lt;update</span> <span class="na">id=</span><span class="s">&#34;updateUser&#34;</span> <span class="na">parameterType=</span><span class="s">&#34;User&#34;</span><span class="nt">&gt;</span>
-        update student
-        set name=#{name},
-            age=#{age},
-            sex=#{sex}where id =#{id}
-    <span class="nt">&lt;/update&gt;</span>
-    <span class="c">&lt;!--删除一个用户--&gt;</span>
-    <span class="nt">&lt;delete</span> <span class="na">id=</span><span class="s">&#34;deleteUser&#34;</span> <span class="na">parameterType=</span><span class="s">&#34;int&#34;</span><span class="nt">&gt;</span>
-        delete
-        from student
-        where id = #{id}
-    <span class="nt">&lt;/delete&gt;</span>
-<span class="nt">&lt;/mapper&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; ?&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE mapper
+</span></span></span><span class="line"><span class="cl"><span class="cp">        PUBLIC &#34;-//mybatis.org//DTD Mapper 3.0//EN&#34;
+</span></span></span><span class="line"><span class="cl"><span class="cp">        &#34;http://mybatis.org/dtd/mybatis-3-mapper.dtd&#34;&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;mapper</span> <span class="na">namespace=</span><span class="s">&#34;com.seawave.mapper.UserMapper&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--    查询所有用户--&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;queryUserList&#34;</span> <span class="na">resultType=</span><span class="s">&#34;com.seawave.pojo.User&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        select *
+</span></span><span class="line"><span class="cl">        from student
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/select&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--    根据id查询用户--&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;queryUserById&#34;</span> <span class="na">resultType=</span><span class="s">&#34;User&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        select *
+</span></span><span class="line"><span class="cl">        from student
+</span></span><span class="line"><span class="cl">        where id = #{id}
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/select&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--添加一个用户--&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;insert</span> <span class="na">id=</span><span class="s">&#34;addUser&#34;</span> <span class="na">parameterType=</span><span class="s">&#34;User&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        insert into student (name, age, sex)
+</span></span><span class="line"><span class="cl">        values (#{name}, #{age}, #{sex})
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/insert&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--    更新一个用户--&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;update</span> <span class="na">id=</span><span class="s">&#34;updateUser&#34;</span> <span class="na">parameterType=</span><span class="s">&#34;User&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        update student
+</span></span><span class="line"><span class="cl">        set name=#{name},
+</span></span><span class="line"><span class="cl">            age=#{age},
+</span></span><span class="line"><span class="cl">            sex=#{sex}where id =#{id}
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/update&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--删除一个用户--&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;delete</span> <span class="na">id=</span><span class="s">&#34;deleteUser&#34;</span> <span class="na">parameterType=</span><span class="s">&#34;int&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        delete
+</span></span><span class="line"><span class="cl">        from student
+</span></span><span class="line"><span class="cl">        where id = #{id}
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/delete&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/mapper&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><ol start="7">
 <li>在测试类中测试是否正常连接数据库</li>
@@ -1028,19 +1028,19 @@ spring.profiles.active=dev
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="nd">@SpringBootTest</span>
-<span class="kd">class</span> <span class="nc">Springboot05MybatisApplicationTests</span> <span class="o">{</span>
-    <span class="nd">@Autowired</span>
-    <span class="n">UserMapper</span> <span class="n">userMapper</span><span class="o">;</span>
-    <span class="nd">@Test</span>
-    <span class="kt">void</span> <span class="nf">contextLoads</span><span class="o">()</span> <span class="o">{</span>
-        <span class="k">for</span> <span class="o">(</span><span class="n">User</span> <span class="n">user</span> <span class="o">:</span> <span class="n">userMapper</span><span class="o">.</span><span class="na">queryUserList</span><span class="o">())</span> <span class="o">{</span>
-            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">user</span><span class="o">);</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@SpringBootTest</span>
+</span></span><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Springboot05MybatisApplicationTests</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Autowired</span>
+</span></span><span class="line"><span class="cl">    <span class="n">UserMapper</span> <span class="n">userMapper</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">contextLoads</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="o">(</span><span class="n">User</span> <span class="n">user</span> <span class="o">:</span> <span class="n">userMapper</span><span class="o">.</span><span class="na">queryUserList</span><span class="o">())</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">user</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>成功即可读取到数据库表内容：</p>
 <p><img

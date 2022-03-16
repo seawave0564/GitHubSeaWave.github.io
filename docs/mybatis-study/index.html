@@ -175,12 +175,12 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml">        <span class="nt">&lt;dependency&gt;</span>
-            <span class="nt">&lt;groupId&gt;</span>org.mybatis<span class="nt">&lt;/groupId&gt;</span>
-            <span class="nt">&lt;artifactId&gt;</span>mybatis<span class="nt">&lt;/artifactId&gt;</span>
-            <span class="nt">&lt;version&gt;</span>3.5.2<span class="nt">&lt;/version&gt;</span>
-        <span class="nt">&lt;/dependency&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">        <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;groupId&gt;</span>org.mybatis<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;artifactId&gt;</span>mybatis<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;version&gt;</span>3.5.2<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="方式二手动导入jar包">方式二：手动导入jar包</h3>
 <p><a href="https://github.com/mybatis/mybatis-3/releases" target="_blank" rel="noopener noreffer">点击此处</a>在github上下载jar包，解压后放入导入idea项目即可</p>
@@ -210,27 +210,27 @@
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; ?&gt;</span>
-<span class="cp">&lt;!DOCTYPE configuration
-</span><span class="cp">  PUBLIC &#34;-//mybatis.org//DTD Config 3.0//EN&#34;
-</span><span class="cp">  &#34;http://mybatis.org/dtd/mybatis-3-config.dtd&#34;&gt;</span>
-<span class="nt">&lt;configuration&gt;</span>
-  <span class="nt">&lt;environments</span> <span class="na">default=</span><span class="s">&#34;development&#34;</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;environment</span> <span class="na">id=</span><span class="s">&#34;development&#34;</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;transactionManager</span> <span class="na">type=</span><span class="s">&#34;JDBC&#34;</span><span class="nt">/&gt;</span>
-      <span class="nt">&lt;dataSource</span> <span class="na">type=</span><span class="s">&#34;POOLED&#34;</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;driver&#34;</span> <span class="na">value=</span><span class="s">&#34;${driver}&#34;</span><span class="nt">/&gt;</span>
-        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;url&#34;</span> <span class="na">value=</span><span class="s">&#34;${url}&#34;</span><span class="nt">/&gt;</span>
-        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;username&#34;</span> <span class="na">value=</span><span class="s">&#34;${username}&#34;</span><span class="nt">/&gt;</span>
-        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;password&#34;</span> <span class="na">value=</span><span class="s">&#34;${password}&#34;</span><span class="nt">/&gt;</span>
-      <span class="nt">&lt;/dataSource&gt;</span>
-    <span class="nt">&lt;/environment&gt;</span>
-  <span class="nt">&lt;/environments&gt;</span>
-  <span class="nt">&lt;mappers&gt;</span>
-    <span class="nt">&lt;mapper</span> <span class="na">resource=</span><span class="s">&#34;org/mybatis/example/BlogMapper.xml&#34;</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;/mappers&gt;</span>
-<span class="nt">&lt;/configuration&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34; ?&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE configuration
+</span></span></span><span class="line"><span class="cl"><span class="cp">  PUBLIC &#34;-//mybatis.org//DTD Config 3.0//EN&#34;
+</span></span></span><span class="line"><span class="cl"><span class="cp">  &#34;http://mybatis.org/dtd/mybatis-3-config.dtd&#34;&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;configuration&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;environments</span> <span class="na">default=</span><span class="s">&#34;development&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;environment</span> <span class="na">id=</span><span class="s">&#34;development&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&lt;transactionManager</span> <span class="na">type=</span><span class="s">&#34;JDBC&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&lt;dataSource</span> <span class="na">type=</span><span class="s">&#34;POOLED&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;driver&#34;</span> <span class="na">value=</span><span class="s">&#34;${driver}&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;url&#34;</span> <span class="na">value=</span><span class="s">&#34;${url}&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;username&#34;</span> <span class="na">value=</span><span class="s">&#34;${username}&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;password&#34;</span> <span class="na">value=</span><span class="s">&#34;${password}&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&lt;/dataSource&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/environment&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/environments&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;mappers&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;mapper</span> <span class="na">resource=</span><span class="s">&#34;org/mybatis/example/BlogMapper.xml&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/mappers&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/configuration&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>其中需要注意的是：</p>
 <p>driver项的值需要改为具体的数据库驱动全类名。</p>
@@ -250,16 +250,16 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="c1">//创建工厂
-</span><span class="c1"></span><span class="n">String</span> <span class="n">resource</span> <span class="o">=</span> <span class="s">&#34;org/mybatis/example/mybatis-config.xml&#34;</span><span class="o">;</span>
-<span class="n">InputStream</span> <span class="n">inputStream</span> <span class="o">=</span> <span class="n">Resources</span><span class="o">.</span><span class="na">getResourceAsStream</span><span class="o">(</span><span class="n">resource</span><span class="o">);</span>
-<span class="n">SqlSessionFactory</span> <span class="n">sqlSessionFactory</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SqlSessionFactoryBuilder</span><span class="o">().</span><span class="na">build</span><span class="o">(</span><span class="n">inputStream</span><span class="o">);</span>
-<span class="c1">//从工厂中获取sqlSession
-</span><span class="c1"></span><span class="k">try</span> <span class="o">(</span><span class="n">SqlSession</span> <span class="n">session</span> <span class="o">=</span> <span class="n">sqlSessionFactory</span><span class="o">.</span><span class="na">openSession</span><span class="o">())</span> <span class="o">{</span>
-  <span class="n">BlogMapper</span> <span class="n">mapper</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="na">getMapper</span><span class="o">(</span><span class="n">BlogMapper</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
-  <span class="n">Blog</span> <span class="n">blog</span> <span class="o">=</span> <span class="n">mapper</span><span class="o">.</span><span class="na">selectBlog</span><span class="o">(</span><span class="n">101</span><span class="o">);</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">//创建工厂
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">String</span> <span class="n">resource</span> <span class="o">=</span> <span class="s">&#34;org/mybatis/example/mybatis-config.xml&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">InputStream</span> <span class="n">inputStream</span> <span class="o">=</span> <span class="n">Resources</span><span class="o">.</span><span class="na">getResourceAsStream</span><span class="o">(</span><span class="n">resource</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">SqlSessionFactory</span> <span class="n">sqlSessionFactory</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SqlSessionFactoryBuilder</span><span class="o">().</span><span class="na">build</span><span class="o">(</span><span class="n">inputStream</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//从工厂中获取sqlSession
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">try</span> <span class="o">(</span><span class="n">SqlSession</span> <span class="n">session</span> <span class="o">=</span> <span class="n">sqlSessionFactory</span><span class="o">.</span><span class="na">openSession</span><span class="o">())</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">BlogMapper</span> <span class="n">mapper</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="na">getMapper</span><span class="o">(</span><span class="n">BlogMapper</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Blog</span> <span class="n">blog</span> <span class="o">=</span> <span class="n">mapper</span><span class="o">.</span><span class="na">selectBlog</span><span class="o">(</span><span class="n">101</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3sql语句映射">3.SQL语句映射</h3>
 <div class="highlight"><div class="chroma">
@@ -275,16 +275,16 @@
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="o">&lt;?</span><span class="n">xml</span> <span class="n">version</span><span class="o">=</span><span class="s">&#34;1.0&#34;</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span> <span class="o">?&gt;</span>
-<span class="o">&lt;!</span><span class="n">DOCTYPE</span> <span class="n">mapper</span>
-  <span class="n">PUBLIC</span> <span class="s">&#34;-//mybatis.org//DTD Mapper 3.0//EN&#34;</span>
-  <span class="s">&#34;http://mybatis.org/dtd/mybatis-3-mapper.dtd&#34;</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">mapper</span> <span class="n">namespace</span><span class="o">=</span><span class="s">&#34;org.mybatis.example.BlogMapper&#34;</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">select</span> <span class="n">id</span><span class="o">=</span><span class="s">&#34;selectBlog&#34;</span> <span class="n">resultType</span><span class="o">=</span><span class="s">&#34;Blog&#34;</span><span class="o">&gt;</span>
-    <span class="n">select</span> <span class="o">*</span> <span class="n">from</span> <span class="n">Blog</span> <span class="n">where</span> <span class="n">id</span> <span class="o">=</span> <span class="err">#</span><span class="o">{</span><span class="n">id</span><span class="o">}</span>
-  <span class="o">&lt;/</span><span class="n">select</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">mapper</span><span class="o">&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="o">&lt;?</span><span class="n">xml</span> <span class="n">version</span><span class="o">=</span><span class="s">&#34;1.0&#34;</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span> <span class="o">?&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;!</span><span class="n">DOCTYPE</span> <span class="n">mapper</span>
+</span></span><span class="line"><span class="cl">  <span class="n">PUBLIC</span> <span class="s">&#34;-//mybatis.org//DTD Mapper 3.0//EN&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;http://mybatis.org/dtd/mybatis-3-mapper.dtd&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="n">mapper</span> <span class="n">namespace</span><span class="o">=</span><span class="s">&#34;org.mybatis.example.BlogMapper&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;</span><span class="n">select</span> <span class="n">id</span><span class="o">=</span><span class="s">&#34;selectBlog&#34;</span> <span class="n">resultType</span><span class="o">=</span><span class="s">&#34;Blog&#34;</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">select</span> <span class="o">*</span> <span class="n">from</span> <span class="n">Blog</span> <span class="n">where</span> <span class="n">id</span> <span class="o">=</span> <span class="err">#</span><span class="o">{</span><span class="n">id</span><span class="o">}</span>
+</span></span><span class="line"><span class="cl">  <span class="o">&lt;/</span><span class="n">select</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="n">mapper</span><span class="o">&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在上述代码中我们需要更改以下几项：</p>
 <ul>
@@ -306,14 +306,14 @@
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="c1">//实体类的属性如下：
-</span><span class="c1"></span><span class="kd">class</span> <span class="nc">user</span><span class="o">{</span>
-    <span class="kt">int</span> <span class="n">name</span><span class="o">;</span>
-	<span class="kt">int</span> <span class="n">password</span><span class="o">;</span>
-<span class="o">}</span>
-<span class="c1">//接口方法
-</span><span class="c1"></span><span class="kt">void</span> <span class="nf">getUser</span><span class="o">();</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">//实体类的属性如下：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">class</span> <span class="nc">user</span><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">int</span> <span class="n">password</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//接口方法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">void</span> <span class="nf">getUser</span><span class="o">();</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -323,11 +323,11 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!--mapper中的查询语句如下--&gt;</span>
-<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getUser&#34;</span> <span class="na">type=</span><span class="s">com.example.User</span><span class="nt">&gt;</span>
-select * name,pwd from users
-<span class="nt">&lt;/select&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="c">&lt;!--mapper中的查询语句如下--&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getUser&#34;</span> <span class="na">type=</span><span class="s">com.example.User</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">select * name,pwd from users
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/select&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时返回的User类中的password属性值为null，对于这个问题我们可以在mapper配置文件中添加resultMap标签来解决。</p>
 <div class="highlight"><div class="chroma">
@@ -344,17 +344,17 @@ select * name,pwd from users
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="c">&lt;!--mapper中的查询语句如下--&gt;</span>
-<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getUser&#34;</span> <span class="na">resultmap=</span><span class="s">com.example.User</span><span class="nt">&gt;</span>
-select * name,pwd from users
-<span class="nt">&lt;/select&gt;</span>
-<span class="c">&lt;!--新增resultMap标签--&gt;</span>
-<span class="nt">&lt;resultMap</span> <span class="na">id=</span><span class="s">&#34;UserMap&#34;</span> <span class="na">type=</span><span class="s">&#34;User&#34;</span><span class="nt">&gt;</span>
-<span class="c">&lt;!--column表示数据库中的字段，property表示实体类中的属性 --&gt;</span>
-    <span class="nt">&lt;result</span> <span class="na">column=</span><span class="s">&#34;name&#34;</span> <span class="na">property=</span><span class="s">&#34;name&#34;</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;result</span> <span class="na">column=</span><span class="s">&#34;pwd&#34;</span> <span class="na">property=</span><span class="s">&#34;password&#34;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;/resultMap&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="c">&lt;!--mapper中的查询语句如下--&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getUser&#34;</span> <span class="na">resultmap=</span><span class="s">com.example.User</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">select * name,pwd from users
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/select&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!--新增resultMap标签--&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;resultMap</span> <span class="na">id=</span><span class="s">&#34;UserMap&#34;</span> <span class="na">type=</span><span class="s">&#34;User&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!--column表示数据库中的字段，property表示实体类中的属性 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;result</span> <span class="na">column=</span><span class="s">&#34;name&#34;</span> <span class="na">property=</span><span class="s">&#34;name&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;result</span> <span class="na">column=</span><span class="s">&#34;pwd&#34;</span> <span class="na">property=</span><span class="s">&#34;password&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/resultMap&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="5多对一的处理">5.多对一的处理</h3>
 <p>在实际查询数据库的过程中，大概率会遇到多对一的情况，比如多个学生对应一个老师，我们查询寻学生时需要连同老师一起查询，这时我们需要对结果集做一些修改。</p>
@@ -371,15 +371,15 @@ select * name,pwd from users
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="c1">//实体类的属性如下：
-</span><span class="c1"></span><span class="kd">class</span> <span class="nc">Student</span><span class="o">{</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="o">;</span>
-	<span class="n">String</span> <span class="n">name</span><span class="o">;</span>
-	<span class="n">Teacher</span> <span class="n">teacher</span>
-<span class="o">}</span>
-<span class="c1">//接口方法
-</span><span class="c1"></span><span class="kt">void</span> <span class="nf">getStudent</span><span class="o">();</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">//实体类的属性如下：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">class</span> <span class="nc">Student</span><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">id</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Teacher</span> <span class="n">teacher</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//接口方法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">void</span> <span class="nf">getStudent</span><span class="o">();</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><p>很明显 以上User类中的Teacher属性是一个复杂类型，所以我们需要单独处理。</p>
 <h4 id="方法一">方法一</h4>
@@ -403,22 +403,22 @@ select * name,pwd from users
 </span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;select</span> <span class="na">id =</span> <span class="s">&#34;getStudent&#34;</span> <span class="na">resultMap=</span><span class="s">&#34;StudentTeacher&#34;</span><span class="nt">&gt;</span>
-	select * from student
-<span class="nt">&lt;/select&gt;</span>
-
-<span class="nt">&lt;resultMap</span> <span class="na">id =</span><span class="s">&#34;StudentTeacher&#34;</span> <span class="na">type=</span><span class="s">&#34;Student&#34;</span><span class="nt">&gt;</span>
-<span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;id&#34;</span> <span class="na">colum=</span><span class="s">&#34;id&#34;</span><span class="nt">/&gt;</span>
-<span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;name&#34;</span><span class="na">colum=</span><span class="s">&#34;name&#34;</span><span class="nt">/&gt;</span>
-    <span class="c">&lt;!-- 复杂的属性，单独处理。对象：association 集合：collection --&gt;</span>
-<span class="nt">&lt;association</span> <span class="na">property=</span><span class="s">&#34;teacher&#34;</span> <span class="na">colum=</span><span class="s">&#34;tid&#34;</span> <span class="na">javaType=</span><span class="s">&#34;Teacher&#34;</span> <span class="na">select=</span><span class="s">&#34;getTcher&#34;</span><span class="nt">/&gt;</span>    
-
-    <span class="c">&lt;!--单独查询Teacher的语句--&gt;</span>
-<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getTeacher&#34;</span> <span class="na">resultType=</span><span class="s">&#34;Teacher&#34;</span><span class="nt">&gt;</span>
-	select * from teacher where id=#{id}    
-<span class="nt">&lt;/select&gt;</span>      
-<span class="nt">&lt;/result&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;select</span> <span class="na">id =</span> <span class="s">&#34;getStudent&#34;</span> <span class="na">resultMap=</span><span class="s">&#34;StudentTeacher&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">	select * from student
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/select&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;resultMap</span> <span class="na">id =</span><span class="s">&#34;StudentTeacher&#34;</span> <span class="na">type=</span><span class="s">&#34;Student&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;id&#34;</span> <span class="na">colum=</span><span class="s">&#34;id&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;name&#34;</span><span class="na">colum=</span><span class="s">&#34;name&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 复杂的属性，单独处理。对象：association 集合：collection --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;association</span> <span class="na">property=</span><span class="s">&#34;teacher&#34;</span> <span class="na">colum=</span><span class="s">&#34;tid&#34;</span> <span class="na">javaType=</span><span class="s">&#34;Teacher&#34;</span> <span class="na">select=</span><span class="s">&#34;getTcher&#34;</span><span class="nt">/&gt;</span>    
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--单独查询Teacher的语句--&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getTeacher&#34;</span> <span class="na">resultType=</span><span class="s">&#34;Teacher&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">	select * from teacher where id=#{id}    
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/select&gt;</span>      
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/result&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h4 id="方法二">方法二</h4>
 <p>按照结果嵌套处理</p>
@@ -438,19 +438,19 @@ select * name,pwd from users
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getStudent&#34;</span> <span class="na">resultMap=</span><span class="s">&#34;StudentTeacher&#34;</span><span class="nt">&gt;</span>
-	select s.id sid,s.name sname,t.name tname
-    from student s,teacher t
-    where s.tid = t.id
-<span class="nt">&lt;/select&gt;</span>
-<span class="nt">&lt;resultMap</span> <span class="na">id=</span><span class="s">&#34;StudentTeacher2&#34;</span> <span class="na">type =</span><span class="s">&#34;Student&#34;</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;id&#34;</span> <span class="na">column=</span><span class="s">&#34;sid&#34;</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;name&#34;</span> <span class="na">column=</span><span class="s">&#34;sname&#34;</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;association</span> <span class="na">property=</span><span class="s">&#34;teacher&#34;</span> <span class="na">javaType=</span><span class="s">&#34;Teacher&#34;</span><span class="nt">&gt;</span>
-    	<span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;name&#34;</span> <span class="na">column=</span><span class="s">&#34;tname&#34;</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;/association&gt;</span>
-<span class="nt">&lt;/resultMap&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getStudent&#34;</span> <span class="na">resultMap=</span><span class="s">&#34;StudentTeacher&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">	select s.id sid,s.name sname,t.name tname
+</span></span><span class="line"><span class="cl">    from student s,teacher t
+</span></span><span class="line"><span class="cl">    where s.tid = t.id
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/select&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;resultMap</span> <span class="na">id=</span><span class="s">&#34;StudentTeacher2&#34;</span> <span class="na">type =</span><span class="s">&#34;Student&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;id&#34;</span> <span class="na">column=</span><span class="s">&#34;sid&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;name&#34;</span> <span class="na">column=</span><span class="s">&#34;sname&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;association</span> <span class="na">property=</span><span class="s">&#34;teacher&#34;</span> <span class="na">javaType=</span><span class="s">&#34;Teacher&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    	<span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;name&#34;</span> <span class="na">column=</span><span class="s">&#34;tname&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/association&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/resultMap&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="6-一对多的处理">6. 一对多的处理</h3>
 <p>与多对一相反,我们会遇到一对多的情况,比如说一个老师对应多个老师,所以我们同样需要对结果集进行处理.</p>
@@ -469,17 +469,17 @@ select * name,pwd from users
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="c1">//实体类
-</span><span class="c1"></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Teacher</span><span class="o">{</span>
-    <span class="kd">private</span> <span class="kt">int</span> <span class="n">id</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
-    <span class="kd">private</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Student</span><span class="o">&gt;</span> <span class="n">students</span><span class="o">;</span>
-<span class="o">}</span>
-<span class="c1">//接口方法
-</span><span class="c1"></span><span class="kd">class</span> <span class="nc">TeacherMapper</span><span class="o">{</span>
-    <span class="n">Teacher</span> <span class="nf">getTeacher</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">);</span>
-<span class="o">}</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">//实体类
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Teacher</span><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kt">int</span> <span class="n">id</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Student</span><span class="o">&gt;</span> <span class="n">students</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1">//接口方法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">class</span> <span class="nc">TeacherMapper</span><span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Teacher</span> <span class="nf">getTeacher</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -499,21 +499,21 @@ select * name,pwd from users
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getTeacher&#34;</span> <span class="na">resultMapper=</span><span class="s">&#34;&#34;</span><span class="nt">&gt;</span>
-	select s.id sid,s.name sname,t.name tname
-    from student s,teacher t
-    where s.tid = t.id and t.id=#{tid}
-<span class="nt">&lt;/select&gt;</span>
-<span class="nt">&lt;resultMap</span> <span class="na">id=</span><span class="s">&#34;TeacherStudent&#34;</span> <span class="na">type =</span><span class="s">&#34;Teacher&#34;</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;id&#34;</span> <span class="na">column=</span><span class="s">&#34;sid&#34;</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;name&#34;</span> <span class="na">column=</span><span class="s">&#34;sname&#34;</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;collection</span> <span class="na">property=</span><span class="s">&#34;teacher&#34;</span> <span class="na">TypeOf=</span><span class="s">&#34;Stident&#34;</span><span class="nt">&gt;</span>
-    	<span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;id&#34;</span> <span class="na">column=</span><span class="s">&#34;sid&#34;</span><span class="nt">/&gt;</span>
-        <span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;name&#34;</span> <span class="na">column=</span><span class="s">&#34;sname&#34;</span><span class="nt">/&gt;</span>
-        <span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;tid&#34;</span> <span class="na">column=</span><span class="s">&#34;tid&#34;</span><span class="nt">/&gt;</span>
-    <span class="nt">&lt;/association&gt;</span>
-<span class="nt">&lt;/resultMap&gt;</span>
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;getTeacher&#34;</span> <span class="na">resultMapper=</span><span class="s">&#34;&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">	select s.id sid,s.name sname,t.name tname
+</span></span><span class="line"><span class="cl">    from student s,teacher t
+</span></span><span class="line"><span class="cl">    where s.tid = t.id and t.id=#{tid}
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/select&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;resultMap</span> <span class="na">id=</span><span class="s">&#34;TeacherStudent&#34;</span> <span class="na">type =</span><span class="s">&#34;Teacher&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;id&#34;</span> <span class="na">column=</span><span class="s">&#34;sid&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;name&#34;</span> <span class="na">column=</span><span class="s">&#34;sname&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;collection</span> <span class="na">property=</span><span class="s">&#34;teacher&#34;</span> <span class="na">TypeOf=</span><span class="s">&#34;Stident&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    	<span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;id&#34;</span> <span class="na">column=</span><span class="s">&#34;sid&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;name&#34;</span> <span class="na">column=</span><span class="s">&#34;sname&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;result</span> <span class="na">property=</span><span class="s">&#34;tid&#34;</span> <span class="na">column=</span><span class="s">&#34;tid&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/association&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/resultMap&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info">

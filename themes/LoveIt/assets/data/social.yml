@@ -509,3 +509,11 @@ rss:
   Newtab: true
   Icon:
     Class: fas fa-rss fa-fw
+
+#065:QQ
+qq:
+  Weight: 62
+  Prefix: https://qq.com/
+  Title: qq
+  Icon:
+    Class: icon-QQ
