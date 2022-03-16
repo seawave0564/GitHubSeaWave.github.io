@@ -2,6 +2,7 @@
 title: "初识SpringMVC"
 date: 2021-12-28T20:50:00+08:00
 categories: ["学习笔记"]
+tags: ["spring","java"]
 draft: false
 Author: "SeaWave"
 ---

@@ -2,6 +2,7 @@
 title: "初识SpringBoot"
 date: 2022-03-01T19:00:00+08:00
 categories: ["学习笔记"]
+tags: ["spring","spring boot","java"]
 draft: false
 Author: "SeaWave"
 ---

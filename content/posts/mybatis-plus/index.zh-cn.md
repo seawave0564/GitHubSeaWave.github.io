@@ -3,6 +3,7 @@ title: "MyBatis-plus使用教程"
 date: 2022-03-05T02:00:00+08:00
 categories: ["学习笔记"]
 draft: false
+tags: ["spring","spring boot","java"]
 Author: "SeaWave"
 ---
 ## 什么是Mybatis-plus？

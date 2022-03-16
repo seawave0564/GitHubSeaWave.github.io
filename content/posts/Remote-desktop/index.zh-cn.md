@@ -2,6 +2,7 @@
 title: "通过SakuraFrp进行远程桌面连接"
 date: 2021-01-12T18:00:00+08:00
 draft: false
+tags: ["windows","frp"]
 categories: ["Windows小技巧"]
 Author: "SeaWave"
 ---
@@ -14,7 +15,7 @@ SakuraFrp是目前市面上少有的免费内网穿透平台，可以用于个�
 这里我们以win10 20H2版本做演示  
 1.按WIN+R打开运行窗口
 
-  
+
 2.在运行窗口输入  `SystemPropertiesRemote`  
 ![运行窗口](https://seawave.top/blogimage/blog2-1.png)  
 

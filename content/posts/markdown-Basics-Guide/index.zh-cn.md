@@ -3,6 +3,7 @@ title: "MarkDown基础语法指北"
 date: 2021-07-02T17:00:00+08:00
 categories: ["各种笔记"]
 draft: false
+tags: ["markdown"]
 Author: "SeaWave"
 ---
 ## Markdown简介
@@ -25,7 +26,7 @@ Markdown 编写的文档后缀为 .md, .markdown。
 >  -------------------------------
 
 **显示效果如下：**
- 
+
 ![标题](https://seawave.top/file/markdown/bt.jpg)
 
  ### 2.使用#号标记
@@ -43,7 +44,7 @@ Markdown 编写的文档后缀为 .md, .markdown。
 
 ####### 六级标题
 ```
- 
+
 ![标题1](https://seawave.top/file/markdown/bt1.jpg)
 
 ## 二、Markdown段落
@@ -220,7 +221,7 @@ Markdown 区块引用是在段落开头使用 **>** 符号 ，然后后面紧跟
 代码区块用 **```** 包裹一段代码，并指定一种语言（也可以不指定）：
 
 ```
-​```javascript
+```javascript
 $(document).ready(function () {
     alert('RUNOOB');
 });
@@ -354,5 +355,5 @@ Markdown 制作表格使用 **|** 来分隔不同的单元格，使用 **-** 来
 
 ![](https://seawave.top/file/markdown/bg2.jpg)
 
-  [1]: http://www.google.com/
-  [2]: http://www.seawave.com/
+[1]: http://www.google.com/
+[2]: http://www.seawave.com/

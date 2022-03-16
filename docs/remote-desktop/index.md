@@ -9,7 +9,7 @@ SakuraFrp是目前市面上少有的免费内网穿透平台，可以用于个�
 这里我们以win10 20H2版本做演示  
 1.按WIN+R打开运行窗口
 
-  
+
 2.在运行窗口输入  `SystemPropertiesRemote`  
 ![运行窗口](https://seawave.top/blogimage/blog2-1.png)  
 

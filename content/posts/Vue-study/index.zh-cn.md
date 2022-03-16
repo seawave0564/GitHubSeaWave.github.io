@@ -2,6 +2,7 @@
 title:  "Vue快速入门"
 date: 2022-01-05T21:00:00+08:00
 categories: ["学习笔记"]
+tags: ["前端","js"]
 draft: false
 Author: "SeaWave"
 ---
