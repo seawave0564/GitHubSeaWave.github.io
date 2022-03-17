@@ -29,11 +29,11 @@ MQTT传输的消息分为：主题（Topic）和负载（payload）两部分：
 
 1. 首先MQTT客户端将会向服务端发送连接请求。该请求实际上是一个包含有连接请求信息的数据包。这个数据包的官方名称为**CONNECT**。
 
-![MQTT-Client-Sends-Connection-Request](images/mqtt/MQTT-Client-Sends-Connection-Request.png)
+![MQTT-Client-Sends-Connection-Request](https://seawave.top/file/mqtt/MQTT-Client-Sends-Connection-Request.png)
 
 2. MQTT服务端收到客户端连接请求后，会向客户端发送连接确认。同样的，该确认也是一个数据包。这个数据包官方名称为**CONNACK**。
 
-![MQTT-Server-Sends-Connection-Confirmation](images\MQTT\MQTT-Server-Sends-Connection-Confirmation.png)
+![MQTT-Server-Sends-Connection-Confirmation](https://seawave.top/file\MQTT\MQTT-Server-Sends-Connection-Confirmation.png)
 
 ### CONNECT报文
 
@@ -41,7 +41,7 @@ MQTT传输的消息分为：主题（Topic）和负载（payload）两部分：
 
 下图是CONNECT报文所包含的信息内容。
 
-![MQTT-connect](images\MQTT\MQTT-connect.gif)
+![MQTT-connect](https://seawave.top/file\MQTT\MQTT-connect.gif)
 
 #### **clientId – 客户端ID**
 
@@ -63,7 +63,7 @@ MQTT服务端运行过程中，当有客户端因为某种原因断开了与服�
 
 CONNACK报文包括两个信息。一个是returnCode(连接返回码)，另一个是sessionPresent (当前会话)。以下是这两个信息的说明：
 
-![connack](images\MQTT\connack.gif)
+![connack](https://seawave.top/file\MQTT\connack.gif)
 
 #### **returnCode – 连接返回码**
 
