@@ -2,52 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e328236-0b76-49ca-b936-e147f47ec45c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/41.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/ip.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/bg1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/bg2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/bt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/bt1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/clj.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/dmpd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/fg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/gitee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/gjlj.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/jz.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/qk.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/qkqt.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/tb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/markdown/xh.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/mybatisplus/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/mybatisplus/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/mybatisplus/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/mybatisplus/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/mybatisplus/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/mybatisplus/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/springboot/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/springboot/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/springboot/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/springboot/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/springboot/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/springboot/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/springboot/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/springboot/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs.backup/file/springboot/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/categories/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/categories/学习笔记/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/categories/学习笔记/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/categories/学习笔记/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/categories/学习笔记/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/Apple-Devices-Preview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/images/touxiang.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/mybatis-plus/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/mybatis-plus/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/page/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/page/2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/posts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/posts/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/posts/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/posts/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +52,8 @@
       <option name="presentableId" value="Default" />
       <updated>1607062457570</updated>
       <workItem from="1647513422372" duration="5000" />
+      <workItem from="1647514378390" duration="18000" />
+      <workItem from="1647515344045" duration="18000" />
     </task>
     <servers />
   </component>
@@ -130,5 +87,8 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

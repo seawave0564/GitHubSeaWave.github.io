@@ -16,6 +16,6 @@
 
 ### 关于此站点
 
-+ 此站点由Hugo强力驱动
++ 此站点由[Hugo](https://gohugo.io/)强力驱动
 + 主题：LoveIt
 
