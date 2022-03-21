@@ -100,7 +100,7 @@ enableEmoji = true
         # 是否隐藏网站图标资源链接
         noFavicon = false
         # 更现代的 SVG 网站图标, 41可替代旧的 .png 和 .ico 文件
-        svgFavicon = "/images/touxiang.png"
+        svgFavicon = "https://cdn.jsdelivr.net/gh/GitHubSeaWave/GitHubSeaWave.github.io@main/docs/images/touxiang.png"
         # Android 浏览器主题色
         themeColor = "#ffffff"
         # Safari 图标颜色
@@ -543,7 +543,7 @@ enableEmoji = true
       # 出版者信息
       [params.page.seo.publisher]
         name = "xxxx"
-        logoUrl = "/images/touxiang.png"
+        logoUrl = "https://cdn.jsdelivr.net/gh/GitHubSeaWave/GitHubSeaWave.github.io@main/docs/images/touxiang.png"
 
   # TypeIt config
   # TypeIt 配置
