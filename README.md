@@ -1,1 +1,1 @@
-# (SeaWave的小破站)[https://seawave.top]
+# [SeaWave的小破站](https://seawave.top)
