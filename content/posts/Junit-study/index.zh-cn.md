@@ -46,7 +46,7 @@ Maven
 
 ## 覆盖测试
 
-![1](images\Juit\1.png)
+![1](https://seawave.top/file/Junit/1.png)
 
 ### 条件覆盖
 
