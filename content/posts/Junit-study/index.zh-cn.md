@@ -130,6 +130,27 @@ public class JunitTestTwo {
 }
 ```
 
+```java
+public class JunitTestThree {
+    @Test
+    public void test() {
+         System.out.println("测试三。。。");
+    }
+}
+```
+
+
+
+```java
+@RunWith(Suite.class)
+@Suite.SuiteClasses({ JunitTestOne.class,JunitTestTwo.class ,JunitTestThree.class})
+public class AllTests {
+
+}
+```
+
+此时执行Alltests会同时执行三个测试方法
+
 ## Junit异常测试
 
 例子：
