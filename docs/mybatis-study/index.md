@@ -1,6 +1,6 @@
 # MyBatis使用教程
 
-## ·什么是MyBatis？
+## 什么是MyBatis？
 
 ### 1.MyBatis介绍
 

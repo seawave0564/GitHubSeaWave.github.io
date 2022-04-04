@@ -6,7 +6,7 @@ draft: false
 tags: ["spring","spring boot","java","mybatis"]
 Author: "SeaWave"
 ---
-## ·什么是MyBatis？
+## 什么是MyBatis？
 
 ### 1.MyBatis介绍
 
