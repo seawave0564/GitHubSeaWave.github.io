@@ -24,7 +24,7 @@
     <pubDate>Wed, 30 Mar 2022 00:30:26 &#43;0800</pubDate>
     <author>作者</author>
     <guid>https://Seawave.top/junit-study/</guid>
-    <description><![CDATA[Junit使用教程 简介 单元测试工具（方法） 常用于白盒测试 安装 创建一个普通Maven项目 在pom.xml中引入依赖 Maven 1 2 3 4 5 6 &lt;dependency&gt; &lt;groupId&gt;junit&lt;/groupId&gt; &lt;artifactId&gt;junit&lt;/artifactId&gt; &lt;version&gt;4.13.2&lt;/version&gt; &lt;scope&gt;test&lt;/scope&gt; &lt;/dependency&gt; 注]]></description>
+    <description><![CDATA[Junit 简介 单元测试工具（方法） 常用于白盒测试 官网https://junit.org/junit4/ 导入 创建一个普通Maven项目 在pom.xml]]></description>
 </item><item>
     <title>MyBatis-plus使用教程</title>
     <link>https://Seawave.top/mybatis-plus/</link>
