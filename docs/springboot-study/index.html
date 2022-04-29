@@ -32,7 +32,7 @@
                             "url": "https:\/\/Seawave.top\/images\/Apple-Devices-Preview.png",
                             "width":  3200 ,
                             "height":  2048 
-                        }],"genre": "posts","keywords": "spring, spring boot, java","wordcount":  5290 ,
+                        }],"genre": "posts","keywords": "spring, spring boot, java","wordcount":  5352 ,
         "url": "https:\/\/Seawave.top\/springboot-study\/","datePublished": "2022-03-01T19:00:00+08:00","dateModified": "2022-03-01T19:00:00+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/cdn.jsdelivr.net\/gh\/GitHubSeaWave\/GitHubSeaWave.github.io@main\/docs\/images\/touxiang.png"},"author": {
@@ -109,7 +109,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">初识SpringBoot</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>SeaWave</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><i class="far fa-folder fa-fw"></i>学习笔记</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-01">2022-03-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 5290 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-01">2022-03-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 5352 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 11 分钟&nbsp;<span id="/springboot-study/" class="leancloud_visitors" data-flag-title="初识SpringBoot">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -177,6 +177,7 @@
         <li><a href="#整合案例">整合案例：</a></li>
       </ul>
     </li>
+    <li><a href="#拦截器配置模板">拦截器配置模板</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="什么是springboot">什么是SpringBoot？</h2>
@@ -1045,8 +1046,45 @@
         data-srcset="http://seawave.top/file/springboot/9.png, http://seawave.top/file/springboot/9.png 1.5x, http://seawave.top/file/springboot/9.png 2x"
         data-sizes="auto"
         alt="http://seawave.top/file/springboot/9.png"
-        title="9" />vv</p>
-</div><div class="post-footer" id="post-footer">
+        title="9" /></p>
+<h2 id="拦截器配置模板">拦截器配置模板</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Configuration</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MvcConfig</span> <span class="kd">implements</span> <span class="n">WebMvcConfigurer</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addInterceptors</span><span class="o">(</span><span class="n">InterceptorRegistry</span> <span class="n">registry</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//拦截路径
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">String</span><span class="o">[]</span> <span class="n">addPathPatterns</span> <span class="o">=</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="s">&#34;/page/**&#34;</span><span class="o">,</span><span class="s">&#34;/student/**&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">};</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//排除路径
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">String</span><span class="o">[]</span> <span class="n">excludePathPatterns</span> <span class="o">=</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">                <span class="s">&#34;/student/login&#34;</span><span class="o">,</span><span class="s">&#34;/student/register&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">};</span>
+</span></span><span class="line"><span class="cl">        <span class="n">registry</span><span class="o">.</span><span class="na">addInterceptor</span><span class="o">(</span><span class="k">new</span> <span class="n">HandlerController</span><span class="o">()).</span><span class="na">addPathPatterns</span><span class="o">(</span><span class="n">addPathPatterns</span><span class="o">).</span><span class="na">excludePathPatterns</span><span class="o">(</span><span class="n">excludePathPatterns</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">

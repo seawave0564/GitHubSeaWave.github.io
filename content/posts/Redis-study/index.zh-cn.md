@@ -1,5 +1,5 @@
 ---
-title: "初始Redis"
+title: "初识Redis"
 date: 2022-04-04T12:00:26+08:00
 categories: ["学习笔记"]
 draft: false

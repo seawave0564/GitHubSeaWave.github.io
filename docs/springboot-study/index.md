@@ -552,5 +552,25 @@ class Springboot05MybatisApplicationTests {
 
 成功即可读取到数据库表内容：
 
-![9](http://seawave.top/file/springboot/9.png)vv
+![9](http://seawave.top/file/springboot/9.png)
+
+## 拦截器配置模板
+
+```java
+@Configuration
+public class MvcConfig implements WebMvcConfigurer {
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        //拦截路径
+        String[] addPathPatterns = {
+                "/page/**","/student/**"
+        };
+        //排除路径
+        String[] excludePathPatterns = {
+                "/student/login","/student/register"
+        };
+        registry.addInterceptor(new HandlerController()).addPathPatterns(addPathPatterns).excludePathPatterns(excludePathPatterns);
+    }
+}
+```
 

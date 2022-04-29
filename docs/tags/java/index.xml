@@ -4,15 +4,8 @@
         <link>https://Seawave.top/tags/java/</link>
         <description>Java - 标签 - SeaWave</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>943581833@qq.com (SeaWave)</managingEditor>
-            <webMaster>943581833@qq.com (SeaWave)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 04 Apr 2022 23:17:26 &#43;0800</lastBuildDate><atom:link href="https://Seawave.top/tags/java/" rel="self" type="application/rss+xml" /><item>
-    <title>Swagger使用教程</title>
-    <link>https://Seawave.top/swagger-study/</link>
-    <pubDate>Mon, 04 Apr 2022 23:17:26 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://Seawave.top/swagger-study/</guid>
-    <description><![CDATA[Swagger使用教程 安装 1 2 3 4 5 6 7 8 9 10 11 12 &lt;!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 --&gt; &lt;dependency&gt; &lt;groupId&gt;io.springfox&lt;/groupId&gt; &lt;artifactId&gt;springfox-swagger2&lt;/artifactId&gt; &lt;version&gt;2.9.2&lt;/version&gt; &lt;/dependency&gt; &lt;!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui --&gt; &lt;dependency&gt; &lt;groupId&gt;io.springfox&lt;/groupId&gt; &lt;artifactId&gt;springfox-swagger-ui&lt;/artifactId&gt; &lt;version&gt;2.9.2&lt;/version&gt; &lt;/dependency&gt; 注意：swagger 2.9.2仅支持springboot2]]></description>
-</item><item>
-    <title>初始Redis</title>
+            <webMaster>943581833@qq.com (SeaWave)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 04 Apr 2022 12:00:26 &#43;0800</lastBuildDate><atom:link href="https://Seawave.top/tags/java/" rel="self" type="application/rss+xml" /><item>
+    <title>初识Redis</title>
     <link>https://Seawave.top/redis-study/</link>
     <pubDate>Mon, 04 Apr 2022 12:00:26 &#43;0800</pubDate>
     <author>作者</author>

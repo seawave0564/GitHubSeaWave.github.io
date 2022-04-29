@@ -1,4 +1,4 @@
-# 初始Redis
+# 初识Redis
 
 
 ## 什么是Redis?

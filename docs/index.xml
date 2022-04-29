@@ -4,17 +4,10 @@
         <link>https://Seawave.top/</link>
         <description>关于 LoveIt 主题</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>943581833@qq.com (SeaWave)</managingEditor>
-            <webMaster>943581833@qq.com (SeaWave)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 04 Apr 2022 23:17:26 &#43;0800</lastBuildDate>
+            <webMaster>943581833@qq.com (SeaWave)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 04 Apr 2022 12:00:26 &#43;0800</lastBuildDate>
             <atom:link href="https://Seawave.top/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Swagger使用教程</title>
-    <link>https://Seawave.top/swagger-study/</link>
-    <pubDate>Mon, 04 Apr 2022 23:17:26 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://Seawave.top/swagger-study/</guid>
-    <description><![CDATA[Swagger使用教程 安装 1 2 3 4 5 6 7 8 9 10 11 12 &lt;!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 --&gt; &lt;dependency&gt; &lt;groupId&gt;io.springfox&lt;/groupId&gt; &lt;artifactId&gt;springfox-swagger2&lt;/artifactId&gt; &lt;version&gt;2.9.2&lt;/version&gt; &lt;/dependency&gt; &lt;!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui --&gt; &lt;dependency&gt; &lt;groupId&gt;io.springfox&lt;/groupId&gt; &lt;artifactId&gt;springfox-swagger-ui&lt;/artifactId&gt; &lt;version&gt;2.9.2&lt;/version&gt; &lt;/dependency&gt; 注意：swagger 2.9.2仅支持springboot2]]></description>
-</item><item>
-    <title>初始Redis</title>
+    <title>初识Redis</title>
     <link>https://Seawave.top/redis-study/</link>
     <pubDate>Mon, 04 Apr 2022 12:00:26 &#43;0800</pubDate>
     <author>作者</author>
@@ -76,5 +69,12 @@
     <author>作者</author>
     <guid>https://Seawave.top/spring-study/</guid>
     <description><![CDATA[什么是Spring？ 1、简介 Spring框架是由于软件开发的复杂性而创建的。Spring使用的是基本的JavaBean来完成以前只可能由EJ]]></description>
+</item><item>
+    <title>MyBatis使用教程</title>
+    <link>https://Seawave.top/mybatis-study/</link>
+    <pubDate>Sun, 05 Dec 2021 14:00:00 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://Seawave.top/mybatis-study/</guid>
+    <description><![CDATA[什么是MyBatis？ 1.MyBatis介绍 MyBatis 是一款优秀的持久层框架，它支持定制化 SQL、存储过程以及高级映射。MyBatis 避免 了几乎所有]]></description>
 </item></channel>
 </rss>
