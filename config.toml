@@ -5,7 +5,7 @@ publishDir = "docs"
 defaultContentLanguage = "zh-cn"
 # theme
 # 主题
-theme = "LoveIt"
+theme = "love"
 # themes directory
 # 主题目录
 themesDir = "/themes"
