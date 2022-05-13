@@ -5,11 +5,11 @@
         <description>所有文章 | SeaWave</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>943581833@qq.com (SeaWave)</managingEditor>
             <webMaster>943581833@qq.com (SeaWave)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 13 May 2022 16:30:26 &#43;0800</lastBuildDate><atom:link href="https://Seawave.top/posts/" rel="self" type="application/rss+xml" /><item>
-    <title>VirtualBox安装MacOS</title>
-    <link>https://Seawave.top/index.zh_cn/</link>
+    <title>VirtualBox安装MacOS虚拟机</title>
+    <link>https://Seawave.top/vb-mac/</link>
     <pubDate>Fri, 13 May 2022 16:30:26 &#43;0800</pubDate>
     <author>SeaWave</author>
-    <guid>https://Seawave.top/index.zh_cn/</guid>
+    <guid>https://Seawave.top/vb-mac/</guid>
     <description><![CDATA[在VirtualBox中安装MacOS 前言 博主环境如下： 宿主机：WINDOWS 10 H1H2 VirtualBox版本：6.1.34 虚拟机设置如下： 内存]]></description>
 </item>
 <item>

@@ -1,7 +1,7 @@
 ---
-title: "VirtualBox安装MacOS"
+title: "VirtualBox安装MacOS虚拟机"
 date: 2022-05-13T16:30:26+08:00
-categories: ["学习笔记"]
+categories: ["折腾记录"]
 draft: false
 tags: ["虚拟机"]
 Author: "SeaWave"
