@@ -22,7 +22,29 @@
         </dependency>
 ```
 
-**注意*：swagger 2.9.2仅支持springboot2.5.6以下版本！使用新版springboot请使用新版本swagger**
+**注意：swagger 2.9.2仅支持springboot2.5.6以下版本！**
+
+***由于swagger已停止更新，springboot2.5.6之后请使用springdoc代替swagger！！***
+
+```xml
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.6.8</version>
+        </dependency>
+```
+
+***同时更新swagger-ui：***
+
+```xml
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>swagger-ui</artifactId>
+            <version>4.10.3</version>
+        </dependency>
+```
+
+
 
 ###  测试
 
