@@ -37,9 +37,11 @@ code, pre, .highlight table, .highlight tr, .highlight td {
   }
 }
 
-.highlight, .gist {
+.highlight {
   font-family: $code-font-family;
   font-size: $code-font-size;
+  line-height: 1.4em;
+  margin: .5rem 0;
 
   .table-wrapper {
     > table,
@@ -49,14 +51,12 @@ code, pre, .highlight table, .highlight tr, .highlight td {
       margin: 0;
       padding: 0;
       border: none !important;
-      white-space: nowrap;
+
+      span.c {
+        white-space: nowrap;
+      }
     }
   }
-}
-
-.highlight {
-  line-height: 1.4em;
-  margin: .5rem 0;
 
   > .chroma {
     position: relative;
@@ -210,6 +210,20 @@ code, pre, .highlight table, .highlight tr, .highlight td {
 }
 
 .gist {
+  font-family: $code-font-family;
+  font-size: $code-font-size;
+
+  .table-wrapper {
+    > table,
+    > table thead,
+    > table tr,
+    > table td {
+      margin: 0;
+      padding: 0;
+      border: none !important;
+    }
+  }
+
   .gist-file, .gist-data, .gist-meta {
     border: none;
   }

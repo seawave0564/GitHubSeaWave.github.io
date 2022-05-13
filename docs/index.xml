@@ -1,1 +1,90 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>SeaWave</title><link>https://Seawave.top/</link><description>关于 LoveIt 主题</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>943581833@qq.com (SeaWave)</managingEditor><webMaster>943581833@qq.com (SeaWave)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 01 May 2022 18:17:26 +0800</lastBuildDate><atom:link href="https://Seawave.top/index.xml" rel="self" type="application/rss+xml"/><item><title>Docker使用教程</title><link>https://Seawave.top/docker-study/</link><pubDate>Sun, 01 May 2022 18:17:26 +0800</pubDate><author>作者</author><guid>https://Seawave.top/docker-study/</guid><description>Docker使用教程 Docker概述 Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行</description></item><item><title>Swagger使用教程</title><link>https://Seawave.top/swagger-study/</link><pubDate>Fri, 29 Apr 2022 16:17:26 +0800</pubDate><author>作者</author><guid>https://Seawave.top/swagger-study/</guid><description><![CDATA[Swagger使用教程 安装 1 2 3 4 5 6 7 8 9 10 11 12 &lt;!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 --&gt; &lt;dependency&gt; &lt;groupId&gt;io.springfox&lt;/groupId&gt; &lt;artifactId&gt;springfox-swagger2&lt;/artifactId&gt; &lt;version&gt;2.9.2&lt;/version&gt; &lt;/dependency&gt; &lt;!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui --&gt; &lt;dependency&gt; &lt;groupId&gt;io.springfox&lt;/groupId&gt; &lt;artifactId&gt;springfox-swagger-ui&lt;/artifactId&gt; &lt;version&gt;2.9.2&lt;/version&gt; &lt;/dependency&gt; 注意：swagger 2.9.2仅支持springboot2]]></description></item><item><title>初识Redis</title><link>https://Seawave.top/redis-study/</link><pubDate>Mon, 04 Apr 2022 12:00:26 +0800</pubDate><author>作者</author><guid>https://Seawave.top/redis-study/</guid><description>什么是Redis? 在Web应用发展的初期，那时关系型数据库受到了较为广泛的关注和应用，原因是因为那时候Web站点基本上访问和并发不高、交互也</description></item><item><title>Junit使用教程</title><link>https://Seawave.top/junit-study/</link><pubDate>Wed, 30 Mar 2022 00:30:26 +0800</pubDate><author>作者</author><guid>https://Seawave.top/junit-study/</guid><description>Junit 简介 单元测试工具（方法） 常用于白盒测试 官网https://junit.org/junit4/ 导入 创建一个普通Maven项目 在pom.xml</description></item><item><title>初识MQTT协议</title><link>https://Seawave.top/mqtt-study/</link><pubDate>Thu, 17 Mar 2022 00:30:26 +0800</pubDate><author>作者</author><guid>https://Seawave.top/mqtt-study/</guid><description>MQTT协议简解 MQTT(消息队列遥测传输)是ISO 标准(ISO/IEC PRF 20922)下基于发布/订阅范式的消息协议。它工作在 TCP/IP协</description></item><item><title>MyBatis-plus使用教程</title><link>https://Seawave.top/mybatis-plus/</link><pubDate>Sat, 05 Mar 2022 02:00:00 +0800</pubDate><author>作者</author><guid>https://Seawave.top/mybatis-plus/</guid><description>什么是Mybatis-plus？ 简介 MyBatis-Plus (opens new window)（简称 MP）是一个 MyBatis (opens new window)的增强工具，在 MyBatis 的基础上只做增强不做改变，为简</description></item><item><title>第三方客户端添加邮箱的相关配置</title><link>https://Seawave.top/mail-config/</link><pubDate>Sat, 05 Mar 2022 00:30:26 +0800</pubDate><author>作者</author><guid>https://Seawave.top/mail-config/</guid><description>腾讯企业邮箱 协议 服务器地址 端口号 IMAP(接收) imap.exmail.qq.com 993 SMTP(发送) smtp.exmail.qq.com 465 POP3 pop.exmail.qq.com 995 网易云邮箱 网易163免费邮箱相关服务器信息： 协议 服务器地址 端口</description></item><item><title>初识SpringBoot</title><link>https://Seawave.top/springboot-study/</link><pubDate>Tue, 01 Mar 2022 19:00:00 +0800</pubDate><author>作者</author><guid>https://Seawave.top/springboot-study/</guid><description>什么是SpringBoot？ Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该</description></item><item><title>Vue快速入门</title><link>https://Seawave.top/vue-study/</link><pubDate>Wed, 05 Jan 2022 21:00:00 +0800</pubDate><author>作者</author><guid>https://Seawave.top/vue-study/</guid><description><![CDATA[Vue快速入门 以下所有代码均可在浏览器直接运行，替换body即可。为了节省空间，里的内容需自行添加。 1.导入Vue 1 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js&#34;&gt;&lt;/script&gt; 2.数据绑定 方式一：]]></description></item><item><title>初识SpringMVC</title><link>https://Seawave.top/springmvc-study/</link><pubDate>Tue, 28 Dec 2021 20:50:00 +0800</pubDate><author>作者</author><guid>https://Seawave.top/springmvc-study/</guid><description>什么是SpringMVC？ 1、简介 很多应用程序的问题在于处理业务数据的对象和显示业务数据的视图之间存在紧密耦合，通常，更新业务对象的命令都是</description></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>SeaWave</title>
+        <link>https://Seawave.top/</link>
+        <description>关于 LoveIt 主题</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>943581833@qq.com (SeaWave)</managingEditor>
+            <webMaster>943581833@qq.com (SeaWave)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 01 May 2022 18:17:26 &#43;0800</lastBuildDate>
+            <atom:link href="https://Seawave.top/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Docker使用教程</title>
+    <link>https://Seawave.top/docker-study/</link>
+    <pubDate>Sun, 01 May 2022 18:17:26 &#43;0800</pubDate>
+    <author>SeaWave</author>
+    <guid>https://Seawave.top/docker-study/</guid>
+    <description><![CDATA[Docker使用教程 Docker概述 Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像 中，然后发布到任何流行]]></description>
+</item>
+<item>
+    <title>Swagger使用教程</title>
+    <link>https://Seawave.top/swagger-study/</link>
+    <pubDate>Fri, 29 Apr 2022 16:17:26 &#43;0800</pubDate>
+    <author>SeaWave</author>
+    <guid>https://Seawave.top/swagger-study/</guid>
+    <description><![CDATA[Swagger使用教程 安装 1 2 3 4 5 6 7 8 9 10 11 12 &lt;!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 --&gt; &lt;dependency&gt; &lt;groupId&gt;io.springfox&lt;/groupId&gt; &lt;artifactId&gt;springfox-swagger2&lt;/artifactId&gt; &lt;version&gt;2.9.2&lt;/version&gt; &lt;/dependency&gt; &lt;!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui --&gt; &lt;dependency&gt; &lt;groupId&gt;io.springfox&lt;/groupId&gt; &lt;artifactId&gt;springfox-swagger-ui&lt;/artifactId&gt; &lt;version&gt;2.9.2&lt;/version&gt; &lt;/dependency&gt; 注意：swagger 2.9.2仅支持springboot2]]></description>
+</item>
+<item>
+    <title>初识Redis</title>
+    <link>https://Seawave.top/redis-study/</link>
+    <pubDate>Mon, 04 Apr 2022 12:00:26 &#43;0800</pubDate>
+    <author>SeaWave</author>
+    <guid>https://Seawave.top/redis-study/</guid>
+    <description><![CDATA[什么是Redis? 在Web应用发展的初期，那时关系型数据库受到了较为广泛的关注和应用，原因是因为那时候Web站点基本上访问和并发不高、交互也]]></description>
+</item>
+<item>
+    <title>Junit使用教程</title>
+    <link>https://Seawave.top/junit-study/</link>
+    <pubDate>Wed, 30 Mar 2022 00:30:26 &#43;0800</pubDate>
+    <author>SeaWave</author>
+    <guid>https://Seawave.top/junit-study/</guid>
+    <description><![CDATA[Junit 简介 单元测试工具（方法） 常用于白盒测试 官网https://junit.org/junit4/ 导入 创建一个普通Maven项目 在pom.xml]]></description>
+</item>
+<item>
+    <title>初识MQTT协议</title>
+    <link>https://Seawave.top/mqtt-study/</link>
+    <pubDate>Thu, 17 Mar 2022 00:30:26 &#43;0800</pubDate>
+    <author>SeaWave</author>
+    <guid>https://Seawave.top/mqtt-study/</guid>
+    <description><![CDATA[MQTT协议简解 MQTT(消息队列遥测传输)是ISO 标准(ISO/IEC PRF 20922)下基于发布 /订阅 范式的消息协议。它工作在 TCP/IP协]]></description>
+</item>
+<item>
+    <title>MyBatis-plus使用教程</title>
+    <link>https://Seawave.top/mybatis-plus/</link>
+    <pubDate>Sat, 05 Mar 2022 02:00:00 &#43;0800</pubDate>
+    <author>SeaWave</author>
+    <guid>https://Seawave.top/mybatis-plus/</guid>
+    <description><![CDATA[什么是Mybatis-plus？ 简介 MyBatis-Plus (opens new window) （简称 MP）是一个 MyBatis (opens new window) 的增强工具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提高效率而生。 开]]></description>
+</item>
+<item>
+    <title>第三方客户端添加邮箱的相关配置</title>
+    <link>https://Seawave.top/mail-config/</link>
+    <pubDate>Sat, 05 Mar 2022 00:30:26 &#43;0800</pubDate>
+    <author>SeaWave</author>
+    <guid>https://Seawave.top/mail-config/</guid>
+    <description><![CDATA[腾讯企业邮箱 协议 服务器地址 端口号 IMAP(接收) imap.exmail.qq.com 993 SMTP(发送) smtp.exmail.qq.com 465 POP3 pop.exmail.qq.com 995 网易云邮箱 网易163免费邮箱相关服务器信息： 协议 服务器地址 端口]]></description>
+</item>
+<item>
+    <title>初识SpringBoot</title>
+    <link>https://Seawave.top/springboot-study/</link>
+    <pubDate>Tue, 01 Mar 2022 19:00:00 &#43;0800</pubDate>
+    <author>SeaWave</author>
+    <guid>https://Seawave.top/springboot-study/</guid>
+    <description><![CDATA[什么是SpringBoot？ Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该]]></description>
+</item>
+<item>
+    <title>Vue快速入门</title>
+    <link>https://Seawave.top/vue-study/</link>
+    <pubDate>Wed, 05 Jan 2022 21:00:00 &#43;0800</pubDate>
+    <author>SeaWave</author>
+    <guid>https://Seawave.top/vue-study/</guid>
+    <description><![CDATA[Vue快速入门 以下所有代码均可在浏览器直接运行，替换body即可。为了节省空间，里的内容需自行添加。 1.导入Vue 1 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js&#34;&gt;&lt;/script&gt; 2.数据绑定 方式一：]]></description>
+</item>
+<item>
+    <title>初识SpringMVC</title>
+    <link>https://Seawave.top/springmvc-study/</link>
+    <pubDate>Tue, 28 Dec 2021 20:50:00 &#43;0800</pubDate>
+    <author>SeaWave</author>
+    <guid>https://Seawave.top/springmvc-study/</guid>
+    <description><![CDATA[什么是SpringMVC？ 1、简介 很多应用程序的问题在于处理业务数据的对象和显示业务数据的视图之间存在紧密耦合，通常，更新业务对象的命令都是]]></description>
+</item>
+</channel>
+</rss>
