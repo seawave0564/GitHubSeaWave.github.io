@@ -8,7 +8,7 @@ libFiles:
   # normalize.css@8.0.1 https://github.com/necolas/normalize.css
   normalizeCSS: normalize/8.0.1/normalize.min.css
   # fontawesome-free@6.1.1 https://fontawesome.com/
-  fontawesomeFreeCSS: fontawesome-iconpicker/3.2.0/css/fontawesome-iconpicker.min.css
+  fontawesomeFreeCSS: font-awesome/6.0.0/css/all.min.css
   # animate.css@4.1.1 https://github.com/daneden/animate.css
   animateCSS: animate.css/4.1.1/animate.min.css
   # autocomplete.js@0.38.1 https://github.com/algolia/autocomplete.js
