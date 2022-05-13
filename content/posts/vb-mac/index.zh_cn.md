@@ -33,13 +33,13 @@ VirtualBox版本：6.1.34
 
 此处感谢[GitHub netgc](https://github.com/netgc)大佬的收录与整理，非常感谢！[捐赠地址](https://sysin.org/donate/)
 
-![image-20220513131821561](E:\笔记\其他\images\vb-mac\image-20220513131821561.png)
+![image-20220513131821561](/file/vb-mac//image-20220513131821561.png)
 
 选择你需要的版本下载即可。
 
 ### 第二步：创建虚拟机
 
-![image-20220513132201749](E:\笔记\其他\images\vb-mac\image-20220513132201749.png)
+![image-20220513132201749](/file/vb-mac//image-20220513132201749.png)
 
 磁盘大小和内存大小按需设置。但是不可太小。
 
@@ -49,7 +49,7 @@ VirtualBox版本：6.1.34
 
 选择创建的虚拟机-点击属性=点击存储-点击右下角绿色加号添加虚拟光盘-选择你的镜像（未注册先注册）
 
-![image-20220513132455412](E:\笔记\其他\images\vb-mac\image-20220513132455412.png)
+![image-20220513132455412](/file/vb-mac//image-20220513132455412.png)
 
 ### 第三步：配置环境
 
@@ -70,62 +70,62 @@ VBoxManage setextradata "macOS" "VBoxInternal2/EfiGraphicsResolution" "1440x900"
 
 ### 第四步：进入系统
 
-![image-20220513134400435](E:\笔记\其他\images\vb-mac\image-20220513134400435.png)
+![image-20220513134400435](/file/vb-mac//image-20220513134400435.png)
 
 启动虚拟机后会进入命令行，我们输入`exit`退出命令行。
 
-![image-20220513134450528](E:\笔记\其他\images\vb-mac\image-20220513134450528.png)
+![image-20220513134450528](/file/vb-mac//image-20220513134450528.png)
 
 依次选择：Boot Maintenance Mannager-Boot From File
 
 选择：
 
-![image-20220513134625626](E:\笔记\其他\images\vb-mac\image-20220513134625626.png)
+![image-20220513134625626](/file/vb-mac//image-20220513134625626.png)
 
 依次进入目录：System-Library-CoreServices
 
 选择`boot.efi`后单击回车，等待一段时间后即可进入安装页。
 
-![image-20220513134754765](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20220513134754765.png)
+![image-20220513134754765](/file/vb-mac/image-20220513134754765.png)
 
 ### 第五步：安装MAC  OS 
 
 进入系统后选择语言：
 
-![image-20220513135203389](E:\笔记\其他\images\vb-mac\image-20220513135203389.png)
+![image-20220513135203389](/file/vb-mac//image-20220513135203389.png)
 
 中国人自然选择中文。
 
 选择磁盘工具。
 
-![image-20220513135341868](E:\笔记\其他\images\vb-mac\image-20220513135341868.png)
+![image-20220513135341868](/file/vb-mac//image-20220513135341868.png)
 
 选中磁盘后，点击**抹掉**按钮，文件系统默认即可。系统会自动格式化磁盘。（这一步选择磁盘时务必注意你选择的磁盘是否是你在虚拟机给mac创建的磁盘，大小>40GB）
 
-![image-20220513140201384](E:\笔记\其他\images\vb-mac\image-20220513140201384.png)
+![image-20220513140201384](/file/vb-mac//image-20220513140201384.png)
 
-![image-20220513140206019](E:\笔记\其他\images\vb-mac\image-20220513140206019.png)
+![image-20220513140206019](/file/vb-mac//image-20220513140206019.png)
 
 完成后点击右上角磁盘工具，退出磁盘工具。
 
-![image-20220513140457423](E:\笔记\其他\images\vb-mac\image-20220513140457423.png)
+![image-20220513140457423](/file/vb-mac//image-20220513140457423.png)
 
 选择第二项，安装macOS
 
-![image-20220513140534686](E:\笔记\其他\images\vb-mac\image-20220513140534686.png)
+![image-20220513140534686](/file/vb-mac//image-20220513140534686.png)
 
 同意许可后选择创建的磁盘。单机继续。然后等待
 
-![image-20220513140729750](E:\笔记\其他\images\vb-mac\image-20220513140729750.png)
+![image-20220513140729750](/file/vb-mac//image-20220513140729750.png)
 
 继续等待。。。
 
-![image-20220513141459484](E:\笔记\其他\images\vb-mac\image-20220513141459484.png)
+![image-20220513141459484](/file/vb-mac//image-20220513141459484.png)
 
 ### 步骤六：进入系统
 
 安装完成后即可进入系统：
 
-![image-20220513162431755](E:\笔记\其他\images\vb-mac\image-20220513162431755.png)
+![image-20220513162431755](/file/vb-mac//image-20220513162431755.png)
 
 #### enjoy it！
