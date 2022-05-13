@@ -24,7 +24,7 @@
   # website description for RSS, SEO, Open Graph and Twitter Cards
   # 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
   description = "This is my cool site"
-  # website images for Open Graph and Twitter Cards
+  # website images for Open Graph and Twitter
   # 网站图片, 用于 Open Graph 和 Twitter Cards
   images = []
 
@@ -566,7 +566,7 @@
     # 位于 "themes/LoveIt/assets/data/cdn/" 目录
     # 可以在你的项目下相同路径存放你自己的数据文件:
     # "assets/data/cdn/"
-    data = "jsdelivr.yml"
+    data = "bytedance.yml"
 
   # Compatibility config
   # 兼容性设置
