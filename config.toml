@@ -100,7 +100,7 @@ enableEmoji = true
         # 是否隐藏网站图标资源链接
         noFavicon = false
         # 更现代的 SVG 网站图标, 41可替代旧的 .png 和 .ico 文件
-        svgFavicon = "https://cdn.jsdelivr.net/gh/GitHubSeaWave/GitHubSeaWave.github.io@main/docs/images/touxiang.png"
+        svgFavicon = "https://seawave.top/images/touxiang.png"
         # Android 浏览器主题色
         themeColor = "#ffffff"
         # Safari 图标颜色
@@ -138,7 +138,7 @@ enableEmoji = true
           # Gravatar 邮箱，用于优先在主页显示的头像
           gravatarEmail = ""
           # 主页显示头像的 URL
-          avatarURL = "https://cdn.jsdelivr.net/gh/GitHubSeaWave/GitHubSeaWave.github.io@main/docs/images/touxiang.png"
+          avatarURL = "https://seawave.top/images/touxiang.png"
           # 主页显示的网站标题 (支持 HTML 格式)
           title = "SeaWave"
           # 主页显示的网站副标题
@@ -543,7 +543,7 @@ enableEmoji = true
       # 出版者信息
       [params.page.seo.publisher]
         name = "xxxx"
-        logoUrl = "https://cdn.jsdelivr.net/gh/GitHubSeaWave/GitHubSeaWave.github.io@main/docs/images/touxiang.png"
+        logoUrl = "https://seawave.top/images/touxiang.png"
 
   # TypeIt config
   # TypeIt 配置
