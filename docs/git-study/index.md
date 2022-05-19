@@ -35,13 +35,13 @@
 
 记录文件每次的更新，可以对每个版本做一个快照，或是记录补丁文件，适合个人用，如RCS。
 
-![](http://image.seawave.top/blog/git/1.png)
+![](https://seawave.top/file/git/1.png)
 
 **2、集中版本控制  SVN**
 
 所有的版本数据都保存在服务器上，协同开发者从服务器上同步更新或上传自己的修改
 
-![](http://image.seawave.top/blog/git/2.png)
+![](https://seawave.top/file/git/2.png)
 
 所有的版本数据都存在服务器上，用户的本地只有自己以前所同步的版本，如果不连网的话，用户就看不到历史版本，也无法切换版本验证问题，或在不同分支工作。而且，所有数据都保存在单一的服务器上，有很大的风险这个服务器会损坏，这样就会丢失所有的数据，当然可以定期备份。代表产品：SVN、CVS、VSS
 
@@ -49,13 +49,13 @@
 
 所有版本信息仓库全部同步到本地的每个用户，**没有中央服务器，每个人的电脑就是一个完整的版本库**。这样就可以在本地查看所有版本历史，可以离线在本地提交，只需在连网时push到相应的服务器或其他用户那里。由于每个用户那里保存的都是所有的版本数据，只要有一个用户的设备没有问题就可以恢复所有的数据，但这增加了本地存储空间的占用。
 
-![](http://image.seawave.top/blog/git/3.jfif)
+![](https://seawave.top/file/git/3.jfif)
 
 **Git是目前世界上最先进的分布式版本控制系统。**
 
 Git创始人：
 
-![](http://image.seawave.top/blog/git/4.jpeg)
+![](https://seawave.top/file/git/4.jpeg)
 
 ## 二、Git 安装与配置
 
@@ -67,7 +67,7 @@ Git创始人：
 
 安装完成后开始菜单如下：
 
-![](http://image.seawave.top/blog/git/5.png)
+![](https://seawave.top/file/git/5.png)
 
 ### 配置
 
@@ -88,7 +88,7 @@ git config --global user.email "943581833@qq.com"
 
 ----------
 
-![](http://image.seawave.top/blog/git/6.png)
+![](https://seawave.top/file/git/6.png)
 
 - Workspace：工作区，就是你平时存放项目代码的地方
 - Staging/index：暂存区，用于临时存放你的改动，事实上它只是一个文件，保存即将提交到文件列表信息
@@ -105,7 +105,7 @@ git config --global user.email "943581833@qq.com"
 
 因此，git管理的文件有三种状态：已修改（modified），已暂存（staged），已提交（committed）
 
-![](http://image.seawave.top/blog/git/7.png)
+![](https://seawave.top/file/git/7.png)
 
 ## 四、Git项目搭建
 
@@ -166,7 +166,7 @@ git status
 
 ----
 
-![](http://image.seawave.top/blog/git/8.png)
+![](https://seawave.top/file/git/8.png)
 
 分支相关常用命令：
 
