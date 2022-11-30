@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "E:/blog/GitHubSeaWave.github.io",
+	"sourceRoot": "/home/seawave/NodeProjects/GitHubSeaWave.github.io",
 	"sources": [
 		"themes/love/assets/css/style.scss",
 		"themes/love/assets/css/_variables.scss",
