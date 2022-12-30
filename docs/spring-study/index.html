@@ -10,7 +10,6 @@
 <meta property="og:url" content="https://Seawave.top/spring-study/" /><meta property="og:image" content="https://Seawave.top/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-12-17T00:50:00+08:00" />
 <meta property="article:modified_time" content="2021-12-17T00:50:00+08:00" /><meta property="og:site_name" content="My cool site" />
-
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://Seawave.top/logo.png"/>
 
@@ -450,7 +449,7 @@
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="o">&lt;!--</span>    <span class="n">别名</span><span class="err">，</span><span class="n">可以用过别名获取对象</span><span class="o">--&gt;</span>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="o">&lt;!--</span>    <span class="err">别名，可以用过别名获取对象</span><span class="o">--&gt;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="n">alias</span> <span class="n">name</span><span class="o">=</span><span class="s">&#34;user&#34;</span> <span class="n">alias</span><span class="o">=</span><span class="s">&#34;UserTese&#34;</span><span class="o">/&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
@@ -1280,9 +1279,9 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">com</span><span class="o">.</span><span class="na">seawave</span><span class="o">.</span><span class="na">service</span><span class="o">.</span><span class="na">UserServiceImpl的add被执行了</span>
-</span></span><span class="line"><span class="cl"><span class="n">增加了一个用户</span>
-</span></span><span class="line"><span class="cl"><span class="n">执行了add返回结果为</span><span class="err">：</span><span class="kc">null</span>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">com</span><span class="o">.</span><span class="na">seawave</span><span class="o">.</span><span class="na">service</span><span class="o">.</span><span class="na">UserServiceImpl</span><span class="err">的</span><span class="n">add</span><span class="err">被执行了</span>
+</span></span><span class="line"><span class="cl"><span class="err">增加了一个用户</span>
+</span></span><span class="line"><span class="cl"><span class="err">执行了</span><span class="n">add</span><span class="err">返回结果为：</span><span class="kc">null</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>由此可见，我们通过context.getBean方法从spring容器中得到了一个UserService的代理类，我们可以在执行UserService类的方法之前插入自己的逻辑方法。</p>
