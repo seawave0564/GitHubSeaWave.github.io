@@ -4,7 +4,15 @@
         <link>https://Seawave.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
         <description>学习笔记 - 分类 - SeaWave</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>943581833@qq.com (SeaWave)</managingEditor>
-            <webMaster>943581833@qq.com (SeaWave)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 08 Mar 2023 13:00:00 &#43;0800</lastBuildDate><atom:link href="https://Seawave.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>943581833@qq.com (SeaWave)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 15 Mar 2023 12:16:26 &#43;0800</lastBuildDate><atom:link href="https://Seawave.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="self" type="application/rss+xml" /><item>
+    <title>GitLab安装部署及配置CI/CD</title>
+    <link>https://Seawave.top/gitlab/</link>
+    <pubDate>Wed, 15 Mar 2023 12:16:26 &#43;0800</pubDate>
+    <author>SeaWave</author>
+    <guid>https://Seawave.top/gitlab/</guid>
+    <description><![CDATA[GitLab 安装部署及配置 CI/CD 一、基本概念 1.什么是 GitLab？ GitLab 是利用 Ruby on Rails 一个开源的版本管理系统，实现一个自托管的 Git 项目仓库，可通过 Web 界面进行访问]]></description>
+</item>
+<item>
     <title>Springboot项目中遇到的问题记录</title>
     <link>https://Seawave.top/spring-problem-record/</link>
     <pubDate>Wed, 08 Mar 2023 13:00:00 &#43;0800</pubDate>
@@ -75,14 +83,6 @@
     <author>SeaWave</author>
     <guid>https://Seawave.top/springboot-study/</guid>
     <description><![CDATA[什么是SpringBoot？ Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该]]></description>
-</item>
-<item>
-    <title>Vue快速入门</title>
-    <link>https://Seawave.top/vue-study/</link>
-    <pubDate>Wed, 05 Jan 2022 21:00:00 &#43;0800</pubDate>
-    <author>SeaWave</author>
-    <guid>https://Seawave.top/vue-study/</guid>
-    <description><![CDATA[Vue快速入门 以下所有代码均可在浏览器直接运行，替换body即可。为了节省空间，里的内容需自行添加。 1.导入Vue 1 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js&#34;&gt;&lt;/script&gt; 2.数据绑定 方式一：]]></description>
 </item>
 </channel>
 </rss>
