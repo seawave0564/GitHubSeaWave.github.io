@@ -2,15 +2,6 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://seawave.com/theme-documentation-content/</loc><lastmod>2020-03-05T16:30:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://seawave.com/en/theme-documentation-content/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://seawave.com/theme-documentation-content/"
-                    /></url><url>
             <loc>https://seawave.com/categories/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -22,15 +13,7 @@
                     /></url><url>
             <loc>https://seawave.com/tags/git/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/gitlab/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://seawave.com/posts/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://seawave.com/en/posts/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://seawave.com/posts/"
-                    /></url><url>
+            <loc>https://seawave.com/posts/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -80,42 +63,9 @@
             <loc>https://seawave.com/tags/windows/</loc><lastmod>2022-03-16T20:19:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/categories/windows%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc><lastmod>2022-03-16T20:19:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/remote-desktop/</loc><lastmod>2022-03-16T20:19:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://seawave.com/about/</loc><lastmod>2022-03-18T10:48:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://seawave.com/en/about/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://seawave.com/about/"
-                    /></url><url>
+            <loc>https://seawave.com/about/</loc><lastmod>2022-03-18T10:48:30&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/my-first-post/</loc><lastmod>2020-12-12T17:50:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://seawave.com/tags/markdown/</loc><lastmod>2020-03-05T16:30:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://seawave.com/en/tags/markdown/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://seawave.com/tags/markdown/"
-                    /></url><url>
-            <loc>https://seawave.com/tags/content/</loc><lastmod>2020-12-12T17:50:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://seawave.com/en/tags/content/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://seawave.com/tags/content/"
-                    /></url><url>
-            <loc>https://seawave.com/categories/documentation/</loc><lastmod>2021-07-02T18:03:04&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://seawave.com/en/categories/documentation/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://seawave.com/categories/documentation/"
-                    /></url><url>
+            <loc>https://seawave.com/tags/content/</loc><lastmod>2020-12-12T17:50:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/tags/installation/</loc><lastmod>2020-12-12T17:50:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://seawave.com/categories/documentation/</loc><lastmod>2021-07-02T18:03:04&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/tags/configuration/</loc><lastmod>2020-12-12T17:50:56&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
