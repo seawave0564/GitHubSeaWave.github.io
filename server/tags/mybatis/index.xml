@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mybatis on SeaWave</title>
+    <link>https://Seawave.top/tags/mybatis/</link>
+    <description>Recent content in mybatis on SeaWave</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>943581833@qq.com (SeaWave)</managingEditor>
+    <webMaster>943581833@qq.com (SeaWave)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 05 Dec 2021 14:00:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://Seawave.top/tags/mybatis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MyBatis使用教程</title>
+      <link>https://Seawave.top/mybatis-study/</link>
+      <pubDate>Sun, 05 Dec 2021 14:00:00 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/mybatis-study/</guid>
+      <description>什么是MyBatis？ 1.MyBatis介绍 MyBatis 是一款优秀的持久层框架，它支持定制化 SQL、存储过程以及高级映射。MyBatis 避免 了几乎所有</description>
+    </item>
+    
+  </channel>
+</rss>

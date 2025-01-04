@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学习笔记 on SeaWave</title>
+    <link>https://Seawave.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 学习笔记 on SeaWave</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>943581833@qq.com (SeaWave)</managingEditor>
+    <webMaster>943581833@qq.com (SeaWave)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 15 Mar 2023 12:16:26 +0800</lastBuildDate>
+    
+	<atom:link href="https://Seawave.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GitLab安装部署及配置CI/CD</title>
+      <link>https://Seawave.top/gitlab/</link>
+      <pubDate>Wed, 15 Mar 2023 12:16:26 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/gitlab/</guid>
+      <description>GitLab 安装部署及配置 CI/CD 一、基本概念 1.什么是 GitLab？ GitLab 是利用 Ruby on Rails 一个开源的版本管理系统，实现一个自托管的 Git 项目仓库，可通过 Web 界面进行访问</description>
+    </item>
+    
+    <item>
+      <title>Springboot项目中遇到的问题记录</title>
+      <link>https://Seawave.top/spring-problem-record/</link>
+      <pubDate>Wed, 08 Mar 2023 13:00:00 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/spring-problem-record/</guid>
+      <description>Springboot项目中遇到的问题记录(持续记录) 问题描述：maven+springboot项目中，使用lombok注解导致无法编译，控制</description>
+    </item>
+    
+    <item>
+      <title>Git食用教程</title>
+      <link>https://Seawave.top/git-study/</link>
+      <pubDate>Thu, 19 May 2022 14:00:00 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/git-study/</guid>
+      <description>Git—分布式版本控制系统 一、版本控制 概述 版本控制（Revision control）是一种在开发的过程中用于管理我们对文件、目录或工程等内容</description>
+    </item>
+    
+    <item>
+      <title>Docker使用教程</title>
+      <link>https://Seawave.top/docker-study/</link>
+      <pubDate>Sun, 01 May 2022 18:17:26 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/docker-study/</guid>
+      <description>Docker使用教程 Docker概述 Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行</description>
+    </item>
+    
+    <item>
+      <title>Swagger使用教程</title>
+      <link>https://Seawave.top/swagger-study/</link>
+      <pubDate>Fri, 29 Apr 2022 16:17:26 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/swagger-study/</guid>
+      <description>Swagger使用教程 安装 1 2 3 4 5 6 7 8 9 10 11 12 &amp;lt;!--https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 --&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;io.springfox&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;springfox-swagger2&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.9.2&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; &amp;lt;!--https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui --&amp;gt; &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;io.springfox&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;springfox-swagger-ui&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.9.2&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 注意：swagger 2.9.2仅支持springboot2.5</description>
+    </item>
+    
+    <item>
+      <title>初识Redis</title>
+      <link>https://Seawave.top/redis-study/</link>
+      <pubDate>Mon, 04 Apr 2022 12:00:26 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/redis-study/</guid>
+      <description>什么是Redis? 在Web应用发展的初期，那时关系型数据库受到了较为广泛的关注和应用，原因是因为那时候Web站点基本上访问和并发不高、交互也</description>
+    </item>
+    
+    <item>
+      <title>Junit使用教程</title>
+      <link>https://Seawave.top/junit-study/</link>
+      <pubDate>Wed, 30 Mar 2022 00:30:26 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/junit-study/</guid>
+      <description>Junit 简介 单元测试工具（方法） 常用于白盒测试 官网https://junit.org/junit4/ 导入 创建一个普通Maven项目 在pom.xml</description>
+    </item>
+    
+    <item>
+      <title>初识MQTT协议</title>
+      <link>https://Seawave.top/mqtt-study/</link>
+      <pubDate>Thu, 17 Mar 2022 00:30:26 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/mqtt-study/</guid>
+      <description>MQTT协议简解 MQTT(消息队列遥测传输)是ISO 标准(ISO/IEC PRF 20922)下基于发布/订阅范式的消息协议。它工作在 TCP/IP协</description>
+    </item>
+    
+    <item>
+      <title>MyBatis-plus使用教程</title>
+      <link>https://Seawave.top/mybatis-plus/</link>
+      <pubDate>Sat, 05 Mar 2022 02:00:00 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/mybatis-plus/</guid>
+      <description>什么是Mybatis-plus？ 简介 MyBatis-Plus (opens new window)（简称 MP）是一个 MyBatis (opens new window)的增强工具，在 MyBatis 的基础上只做增强不做改变，为简</description>
+    </item>
+    
+    <item>
+      <title>初识SpringBoot</title>
+      <link>https://Seawave.top/springboot-study/</link>
+      <pubDate>Tue, 01 Mar 2022 19:00:00 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/springboot-study/</guid>
+      <description>什么是SpringBoot？ Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该</description>
+    </item>
+    
+    <item>
+      <title>Vue快速入门</title>
+      <link>https://Seawave.top/vue-study/</link>
+      <pubDate>Wed, 05 Jan 2022 21:00:00 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/vue-study/</guid>
+      <description>Vue快速入门 以下所有代码均可在浏览器直接运行，替换body即可。为了节省空间，里的内容需自行添加。 1.导入Vue 1 &amp;lt;script src=&amp;#34;https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 2.数据绑定 方式一：</description>
+    </item>
+    
+    <item>
+      <title>初识SpringMVC</title>
+      <link>https://Seawave.top/springmvc-study/</link>
+      <pubDate>Tue, 28 Dec 2021 20:50:00 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/springmvc-study/</guid>
+      <description>什么是SpringMVC？ 1、简介 很多应用程序的问题在于处理业务数据的对象和显示业务数据的视图之间存在紧密耦合，通常，更新业务对象的命令都是</description>
+    </item>
+    
+    <item>
+      <title>初识Spring5</title>
+      <link>https://Seawave.top/spring-study/</link>
+      <pubDate>Fri, 17 Dec 2021 00:50:00 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/spring-study/</guid>
+      <description>什么是Spring？ 1、简介 Spring框架是由于软件开发的复杂性而创建的。Spring使用的是基本的JavaBean来完成以前只可能由EJ</description>
+    </item>
+    
+    <item>
+      <title>MyBatis使用教程</title>
+      <link>https://Seawave.top/mybatis-study/</link>
+      <pubDate>Sun, 05 Dec 2021 14:00:00 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/mybatis-study/</guid>
+      <description>什么是MyBatis？ 1.MyBatis介绍 MyBatis 是一款优秀的持久层框架，它支持定制化 SQL、存储过程以及高级映射。MyBatis 避免 了几乎所有</description>
+    </item>
+    
+  </channel>
+</rss>

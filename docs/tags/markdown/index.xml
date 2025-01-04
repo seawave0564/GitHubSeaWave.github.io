@@ -1,23 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>markdown on SeaWave</title>
-    <link>https://Seawave.top/tags/markdown/</link>
-    <description>Recent content in markdown on SeaWave</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <managingEditor>943581833@qq.com (SeaWave)</managingEditor>
-    <webMaster>943581833@qq.com (SeaWave)</webMaster>
-    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 02 Jul 2021 17:00:00 +0800</lastBuildDate><atom:link href="https://Seawave.top/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MarkDown基础语法指北</title>
-      <link>https://Seawave.top/markdown-basics-guide/</link>
-      <pubDate>Fri, 02 Jul 2021 17:00:00 +0800</pubDate>
-      <author>943581833@qq.com (SeaWave)</author>
-      <guid>https://Seawave.top/markdown-basics-guide/</guid>
-      <description>Markdown简介 Markdown是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档。 Markdown 语言在 2004 由约翰·格鲁伯（英语：Joh</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Markdown - 标签 - SeaWave</title>
+        <link>https://seawave.com/tags/markdown/</link>
+        <description>Markdown - 标签 - SeaWave</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>zheng@seawave.top (seawave)</managingEditor>
+            <webMaster>zheng@seawave.top (seawave)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 05 Mar 2020 16:30:05 &#43;0800</lastBuildDate><atom:link href="https://seawave.com/tags/markdown/" rel="self" type="application/rss+xml" /><item>
+    <title>主题文档 - 内容</title>
+    <link>https://seawave.com/theme-documentation-content/</link>
+    <pubDate>Thu, 05 Mar 2020 16:30:05 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>https://seawave.com/theme-documentation-content/</guid>
+    <description><![CDATA[<p>了解如何在 <strong>LoveIt</strong> 主题中快速, 直观地创建和组织内容.</p>]]></description>
+</item>
+</channel>
 </rss>

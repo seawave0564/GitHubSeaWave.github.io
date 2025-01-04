@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>虚拟机 on SeaWave</title>
+    <link>https://Seawave.top/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+    <description>Recent content in 虚拟机 on SeaWave</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>943581833@qq.com (SeaWave)</managingEditor>
+    <webMaster>943581833@qq.com (SeaWave)</webMaster>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 13 May 2022 16:30:26 +0800</lastBuildDate>
+    
+	<atom:link href="https://Seawave.top/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>VirtualBox安装MacOS虚拟机</title>
+      <link>https://Seawave.top/vb-mac/</link>
+      <pubDate>Fri, 13 May 2022 16:30:26 +0800</pubDate>
+      <author>943581833@qq.com (SeaWave)</author>
+      <guid>https://Seawave.top/vb-mac/</guid>
+      <description>在VirtualBox中安装MacOS 前言 博主环境如下： 宿主机：WINDOWS 10 H1H2 VirtualBox版本：6.1.34 虚拟机设置如下： 内存</description>
+    </item>
+    
+  </channel>
+</rss>
