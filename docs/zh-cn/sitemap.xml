@@ -11,8 +11,6 @@
                     hreflang="zh-cn"
                     href="https://seawave.com/categories/"
                     /></url><url>
-            <loc>https://seawave.com/tags/git/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://seawave.com/gitlab/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/posts/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
@@ -32,6 +30,11 @@
                     hreflang="zh-cn"
                     href="https://seawave.com/tags/"
                     /></url><url>
+            <loc>https://seawave.com/categories/%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95/</loc><lastmod>2022-05-15T20:20:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://seawave.com/mail-config/</loc><lastmod>2022-05-15T20:20:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://seawave.com/tags/%E9%82%AE%E7%AE%B1/</loc><lastmod>2022-05-15T20:20:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://seawave.com/tags/git/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://seawave.com/gitlab/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/tags/java/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/tags/spring/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -39,7 +42,6 @@
             <loc>https://seawave.com/spring-problem-record/</loc><lastmod>2023-03-15T12:17:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/git-study/</loc><lastmod>2022-05-19T19:30:15&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/vb-mac/</loc><lastmod>2022-05-13T17:59:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://seawave.com/categories/%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95/</loc><lastmod>2022-05-15T20:20:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc><lastmod>2022-05-13T17:59:48&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/docker-study/</loc><lastmod>2022-04-29T16:15:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/swagger-study/</loc><lastmod>2022-04-29T16:15:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
@@ -49,8 +51,6 @@
             <loc>https://seawave.com/tags/%E5%8D%8F%E8%AE%AE/</loc><lastmod>2022-03-17T18:53:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/tags/%E7%89%A9%E8%81%94%E7%BD%91/</loc><lastmod>2022-03-17T18:53:08&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/mybatis-plus/</loc><lastmod>2022-03-16T20:19:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://seawave.com/mail-config/</loc><lastmod>2022-05-15T20:20:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://seawave.com/tags/%E9%82%AE%E7%AE%B1/</loc><lastmod>2022-05-15T20:20:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/springboot-study/</loc><lastmod>2022-04-29T16:15:11&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/tags/js/</loc><lastmod>2022-03-16T20:19:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://seawave.com/vue-study/</loc><lastmod>2022-03-16T20:19:58&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
